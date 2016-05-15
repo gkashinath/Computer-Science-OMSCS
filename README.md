@@ -8,7 +8,7 @@ This folder contains all the Computer Science work I have done over the past 3 y
   - **6300Fall15gkashinath3:** This folder contains all the individual projects accomplished in this course. Highlight projects are Grades Calculator and Unit Conversion Android app.
   - **6300Fall15Team80:** This folder contains all the group projects completed in this course. Highlight project is the Smoothie Cart Android app.
 
-Programming languages: JAVA, MATLAB, Python and Android
+**Programming languages:** JAVA, MATLAB, Python and Android
 
 I have achieved an **A** grade for both the courses I have taken in the OMSCS program.
 
