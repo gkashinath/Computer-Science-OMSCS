@@ -10,6 +10,6 @@ This folder contains all the Computer Science work I have done over the past 3 y
 
 **Programming languages:** JAVA, MATLAB, Python and Android
 
-I have achieved an **A** grade for both the courses I have taken in the OMSCS program.
+I have achieved an **A** grade for both the courses I have taken as part of the OMSCS program.
 
 For more information please contact, gkashinath@gmail.com.
