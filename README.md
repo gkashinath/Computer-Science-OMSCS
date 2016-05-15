@@ -1,5 +1,4 @@
-# Computer Science Work
-=========
+# Computer Science Work #
 
 This folder contains all the Computer Science work I have done over the past 3 years.
 
