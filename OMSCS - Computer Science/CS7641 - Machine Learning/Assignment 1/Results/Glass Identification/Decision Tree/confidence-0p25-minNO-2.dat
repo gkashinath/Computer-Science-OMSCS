@@ -1,0 +1,116 @@
+=== Run information ===
+
+Scheme:weka.classifiers.trees.J48 -C 0.25 -M 2
+Relation:     glass-weka.filters.unsupervised.attribute.Normalize-S1.0-T0.0
+Instances:    214
+Attributes:   10
+              RI
+              Na
+              Mg
+              Al
+              Si
+              K
+              Ca
+              Ba
+              Fe
+              Class
+Test mode:10-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+J48 pruned tree
+------------------
+
+Ba <= 0.085714
+|   Mg <= 0.536748
+|   |   K <= 0.004831
+|   |   |   Na <= 0.454135: 2 (3.0)
+|   |   |   Na > 0.454135: 6 (9.0)
+|   |   K > 0.004831
+|   |   |   Na <= 0.415038
+|   |   |   |   RI <= 0.568481: 5 (13.0/1.0)
+|   |   |   |   RI > 0.568481: 2 (3.0)
+|   |   |   Na > 0.415038: 2 (7.0/1.0)
+|   Mg > 0.536748
+|   |   Al <= 0.34891
+|   |   |   RI <= 0.259877
+|   |   |   |   RI <= 0.21115: 1 (3.0)
+|   |   |   |   RI > 0.21115
+|   |   |   |   |   Fe <= 0.235294
+|   |   |   |   |   |   Mg <= 0.788419: 3 (5.0)
+|   |   |   |   |   |   Mg > 0.788419
+|   |   |   |   |   |   |   RI <= 0.242318: 2 (2.0)
+|   |   |   |   |   |   |   RI > 0.242318: 3 (2.0)
+|   |   |   |   |   Fe > 0.235294: 2 (2.0)
+|   |   |   RI > 0.259877
+|   |   |   |   K <= 0.037037
+|   |   |   |   |   Mg <= 0.743875: 2 (2.0)
+|   |   |   |   |   Mg > 0.743875
+|   |   |   |   |   |   Si <= 0.505357
+|   |   |   |   |   |   |   Na <= 0.493233: 1 (14.0)
+|   |   |   |   |   |   |   Na > 0.493233
+|   |   |   |   |   |   |   |   RI <= 0.481124
+|   |   |   |   |   |   |   |   |   Na <= 0.53985: 3 (3.0)
+|   |   |   |   |   |   |   |   |   Na > 0.53985: 1 (2.0)
+|   |   |   |   |   |   |   |   RI > 0.481124: 1 (3.0)
+|   |   |   |   |   |   Si > 0.505357: 3 (3.0)
+|   |   |   |   K > 0.037037
+|   |   |   |   |   Mg <= 0.835189
+|   |   |   |   |   |   Fe <= 0.27451
+|   |   |   |   |   |   |   RI <= 0.407375: 1 (36.0)
+|   |   |   |   |   |   |   RI > 0.407375: 2 (2.0/1.0)
+|   |   |   |   |   |   Fe > 0.27451
+|   |   |   |   |   |   |   Al <= 0.274143: 2 (5.0)
+|   |   |   |   |   |   |   Al > 0.274143: 1 (6.0/1.0)
+|   |   |   |   |   Mg > 0.835189: 2 (10.0)
+|   |   Al > 0.34891
+|   |   |   Si <= 0.478571
+|   |   |   |   Ca <= 0.26487: 2 (6.0)
+|   |   |   |   Ca > 0.26487: 3 (5.0/1.0)
+|   |   |   Si > 0.478571: 2 (39.0/6.0)
+Ba > 0.085714
+|   Si <= 0.0625: 2 (2.0/1.0)
+|   Si > 0.0625: 7 (27.0/1.0)
+
+Number of Leaves  : 	26
+
+Size of the tree : 	51
+
+
+Time taken to build model: 0 seconds
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances         144               67.2897 %
+Incorrectly Classified Instances        70               32.7103 %
+Kappa statistic                          0.5606
+Mean absolute error                      0.1019
+Root mean squared error                  0.286 
+Relative absolute error                 48.1205 %
+Root relative squared error             88.1331 %
+Total Number of Instances              214     
+
+=== Detailed Accuracy By Class ===
+
+               TP Rate   FP Rate   Precision   Recall  F-Measure   ROC Area  Class
+                 0.714     0.16       0.685     0.714     0.699      0.807    1
+                 0.592     0.167      0.662     0.592     0.625      0.771    2
+                 0.353     0.061      0.333     0.353     0.343      0.757    3
+                 0         0          0         0         0          ?        4
+                 0.846     0.025      0.688     0.846     0.759      0.944    5
+                 0.889     0.015      0.727     0.889     0.8        0.938    6
+                 0.828     0.022      0.857     0.828     0.842      0.884    7
+Weighted Avg.    0.673     0.121      0.674     0.673     0.672      0.815
+
+=== Confusion Matrix ===
+
+  a  b  c  d  e  f  g   <-- classified as
+ 50 14  4  0  0  1  1 |  a = 1
+ 14 45  8  0  5  2  2 |  b = 2
+  6  5  6  0  0  0  0 |  c = 3
+  0  0  0  0  0  0  0 |  d = 4
+  0  1  0  0 11  0  1 |  e = 5
+  1  0  0  0  0  8  0 |  f = 6
+  2  3  0  0  0  0 24 |  g = 7
+

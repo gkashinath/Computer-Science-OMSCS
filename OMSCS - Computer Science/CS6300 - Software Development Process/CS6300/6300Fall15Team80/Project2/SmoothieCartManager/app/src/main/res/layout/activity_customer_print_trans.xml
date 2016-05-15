@@ -1,0 +1,96 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="edu.gatech.seclass.scm.customerPrintTrans">
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="PRINT"
+        android:id="@+id/bPrintCustHist"
+        android:clickable="true"
+        android:enabled="true"
+        android:onClick="handlePrintTrans"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SCAN QR"
+        android:onClick="handleCustomerGet"
+        android:id="@+id/button2"
+        android:layout_alignTop="@+id/bPrintCustHist"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Name"
+        android:id="@+id/textView21"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:id="@+id/editText5"
+        android:layout_below="@+id/textView21"
+        android:editable="false"
+        android:clickable="false"
+        android:cursorVisible="false"
+        android:layout_alignEnd="@+id/editText6"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Customer ID"
+        android:id="@+id/textView22"
+        android:layout_below="@+id/editText5"
+        android:layout_centerHorizontal="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:id="@+id/editText6"
+        android:layout_below="@+id/textView22"
+        android:editable="false"
+        android:clickable="false"
+        android:cursorVisible="false"
+        android:layout_alignEnd="@+id/tPrintTrans"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="List Of Transactions"
+        android:id="@+id/textView23"
+        android:layout_marginTop="39dp"
+        android:layout_below="@+id/editText6"
+        android:layout_centerHorizontal="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:id="@+id/tPrintTrans"
+        android:editable="false"
+        android:clickable="false"
+        android:cursorVisible="false"
+        android:layout_below="@+id/textView23"
+        android:nestedScrollingEnabled="true"
+        android:layout_alignEnd="@+id/bPrintCustHist"
+        android:layout_alignParentStart="true"
+        android:layout_above="@+id/bPrintCustHist"
+        android:scrollIndicators="right"
+        android:background="#ffe4d2" />
+</RelativeLayout>

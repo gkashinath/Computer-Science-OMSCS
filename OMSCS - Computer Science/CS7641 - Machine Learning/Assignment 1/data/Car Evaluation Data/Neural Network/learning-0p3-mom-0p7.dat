@@ -1,0 +1,139 @@
+=== Run information ===
+
+Scheme:weka.classifiers.functions.MultilayerPerceptron -L 0.3 -M 0.7 -N 500 -V 0 -S 0 -E 20 -H a
+Relation:     preprocess_car_data
+Instances:    1728
+Attributes:   7
+              buying
+              maint
+              doors
+              persons
+              lug_boot
+              safety
+              class
+Test mode:10-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+Sigmoid Node 0
+    Inputs    Weights
+    Threshold    -9.879884599097128
+    Node 4    1.7290465276685336
+    Node 5    9.163480838019293
+    Node 6    14.302733597763563
+    Node 7    10.434717880057487
+    Node 8    13.80933504693438
+Sigmoid Node 1
+    Inputs    Weights
+    Threshold    -2.2202225270573455
+    Node 4    9.605504882902867
+    Node 5    -8.33131543500792
+    Node 6    -12.186665293596969
+    Node 7    -9.216533118950691
+    Node 8    -12.847211542145093
+Sigmoid Node 2
+    Inputs    Weights
+    Threshold    0.4116674293479752
+    Node 4    -4.839869209211079
+    Node 5    -6.382989165970175
+    Node 6    -5.515683643949126
+    Node 7    -22.353432426071134
+    Node 8    -2.0751249811190635
+Sigmoid Node 3
+    Inputs    Weights
+    Threshold    -0.796516755542043
+    Node 4    -8.06002415204807
+    Node 5    -13.60363509886047
+    Node 6    -9.58205602666193
+    Node 7    6.3782737613197025
+    Node 8    -1.8235297059595037
+Sigmoid Node 4
+    Inputs    Weights
+    Threshold    31.1049199288375
+    Attrib buying    27.285600122384633
+    Attrib maint    21.86500138160229
+    Attrib doors    -3.2092491024916256
+    Attrib persons    -0.15302939188580703
+    Attrib lug_boot    -6.419518103324022
+    Attrib safety    -14.119896197854015
+Sigmoid Node 5
+    Inputs    Weights
+    Threshold    -0.8747191685452496
+    Attrib buying    7.100306178722314
+    Attrib maint    8.29562630165837
+    Attrib doors    -9.169798051356285
+    Attrib persons    -1.4366957838959897
+    Attrib lug_boot    -14.846585527015597
+    Attrib safety    -24.982560886904366
+Sigmoid Node 6
+    Inputs    Weights
+    Threshold    1.1933812491768203
+    Attrib buying    3.556354674661306
+    Attrib maint    -0.43217067705387097
+    Attrib doors    -2.073949401214438
+    Attrib persons    -21.235975327505724
+    Attrib lug_boot    -1.1858188383532529
+    Attrib safety    -13.554068743364498
+Sigmoid Node 7
+    Inputs    Weights
+    Threshold    -3.529011371375058
+    Attrib buying    -0.9231741484878933
+    Attrib maint    -1.4997443364381433
+    Attrib doors    0.6005055037061625
+    Attrib persons    0.5461814250770103
+    Attrib lug_boot    1.686180469422968
+    Attrib safety    -13.193448058071473
+Sigmoid Node 8
+    Inputs    Weights
+    Threshold    -20.304803990537756
+    Attrib buying    19.217459166092972
+    Attrib maint    20.011345326195748
+    Attrib doors    -0.2627815053220434
+    Attrib persons    3.6371421309592424
+    Attrib lug_boot    -3.723435432046112
+    Attrib safety    -1.3114914419345804
+Class unacc
+    Input
+    Node 0
+Class acc
+    Input
+    Node 1
+Class vgood
+    Input
+    Node 2
+Class good
+    Input
+    Node 3
+
+
+Time taken to build model: 1.41 seconds
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances        1598               92.4769 %
+Incorrectly Classified Instances       130                7.5231 %
+Kappa statistic                          0.8362
+Mean absolute error                      0.0452
+Root mean squared error                  0.1611
+Relative absolute error                 19.7165 %
+Root relative squared error             47.6581 %
+Total Number of Instances             1728     
+
+=== Detailed Accuracy By Class ===
+
+               TP Rate   FP Rate   Precision   Recall  F-Measure   ROC Area  Class
+                 0.98      0.048      0.979     0.98      0.98       0.993    unacc
+                 0.87      0.022      0.92      0.87      0.894      0.984    acc
+                 0.692     0.027      0.5       0.692     0.581      0.98     vgood
+                 0.478     0.019      0.516     0.478     0.496      0.974    good
+Weighted Avg.    0.925     0.04       0.93      0.925     0.926      0.99 
+
+=== Confusion Matrix ===
+
+    a    b    c    d   <-- classified as
+ 1186   19    3    2 |    a = unacc
+   25  334   13   12 |    b = acc
+    0    3   45   17 |    c = vgood
+    0    7   29   33 |    d = good
+

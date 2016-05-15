@@ -1,0 +1,1324 @@
+
+Test Case 1  		<error>
+   Presence of a file corresponding to the name :  Not present
+
+
+Test Case 2  		<error>
+   Size :  Empty
+
+
+Test Case 3  		<error>
+   File format :  Others
+
+
+Test Case 4  		<error>
+   Valid flags specified :  No
+
+
+Test Case 5  		<single>
+   -b Flag specified :  No
+
+
+Test Case 6  		<single>
+   -f Flag specified :  No
+
+
+Test Case 7  		<single>
+   -i Flag specified :  No
+
+
+Test Case 8  		<single>
+   -n Flag specified :  No
+
+
+Test Case 9  		<single>  (follows [if])
+   Presence of a number in the input file :  Not Present
+
+
+Test Case 10 		<single>
+   -r Flag specified :  No
+
+
+Test Case 11 		<single>
+   -u Flag specified :  No
+
+
+Test Case 12 		(Key = 2.2.1.1.1.1.1.1.1.1.1.2.1.1.1.1.1.)
+   Presence of a file corresponding to the name :  Present
+   Size                                         :  Not Empty
+   File format                                  :  ASCII
+   Valid flags specified                        :  Yes
+   -b Flag specified                            :  Yes
+   Presence of leading space and/or tab         :  Not Present
+   -f Flag specified                            :  Yes
+   Presence of alphabetic characters            :  Not Present
+   -i Flag specified                            :  Yes
+   Presence of non-printable characters         :  Not Present
+   -n Flag specified                            :  Yes
+   Presence of a number in the input file       :  Present
+   Number has a minus sign                      :  Yes
+   Number has a decimal digits                  :  Yes
+   Number has thousands-seperator characters    :  Yes
+   -r Flag specified                            :  Yes
+   -u Flag specified                            :  Yes
+
+
+Test Case 13 		(Key = 2.2.1.1.1.1.1.1.1.1.1.2.1.1.2.1.1.)
+   Presence of a file corresponding to the name :  Present
+   Size                                         :  Not Empty
+   File format                                  :  ASCII
+   Valid flags specified                        :  Yes
+   -b Flag specified                            :  Yes
+   Presence of leading space and/or tab         :  Not Present
+   -f Flag specified                            :  Yes
+   Presence of alphabetic characters            :  Not Present
+   -i Flag specified                            :  Yes
+   Presence of non-printable characters         :  Not Present
+   -n Flag specified                            :  Yes
+   Presence of a number in the input file       :  Present
+   Number has a minus sign                      :  Yes
+   Number has a decimal digits                  :  Yes
+   Number has thousands-seperator characters    :  No
+   -r Flag specified                            :  Yes
+   -u Flag specified                            :  Yes
+
+
+Test Case 14 		(Key = 2.2.1.1.1.1.1.1.1.1.1.2.1.2.1.1.1.)
+   Presence of a file corresponding to the name :  Present
+   Size                                         :  Not Empty
+   File format                                  :  ASCII
+   Valid flags specified                        :  Yes
+   -b Flag specified                            :  Yes
+   Presence of leading space and/or tab         :  Not Present
+   -f Flag specified                            :  Yes
+   Presence of alphabetic characters            :  Not Present
+   -i Flag specified                            :  Yes
+   Presence of non-printable characters         :  Not Present
+   -n Flag specified                            :  Yes
+   Presence of a number in the input file       :  Present
+   Number has a minus sign                      :  Yes
+   Number has a decimal digits                  :  No
+   Number has thousands-seperator characters    :  Yes
+   -r Flag specified                            :  Yes
+   -u Flag specified                            :  Yes
+
+
+Test Case 15 		(Key = 2.2.1.1.1.1.1.1.1.1.1.2.1.2.2.1.1.)
+   Presence of a file corresponding to the name :  Present
+   Size                                         :  Not Empty
+   File format                                  :  ASCII
+   Valid flags specified                        :  Yes
+   -b Flag specified                            :  Yes
+   Presence of leading space and/or tab         :  Not Present
+   -f Flag specified                            :  Yes
+   Presence of alphabetic characters            :  Not Present
+   -i Flag specified                            :  Yes
+   Presence of non-printable characters         :  Not Present
+   -n Flag specified                            :  Yes
+   Presence of a number in the input file       :  Present
+   Number has a minus sign                      :  Yes
+   Number has a decimal digits                  :  No
+   Number has thousands-seperator characters    :  No
+   -r Flag specified                            :  Yes
+   -u Flag specified                            :  Yes
+
+
+Test Case 16 		(Key = 2.2.1.1.1.1.1.1.1.1.1.2.2.1.1.1.1.)
+   Presence of a file corresponding to the name :  Present
+   Size                                         :  Not Empty
+   File format                                  :  ASCII
+   Valid flags specified                        :  Yes
+   -b Flag specified                            :  Yes
+   Presence of leading space and/or tab         :  Not Present
+   -f Flag specified                            :  Yes
+   Presence of alphabetic characters            :  Not Present
+   -i Flag specified                            :  Yes
+   Presence of non-printable characters         :  Not Present
+   -n Flag specified                            :  Yes
+   Presence of a number in the input file       :  Present
+   Number has a minus sign                      :  No
+   Number has a decimal digits                  :  Yes
+   Number has thousands-seperator characters    :  Yes
+   -r Flag specified                            :  Yes
+   -u Flag specified                            :  Yes
+
+
+Test Case 17 		(Key = 2.2.1.1.1.1.1.1.1.1.1.2.2.1.2.1.1.)
+   Presence of a file corresponding to the name :  Present
+   Size                                         :  Not Empty
+   File format                                  :  ASCII
+   Valid flags specified                        :  Yes
+   -b Flag specified                            :  Yes
+   Presence of leading space and/or tab         :  Not Present
+   -f Flag specified                            :  Yes
+   Presence of alphabetic characters            :  Not Present
+   -i Flag specified                            :  Yes
+   Presence of non-printable characters         :  Not Present
+   -n Flag specified                            :  Yes
+   Presence of a number in the input file       :  Present
+   Number has a minus sign                      :  No
+   Number has a decimal digits                  :  Yes
+   Number has thousands-seperator characters    :  No
+   -r Flag specified                            :  Yes
+   -u Flag specified                            :  Yes
+
+
+Test Case 18 		(Key = 2.2.1.1.1.1.1.1.1.1.1.2.2.2.1.1.1.)
+   Presence of a file corresponding to the name :  Present
+   Size                                         :  Not Empty
+   File format                                  :  ASCII
+   Valid flags specified                        :  Yes
+   -b Flag specified                            :  Yes
+   Presence of leading space and/or tab         :  Not Present
+   -f Flag specified                            :  Yes
+   Presence of alphabetic characters            :  Not Present
+   -i Flag specified                            :  Yes
+   Presence of non-printable characters         :  Not Present
+   -n Flag specified                            :  Yes
+   Presence of a number in the input file       :  Present
+   Number has a minus sign                      :  No
+   Number has a decimal digits                  :  No
+   Number has thousands-seperator characters    :  Yes
+   -r Flag specified                            :  Yes
+   -u Flag specified                            :  Yes
+
+
+Test Case 19 		(Key = 2.2.1.1.1.1.1.1.1.1.1.2.2.2.2.1.1.)
+   Presence of a file corresponding to the name :  Present
+   Size                                         :  Not Empty
+   File format                                  :  ASCII
+   Valid flags specified                        :  Yes
+   -b Flag specified                            :  Yes
+   Presence of leading space and/or tab         :  Not Present
+   -f Flag specified                            :  Yes
+   Presence of alphabetic characters            :  Not Present
+   -i Flag specified                            :  Yes
+   Presence of non-printable characters         :  Not Present
+   -n Flag specified                            :  Yes
+   Presence of a number in the input file       :  Present
+   Number has a minus sign                      :  No
+   Number has a decimal digits                  :  No
+   Number has thousands-seperator characters    :  No
+   -r Flag specified                            :  Yes
+   -u Flag specified                            :  Yes
+
+
+Test Case 20 		(Key = 2.2.1.1.1.1.1.1.1.2.1.2.1.1.1.1.1.)
+   Presence of a file corresponding to the name :  Present
+   Size                                         :  Not Empty
+   File format                                  :  ASCII
+   Valid flags specified                        :  Yes
+   -b Flag specified                            :  Yes
+   Presence of leading space and/or tab         :  Not Present
+   -f Flag specified                            :  Yes
+   Presence of alphabetic characters            :  Not Present
+   -i Flag specified                            :  Yes
+   Presence of non-printable characters         :  Present
+   -n Flag specified                            :  Yes
+   Presence of a number in the input file       :  Present
+   Number has a minus sign                      :  Yes
+   Number has a decimal digits                  :  Yes
+   Number has thousands-seperator characters    :  Yes
+   -r Flag specified                            :  Yes
+   -u Flag specified                            :  Yes
+
+
+Test Case 21 		(Key = 2.2.1.1.1.1.1.1.1.2.1.2.1.1.2.1.1.)
+   Presence of a file corresponding to the name :  Present
+   Size                                         :  Not Empty
+   File format                                  :  ASCII
+   Valid flags specified                        :  Yes
+   -b Flag specified                            :  Yes
+   Presence of leading space and/or tab         :  Not Present
+   -f Flag specified                            :  Yes
+   Presence of alphabetic characters            :  Not Present
+   -i Flag specified                            :  Yes
+   Presence of non-printable characters         :  Present
+   -n Flag specified                            :  Yes
+   Presence of a number in the input file       :  Present
+   Number has a minus sign                      :  Yes
+   Number has a decimal digits                  :  Yes
+   Number has thousands-seperator characters    :  No
+   -r Flag specified                            :  Yes
+   -u Flag specified                            :  Yes
+
+
+Test Case 22 		(Key = 2.2.1.1.1.1.1.1.1.2.1.2.1.2.1.1.1.)
+   Presence of a file corresponding to the name :  Present
+   Size                                         :  Not Empty
+   File format                                  :  ASCII
+   Valid flags specified                        :  Yes
+   -b Flag specified                            :  Yes
+   Presence of leading space and/or tab         :  Not Present
+   -f Flag specified                            :  Yes
+   Presence of alphabetic characters            :  Not Present
+   -i Flag specified                            :  Yes
+   Presence of non-printable characters         :  Present
+   -n Flag specified                            :  Yes
+   Presence of a number in the input file       :  Present
+   Number has a minus sign                      :  Yes
+   Number has a decimal digits                  :  No
+   Number has thousands-seperator characters    :  Yes
+   -r Flag specified                            :  Yes
+   -u Flag specified                            :  Yes
+
+
+Test Case 23 		(Key = 2.2.1.1.1.1.1.1.1.2.1.2.1.2.2.1.1.)
+   Presence of a file corresponding to the name :  Present
+   Size                                         :  Not Empty
+   File format                                  :  ASCII
+   Valid flags specified                        :  Yes
+   -b Flag specified                            :  Yes
+   Presence of leading space and/or tab         :  Not Present
+   -f Flag specified                            :  Yes
+   Presence of alphabetic characters            :  Not Present
+   -i Flag specified                            :  Yes
+   Presence of non-printable characters         :  Present
+   -n Flag specified                            :  Yes
+   Presence of a number in the input file       :  Present
+   Number has a minus sign                      :  Yes
+   Number has a decimal digits                  :  No
+   Number has thousands-seperator characters    :  No
+   -r Flag specified                            :  Yes
+   -u Flag specified                            :  Yes
+
+
+Test Case 24 		(Key = 2.2.1.1.1.1.1.1.1.2.1.2.2.1.1.1.1.)
+   Presence of a file corresponding to the name :  Present
+   Size                                         :  Not Empty
+   File format                                  :  ASCII
+   Valid flags specified                        :  Yes
+   -b Flag specified                            :  Yes
+   Presence of leading space and/or tab         :  Not Present
+   -f Flag specified                            :  Yes
+   Presence of alphabetic characters            :  Not Present
+   -i Flag specified                            :  Yes
+   Presence of non-printable characters         :  Present
+   -n Flag specified                            :  Yes
+   Presence of a number in the input file       :  Present
+   Number has a minus sign                      :  No
+   Number has a decimal digits                  :  Yes
+   Number has thousands-seperator characters    :  Yes
+   -r Flag specified                            :  Yes
+   -u Flag specified                            :  Yes
+
+
+Test Case 25 		(Key = 2.2.1.1.1.1.1.1.1.2.1.2.2.1.2.1.1.)
+   Presence of a file corresponding to the name :  Present
+   Size                                         :  Not Empty
+   File format                                  :  ASCII
+   Valid flags specified                        :  Yes
+   -b Flag specified                            :  Yes
+   Presence of leading space and/or tab         :  Not Present
+   -f Flag specified                            :  Yes
+   Presence of alphabetic characters            :  Not Present
+   -i Flag specified                            :  Yes
+   Presence of non-printable characters         :  Present
+   -n Flag specified                            :  Yes
+   Presence of a number in the input file       :  Present
+   Number has a minus sign                      :  No
+   Number has a decimal digits                  :  Yes
+   Number has thousands-seperator characters    :  No
+   -r Flag specified                            :  Yes
+   -u Flag specified                            :  Yes
+
+
+Test Case 26 		(Key = 2.2.1.1.1.1.1.1.1.2.1.2.2.2.1.1.1.)
+   Presence of a file corresponding to the name :  Present
+   Size                                         :  Not Empty
+   File format                                  :  ASCII
+   Valid flags specified                        :  Yes
+   -b Flag specified                            :  Yes
+   Presence of leading space and/or tab         :  Not Present
+   -f Flag specified                            :  Yes
+   Presence of alphabetic characters            :  Not Present
+   -i Flag specified                            :  Yes
+   Presence of non-printable characters         :  Present
+   -n Flag specified                            :  Yes
+   Presence of a number in the input file       :  Present
+   Number has a minus sign                      :  No
+   Number has a decimal digits                  :  No
+   Number has thousands-seperator characters    :  Yes
+   -r Flag specified                            :  Yes
+   -u Flag specified                            :  Yes
+
+
+Test Case 27 		(Key = 2.2.1.1.1.1.1.1.1.2.1.2.2.2.2.1.1.)
+   Presence of a file corresponding to the name :  Present
+   Size                                         :  Not Empty
+   File format                                  :  ASCII
+   Valid flags specified                        :  Yes
+   -b Flag specified                            :  Yes
+   Presence of leading space and/or tab         :  Not Present
+   -f Flag specified                            :  Yes
+   Presence of alphabetic characters            :  Not Present
+   -i Flag specified                            :  Yes
+   Presence of non-printable characters         :  Present
+   -n Flag specified                            :  Yes
+   Presence of a number in the input file       :  Present
+   Number has a minus sign                      :  No
+   Number has a decimal digits                  :  No
+   Number has thousands-seperator characters    :  No
+   -r Flag specified                            :  Yes
+   -u Flag specified                            :  Yes
+
+
+Test Case 28 		(Key = 2.2.1.1.1.1.1.2.1.1.1.2.1.1.1.1.1.)
+   Presence of a file corresponding to the name :  Present
+   Size                                         :  Not Empty
+   File format                                  :  ASCII
+   Valid flags specified                        :  Yes
+   -b Flag specified                            :  Yes
+   Presence of leading space and/or tab         :  Not Present
+   -f Flag specified                            :  Yes
+   Presence of alphabetic characters            :  Present
+   -i Flag specified                            :  Yes
+   Presence of non-printable characters         :  Not Present
+   -n Flag specified                            :  Yes
+   Presence of a number in the input file       :  Present
+   Number has a minus sign                      :  Yes
+   Number has a decimal digits                  :  Yes
+   Number has thousands-seperator characters    :  Yes
+   -r Flag specified                            :  Yes
+   -u Flag specified                            :  Yes
+
+
+Test Case 29 		(Key = 2.2.1.1.1.1.1.2.1.1.1.2.1.1.2.1.1.)
+   Presence of a file corresponding to the name :  Present
+   Size                                         :  Not Empty
+   File format                                  :  ASCII
+   Valid flags specified                        :  Yes
+   -b Flag specified                            :  Yes
+   Presence of leading space and/or tab         :  Not Present
+   -f Flag specified                            :  Yes
+   Presence of alphabetic characters            :  Present
+   -i Flag specified                            :  Yes
+   Presence of non-printable characters         :  Not Present
+   -n Flag specified                            :  Yes
+   Presence of a number in the input file       :  Present
+   Number has a minus sign                      :  Yes
+   Number has a decimal digits                  :  Yes
+   Number has thousands-seperator characters    :  No
+   -r Flag specified                            :  Yes
+   -u Flag specified                            :  Yes
+
+
+Test Case 30 		(Key = 2.2.1.1.1.1.1.2.1.1.1.2.1.2.1.1.1.)
+   Presence of a file corresponding to the name :  Present
+   Size                                         :  Not Empty
+   File format                                  :  ASCII
+   Valid flags specified                        :  Yes
+   -b Flag specified                            :  Yes
+   Presence of leading space and/or tab         :  Not Present
+   -f Flag specified                            :  Yes
+   Presence of alphabetic characters            :  Present
+   -i Flag specified                            :  Yes
+   Presence of non-printable characters         :  Not Present
+   -n Flag specified                            :  Yes
+   Presence of a number in the input file       :  Present
+   Number has a minus sign                      :  Yes
+   Number has a decimal digits                  :  No
+   Number has thousands-seperator characters    :  Yes
+   -r Flag specified                            :  Yes
+   -u Flag specified                            :  Yes
+
+
+Test Case 31 		(Key = 2.2.1.1.1.1.1.2.1.1.1.2.1.2.2.1.1.)
+   Presence of a file corresponding to the name :  Present
+   Size                                         :  Not Empty
+   File format                                  :  ASCII
+   Valid flags specified                        :  Yes
+   -b Flag specified                            :  Yes
+   Presence of leading space and/or tab         :  Not Present
+   -f Flag specified                            :  Yes
+   Presence of alphabetic characters            :  Present
+   -i Flag specified                            :  Yes
+   Presence of non-printable characters         :  Not Present
+   -n Flag specified                            :  Yes
+   Presence of a number in the input file       :  Present
+   Number has a minus sign                      :  Yes
+   Number has a decimal digits                  :  No
+   Number has thousands-seperator characters    :  No
+   -r Flag specified                            :  Yes
+   -u Flag specified                            :  Yes
+
+
+Test Case 32 		(Key = 2.2.1.1.1.1.1.2.1.1.1.2.2.1.1.1.1.)
+   Presence of a file corresponding to the name :  Present
+   Size                                         :  Not Empty
+   File format                                  :  ASCII
+   Valid flags specified                        :  Yes
+   -b Flag specified                            :  Yes
+   Presence of leading space and/or tab         :  Not Present
+   -f Flag specified                            :  Yes
+   Presence of alphabetic characters            :  Present
+   -i Flag specified                            :  Yes
+   Presence of non-printable characters         :  Not Present
+   -n Flag specified                            :  Yes
+   Presence of a number in the input file       :  Present
+   Number has a minus sign                      :  No
+   Number has a decimal digits                  :  Yes
+   Number has thousands-seperator characters    :  Yes
+   -r Flag specified                            :  Yes
+   -u Flag specified                            :  Yes
+
+
+Test Case 33 		(Key = 2.2.1.1.1.1.1.2.1.1.1.2.2.1.2.1.1.)
+   Presence of a file corresponding to the name :  Present
+   Size                                         :  Not Empty
+   File format                                  :  ASCII
+   Valid flags specified                        :  Yes
+   -b Flag specified                            :  Yes
+   Presence of leading space and/or tab         :  Not Present
+   -f Flag specified                            :  Yes
+   Presence of alphabetic characters            :  Present
+   -i Flag specified                            :  Yes
+   Presence of non-printable characters         :  Not Present
+   -n Flag specified                            :  Yes
+   Presence of a number in the input file       :  Present
+   Number has a minus sign                      :  No
+   Number has a decimal digits                  :  Yes
+   Number has thousands-seperator characters    :  No
+   -r Flag specified                            :  Yes
+   -u Flag specified                            :  Yes
+
+
+Test Case 34 		(Key = 2.2.1.1.1.1.1.2.1.1.1.2.2.2.1.1.1.)
+   Presence of a file corresponding to the name :  Present
+   Size                                         :  Not Empty
+   File format                                  :  ASCII
+   Valid flags specified                        :  Yes
+   -b Flag specified                            :  Yes
+   Presence of leading space and/or tab         :  Not Present
+   -f Flag specified                            :  Yes
+   Presence of alphabetic characters            :  Present
+   -i Flag specified                            :  Yes
+   Presence of non-printable characters         :  Not Present
+   -n Flag specified                            :  Yes
+   Presence of a number in the input file       :  Present
+   Number has a minus sign                      :  No
+   Number has a decimal digits                  :  No
+   Number has thousands-seperator characters    :  Yes
+   -r Flag specified                            :  Yes
+   -u Flag specified                            :  Yes
+
+
+Test Case 35 		(Key = 2.2.1.1.1.1.1.2.1.1.1.2.2.2.2.1.1.)
+   Presence of a file corresponding to the name :  Present
+   Size                                         :  Not Empty
+   File format                                  :  ASCII
+   Valid flags specified                        :  Yes
+   -b Flag specified                            :  Yes
+   Presence of leading space and/or tab         :  Not Present
+   -f Flag specified                            :  Yes
+   Presence of alphabetic characters            :  Present
+   -i Flag specified                            :  Yes
+   Presence of non-printable characters         :  Not Present
+   -n Flag specified                            :  Yes
+   Presence of a number in the input file       :  Present
+   Number has a minus sign                      :  No
+   Number has a decimal digits                  :  No
+   Number has thousands-seperator characters    :  No
+   -r Flag specified                            :  Yes
+   -u Flag specified                            :  Yes
+
+
+Test Case 36 		(Key = 2.2.1.1.1.1.1.2.1.2.1.2.1.1.1.1.1.)
+   Presence of a file corresponding to the name :  Present
+   Size                                         :  Not Empty
+   File format                                  :  ASCII
+   Valid flags specified                        :  Yes
+   -b Flag specified                            :  Yes
+   Presence of leading space and/or tab         :  Not Present
+   -f Flag specified                            :  Yes
+   Presence of alphabetic characters            :  Present
+   -i Flag specified                            :  Yes
+   Presence of non-printable characters         :  Present
+   -n Flag specified                            :  Yes
+   Presence of a number in the input file       :  Present
+   Number has a minus sign                      :  Yes
+   Number has a decimal digits                  :  Yes
+   Number has thousands-seperator characters    :  Yes
+   -r Flag specified                            :  Yes
+   -u Flag specified                            :  Yes
+
+
+Test Case 37 		(Key = 2.2.1.1.1.1.1.2.1.2.1.2.1.1.2.1.1.)
+   Presence of a file corresponding to the name :  Present
+   Size                                         :  Not Empty
+   File format                                  :  ASCII
+   Valid flags specified                        :  Yes
+   -b Flag specified                            :  Yes
+   Presence of leading space and/or tab         :  Not Present
+   -f Flag specified                            :  Yes
+   Presence of alphabetic characters            :  Present
+   -i Flag specified                            :  Yes
+   Presence of non-printable characters         :  Present
+   -n Flag specified                            :  Yes
+   Presence of a number in the input file       :  Present
+   Number has a minus sign                      :  Yes
+   Number has a decimal digits                  :  Yes
+   Number has thousands-seperator characters    :  No
+   -r Flag specified                            :  Yes
+   -u Flag specified                            :  Yes
+
+
+Test Case 38 		(Key = 2.2.1.1.1.1.1.2.1.2.1.2.1.2.1.1.1.)
+   Presence of a file corresponding to the name :  Present
+   Size                                         :  Not Empty
+   File format                                  :  ASCII
+   Valid flags specified                        :  Yes
+   -b Flag specified                            :  Yes
+   Presence of leading space and/or tab         :  Not Present
+   -f Flag specified                            :  Yes
+   Presence of alphabetic characters            :  Present
+   -i Flag specified                            :  Yes
+   Presence of non-printable characters         :  Present
+   -n Flag specified                            :  Yes
+   Presence of a number in the input file       :  Present
+   Number has a minus sign                      :  Yes
+   Number has a decimal digits                  :  No
+   Number has thousands-seperator characters    :  Yes
+   -r Flag specified                            :  Yes
+   -u Flag specified                            :  Yes
+
+
+Test Case 39 		(Key = 2.2.1.1.1.1.1.2.1.2.1.2.1.2.2.1.1.)
+   Presence of a file corresponding to the name :  Present
+   Size                                         :  Not Empty
+   File format                                  :  ASCII
+   Valid flags specified                        :  Yes
+   -b Flag specified                            :  Yes
+   Presence of leading space and/or tab         :  Not Present
+   -f Flag specified                            :  Yes
+   Presence of alphabetic characters            :  Present
+   -i Flag specified                            :  Yes
+   Presence of non-printable characters         :  Present
+   -n Flag specified                            :  Yes
+   Presence of a number in the input file       :  Present
+   Number has a minus sign                      :  Yes
+   Number has a decimal digits                  :  No
+   Number has thousands-seperator characters    :  No
+   -r Flag specified                            :  Yes
+   -u Flag specified                            :  Yes
+
+
+Test Case 40 		(Key = 2.2.1.1.1.1.1.2.1.2.1.2.2.1.1.1.1.)
+   Presence of a file corresponding to the name :  Present
+   Size                                         :  Not Empty
+   File format                                  :  ASCII
+   Valid flags specified                        :  Yes
+   -b Flag specified                            :  Yes
+   Presence of leading space and/or tab         :  Not Present
+   -f Flag specified                            :  Yes
+   Presence of alphabetic characters            :  Present
+   -i Flag specified                            :  Yes
+   Presence of non-printable characters         :  Present
+   -n Flag specified                            :  Yes
+   Presence of a number in the input file       :  Present
+   Number has a minus sign                      :  No
+   Number has a decimal digits                  :  Yes
+   Number has thousands-seperator characters    :  Yes
+   -r Flag specified                            :  Yes
+   -u Flag specified                            :  Yes
+
+
+Test Case 41 		(Key = 2.2.1.1.1.1.1.2.1.2.1.2.2.1.2.1.1.)
+   Presence of a file corresponding to the name :  Present
+   Size                                         :  Not Empty
+   File format                                  :  ASCII
+   Valid flags specified                        :  Yes
+   -b Flag specified                            :  Yes
+   Presence of leading space and/or tab         :  Not Present
+   -f Flag specified                            :  Yes
+   Presence of alphabetic characters            :  Present
+   -i Flag specified                            :  Yes
+   Presence of non-printable characters         :  Present
+   -n Flag specified                            :  Yes
+   Presence of a number in the input file       :  Present
+   Number has a minus sign                      :  No
+   Number has a decimal digits                  :  Yes
+   Number has thousands-seperator characters    :  No
+   -r Flag specified                            :  Yes
+   -u Flag specified                            :  Yes
+
+
+Test Case 42 		(Key = 2.2.1.1.1.1.1.2.1.2.1.2.2.2.1.1.1.)
+   Presence of a file corresponding to the name :  Present
+   Size                                         :  Not Empty
+   File format                                  :  ASCII
+   Valid flags specified                        :  Yes
+   -b Flag specified                            :  Yes
+   Presence of leading space and/or tab         :  Not Present
+   -f Flag specified                            :  Yes
+   Presence of alphabetic characters            :  Present
+   -i Flag specified                            :  Yes
+   Presence of non-printable characters         :  Present
+   -n Flag specified                            :  Yes
+   Presence of a number in the input file       :  Present
+   Number has a minus sign                      :  No
+   Number has a decimal digits                  :  No
+   Number has thousands-seperator characters    :  Yes
+   -r Flag specified                            :  Yes
+   -u Flag specified                            :  Yes
+
+
+Test Case 43 		(Key = 2.2.1.1.1.1.1.2.1.2.1.2.2.2.2.1.1.)
+   Presence of a file corresponding to the name :  Present
+   Size                                         :  Not Empty
+   File format                                  :  ASCII
+   Valid flags specified                        :  Yes
+   -b Flag specified                            :  Yes
+   Presence of leading space and/or tab         :  Not Present
+   -f Flag specified                            :  Yes
+   Presence of alphabetic characters            :  Present
+   -i Flag specified                            :  Yes
+   Presence of non-printable characters         :  Present
+   -n Flag specified                            :  Yes
+   Presence of a number in the input file       :  Present
+   Number has a minus sign                      :  No
+   Number has a decimal digits                  :  No
+   Number has thousands-seperator characters    :  No
+   -r Flag specified                            :  Yes
+   -u Flag specified                            :  Yes
+
+
+Test Case 44 		(Key = 2.2.1.1.1.2.1.1.1.1.1.2.1.1.1.1.1.)
+   Presence of a file corresponding to the name :  Present
+   Size                                         :  Not Empty
+   File format                                  :  ASCII
+   Valid flags specified                        :  Yes
+   -b Flag specified                            :  Yes
+   Presence of leading space and/or tab         :  Present
+   -f Flag specified                            :  Yes
+   Presence of alphabetic characters            :  Not Present
+   -i Flag specified                            :  Yes
+   Presence of non-printable characters         :  Not Present
+   -n Flag specified                            :  Yes
+   Presence of a number in the input file       :  Present
+   Number has a minus sign                      :  Yes
+   Number has a decimal digits                  :  Yes
+   Number has thousands-seperator characters    :  Yes
+   -r Flag specified                            :  Yes
+   -u Flag specified                            :  Yes
+
+
+Test Case 45 		(Key = 2.2.1.1.1.2.1.1.1.1.1.2.1.1.2.1.1.)
+   Presence of a file corresponding to the name :  Present
+   Size                                         :  Not Empty
+   File format                                  :  ASCII
+   Valid flags specified                        :  Yes
+   -b Flag specified                            :  Yes
+   Presence of leading space and/or tab         :  Present
+   -f Flag specified                            :  Yes
+   Presence of alphabetic characters            :  Not Present
+   -i Flag specified                            :  Yes
+   Presence of non-printable characters         :  Not Present
+   -n Flag specified                            :  Yes
+   Presence of a number in the input file       :  Present
+   Number has a minus sign                      :  Yes
+   Number has a decimal digits                  :  Yes
+   Number has thousands-seperator characters    :  No
+   -r Flag specified                            :  Yes
+   -u Flag specified                            :  Yes
+
+
+Test Case 46 		(Key = 2.2.1.1.1.2.1.1.1.1.1.2.1.2.1.1.1.)
+   Presence of a file corresponding to the name :  Present
+   Size                                         :  Not Empty
+   File format                                  :  ASCII
+   Valid flags specified                        :  Yes
+   -b Flag specified                            :  Yes
+   Presence of leading space and/or tab         :  Present
+   -f Flag specified                            :  Yes
+   Presence of alphabetic characters            :  Not Present
+   -i Flag specified                            :  Yes
+   Presence of non-printable characters         :  Not Present
+   -n Flag specified                            :  Yes
+   Presence of a number in the input file       :  Present
+   Number has a minus sign                      :  Yes
+   Number has a decimal digits                  :  No
+   Number has thousands-seperator characters    :  Yes
+   -r Flag specified                            :  Yes
+   -u Flag specified                            :  Yes
+
+
+Test Case 47 		(Key = 2.2.1.1.1.2.1.1.1.1.1.2.1.2.2.1.1.)
+   Presence of a file corresponding to the name :  Present
+   Size                                         :  Not Empty
+   File format                                  :  ASCII
+   Valid flags specified                        :  Yes
+   -b Flag specified                            :  Yes
+   Presence of leading space and/or tab         :  Present
+   -f Flag specified                            :  Yes
+   Presence of alphabetic characters            :  Not Present
+   -i Flag specified                            :  Yes
+   Presence of non-printable characters         :  Not Present
+   -n Flag specified                            :  Yes
+   Presence of a number in the input file       :  Present
+   Number has a minus sign                      :  Yes
+   Number has a decimal digits                  :  No
+   Number has thousands-seperator characters    :  No
+   -r Flag specified                            :  Yes
+   -u Flag specified                            :  Yes
+
+
+Test Case 48 		(Key = 2.2.1.1.1.2.1.1.1.1.1.2.2.1.1.1.1.)
+   Presence of a file corresponding to the name :  Present
+   Size                                         :  Not Empty
+   File format                                  :  ASCII
+   Valid flags specified                        :  Yes
+   -b Flag specified                            :  Yes
+   Presence of leading space and/or tab         :  Present
+   -f Flag specified                            :  Yes
+   Presence of alphabetic characters            :  Not Present
+   -i Flag specified                            :  Yes
+   Presence of non-printable characters         :  Not Present
+   -n Flag specified                            :  Yes
+   Presence of a number in the input file       :  Present
+   Number has a minus sign                      :  No
+   Number has a decimal digits                  :  Yes
+   Number has thousands-seperator characters    :  Yes
+   -r Flag specified                            :  Yes
+   -u Flag specified                            :  Yes
+
+
+Test Case 49 		(Key = 2.2.1.1.1.2.1.1.1.1.1.2.2.1.2.1.1.)
+   Presence of a file corresponding to the name :  Present
+   Size                                         :  Not Empty
+   File format                                  :  ASCII
+   Valid flags specified                        :  Yes
+   -b Flag specified                            :  Yes
+   Presence of leading space and/or tab         :  Present
+   -f Flag specified                            :  Yes
+   Presence of alphabetic characters            :  Not Present
+   -i Flag specified                            :  Yes
+   Presence of non-printable characters         :  Not Present
+   -n Flag specified                            :  Yes
+   Presence of a number in the input file       :  Present
+   Number has a minus sign                      :  No
+   Number has a decimal digits                  :  Yes
+   Number has thousands-seperator characters    :  No
+   -r Flag specified                            :  Yes
+   -u Flag specified                            :  Yes
+
+
+Test Case 50 		(Key = 2.2.1.1.1.2.1.1.1.1.1.2.2.2.1.1.1.)
+   Presence of a file corresponding to the name :  Present
+   Size                                         :  Not Empty
+   File format                                  :  ASCII
+   Valid flags specified                        :  Yes
+   -b Flag specified                            :  Yes
+   Presence of leading space and/or tab         :  Present
+   -f Flag specified                            :  Yes
+   Presence of alphabetic characters            :  Not Present
+   -i Flag specified                            :  Yes
+   Presence of non-printable characters         :  Not Present
+   -n Flag specified                            :  Yes
+   Presence of a number in the input file       :  Present
+   Number has a minus sign                      :  No
+   Number has a decimal digits                  :  No
+   Number has thousands-seperator characters    :  Yes
+   -r Flag specified                            :  Yes
+   -u Flag specified                            :  Yes
+
+
+Test Case 51 		(Key = 2.2.1.1.1.2.1.1.1.1.1.2.2.2.2.1.1.)
+   Presence of a file corresponding to the name :  Present
+   Size                                         :  Not Empty
+   File format                                  :  ASCII
+   Valid flags specified                        :  Yes
+   -b Flag specified                            :  Yes
+   Presence of leading space and/or tab         :  Present
+   -f Flag specified                            :  Yes
+   Presence of alphabetic characters            :  Not Present
+   -i Flag specified                            :  Yes
+   Presence of non-printable characters         :  Not Present
+   -n Flag specified                            :  Yes
+   Presence of a number in the input file       :  Present
+   Number has a minus sign                      :  No
+   Number has a decimal digits                  :  No
+   Number has thousands-seperator characters    :  No
+   -r Flag specified                            :  Yes
+   -u Flag specified                            :  Yes
+
+
+Test Case 52 		(Key = 2.2.1.1.1.2.1.1.1.2.1.2.1.1.1.1.1.)
+   Presence of a file corresponding to the name :  Present
+   Size                                         :  Not Empty
+   File format                                  :  ASCII
+   Valid flags specified                        :  Yes
+   -b Flag specified                            :  Yes
+   Presence of leading space and/or tab         :  Present
+   -f Flag specified                            :  Yes
+   Presence of alphabetic characters            :  Not Present
+   -i Flag specified                            :  Yes
+   Presence of non-printable characters         :  Present
+   -n Flag specified                            :  Yes
+   Presence of a number in the input file       :  Present
+   Number has a minus sign                      :  Yes
+   Number has a decimal digits                  :  Yes
+   Number has thousands-seperator characters    :  Yes
+   -r Flag specified                            :  Yes
+   -u Flag specified                            :  Yes
+
+
+Test Case 53 		(Key = 2.2.1.1.1.2.1.1.1.2.1.2.1.1.2.1.1.)
+   Presence of a file corresponding to the name :  Present
+   Size                                         :  Not Empty
+   File format                                  :  ASCII
+   Valid flags specified                        :  Yes
+   -b Flag specified                            :  Yes
+   Presence of leading space and/or tab         :  Present
+   -f Flag specified                            :  Yes
+   Presence of alphabetic characters            :  Not Present
+   -i Flag specified                            :  Yes
+   Presence of non-printable characters         :  Present
+   -n Flag specified                            :  Yes
+   Presence of a number in the input file       :  Present
+   Number has a minus sign                      :  Yes
+   Number has a decimal digits                  :  Yes
+   Number has thousands-seperator characters    :  No
+   -r Flag specified                            :  Yes
+   -u Flag specified                            :  Yes
+
+
+Test Case 54 		(Key = 2.2.1.1.1.2.1.1.1.2.1.2.1.2.1.1.1.)
+   Presence of a file corresponding to the name :  Present
+   Size                                         :  Not Empty
+   File format                                  :  ASCII
+   Valid flags specified                        :  Yes
+   -b Flag specified                            :  Yes
+   Presence of leading space and/or tab         :  Present
+   -f Flag specified                            :  Yes
+   Presence of alphabetic characters            :  Not Present
+   -i Flag specified                            :  Yes
+   Presence of non-printable characters         :  Present
+   -n Flag specified                            :  Yes
+   Presence of a number in the input file       :  Present
+   Number has a minus sign                      :  Yes
+   Number has a decimal digits                  :  No
+   Number has thousands-seperator characters    :  Yes
+   -r Flag specified                            :  Yes
+   -u Flag specified                            :  Yes
+
+
+Test Case 55 		(Key = 2.2.1.1.1.2.1.1.1.2.1.2.1.2.2.1.1.)
+   Presence of a file corresponding to the name :  Present
+   Size                                         :  Not Empty
+   File format                                  :  ASCII
+   Valid flags specified                        :  Yes
+   -b Flag specified                            :  Yes
+   Presence of leading space and/or tab         :  Present
+   -f Flag specified                            :  Yes
+   Presence of alphabetic characters            :  Not Present
+   -i Flag specified                            :  Yes
+   Presence of non-printable characters         :  Present
+   -n Flag specified                            :  Yes
+   Presence of a number in the input file       :  Present
+   Number has a minus sign                      :  Yes
+   Number has a decimal digits                  :  No
+   Number has thousands-seperator characters    :  No
+   -r Flag specified                            :  Yes
+   -u Flag specified                            :  Yes
+
+
+Test Case 56 		(Key = 2.2.1.1.1.2.1.1.1.2.1.2.2.1.1.1.1.)
+   Presence of a file corresponding to the name :  Present
+   Size                                         :  Not Empty
+   File format                                  :  ASCII
+   Valid flags specified                        :  Yes
+   -b Flag specified                            :  Yes
+   Presence of leading space and/or tab         :  Present
+   -f Flag specified                            :  Yes
+   Presence of alphabetic characters            :  Not Present
+   -i Flag specified                            :  Yes
+   Presence of non-printable characters         :  Present
+   -n Flag specified                            :  Yes
+   Presence of a number in the input file       :  Present
+   Number has a minus sign                      :  No
+   Number has a decimal digits                  :  Yes
+   Number has thousands-seperator characters    :  Yes
+   -r Flag specified                            :  Yes
+   -u Flag specified                            :  Yes
+
+
+Test Case 57 		(Key = 2.2.1.1.1.2.1.1.1.2.1.2.2.1.2.1.1.)
+   Presence of a file corresponding to the name :  Present
+   Size                                         :  Not Empty
+   File format                                  :  ASCII
+   Valid flags specified                        :  Yes
+   -b Flag specified                            :  Yes
+   Presence of leading space and/or tab         :  Present
+   -f Flag specified                            :  Yes
+   Presence of alphabetic characters            :  Not Present
+   -i Flag specified                            :  Yes
+   Presence of non-printable characters         :  Present
+   -n Flag specified                            :  Yes
+   Presence of a number in the input file       :  Present
+   Number has a minus sign                      :  No
+   Number has a decimal digits                  :  Yes
+   Number has thousands-seperator characters    :  No
+   -r Flag specified                            :  Yes
+   -u Flag specified                            :  Yes
+
+
+Test Case 58 		(Key = 2.2.1.1.1.2.1.1.1.2.1.2.2.2.1.1.1.)
+   Presence of a file corresponding to the name :  Present
+   Size                                         :  Not Empty
+   File format                                  :  ASCII
+   Valid flags specified                        :  Yes
+   -b Flag specified                            :  Yes
+   Presence of leading space and/or tab         :  Present
+   -f Flag specified                            :  Yes
+   Presence of alphabetic characters            :  Not Present
+   -i Flag specified                            :  Yes
+   Presence of non-printable characters         :  Present
+   -n Flag specified                            :  Yes
+   Presence of a number in the input file       :  Present
+   Number has a minus sign                      :  No
+   Number has a decimal digits                  :  No
+   Number has thousands-seperator characters    :  Yes
+   -r Flag specified                            :  Yes
+   -u Flag specified                            :  Yes
+
+
+Test Case 59 		(Key = 2.2.1.1.1.2.1.1.1.2.1.2.2.2.2.1.1.)
+   Presence of a file corresponding to the name :  Present
+   Size                                         :  Not Empty
+   File format                                  :  ASCII
+   Valid flags specified                        :  Yes
+   -b Flag specified                            :  Yes
+   Presence of leading space and/or tab         :  Present
+   -f Flag specified                            :  Yes
+   Presence of alphabetic characters            :  Not Present
+   -i Flag specified                            :  Yes
+   Presence of non-printable characters         :  Present
+   -n Flag specified                            :  Yes
+   Presence of a number in the input file       :  Present
+   Number has a minus sign                      :  No
+   Number has a decimal digits                  :  No
+   Number has thousands-seperator characters    :  No
+   -r Flag specified                            :  Yes
+   -u Flag specified                            :  Yes
+
+
+Test Case 60 		(Key = 2.2.1.1.1.2.1.2.1.1.1.2.1.1.1.1.1.)
+   Presence of a file corresponding to the name :  Present
+   Size                                         :  Not Empty
+   File format                                  :  ASCII
+   Valid flags specified                        :  Yes
+   -b Flag specified                            :  Yes
+   Presence of leading space and/or tab         :  Present
+   -f Flag specified                            :  Yes
+   Presence of alphabetic characters            :  Present
+   -i Flag specified                            :  Yes
+   Presence of non-printable characters         :  Not Present
+   -n Flag specified                            :  Yes
+   Presence of a number in the input file       :  Present
+   Number has a minus sign                      :  Yes
+   Number has a decimal digits                  :  Yes
+   Number has thousands-seperator characters    :  Yes
+   -r Flag specified                            :  Yes
+   -u Flag specified                            :  Yes
+
+
+Test Case 61 		(Key = 2.2.1.1.1.2.1.2.1.1.1.2.1.1.2.1.1.)
+   Presence of a file corresponding to the name :  Present
+   Size                                         :  Not Empty
+   File format                                  :  ASCII
+   Valid flags specified                        :  Yes
+   -b Flag specified                            :  Yes
+   Presence of leading space and/or tab         :  Present
+   -f Flag specified                            :  Yes
+   Presence of alphabetic characters            :  Present
+   -i Flag specified                            :  Yes
+   Presence of non-printable characters         :  Not Present
+   -n Flag specified                            :  Yes
+   Presence of a number in the input file       :  Present
+   Number has a minus sign                      :  Yes
+   Number has a decimal digits                  :  Yes
+   Number has thousands-seperator characters    :  No
+   -r Flag specified                            :  Yes
+   -u Flag specified                            :  Yes
+
+
+Test Case 62 		(Key = 2.2.1.1.1.2.1.2.1.1.1.2.1.2.1.1.1.)
+   Presence of a file corresponding to the name :  Present
+   Size                                         :  Not Empty
+   File format                                  :  ASCII
+   Valid flags specified                        :  Yes
+   -b Flag specified                            :  Yes
+   Presence of leading space and/or tab         :  Present
+   -f Flag specified                            :  Yes
+   Presence of alphabetic characters            :  Present
+   -i Flag specified                            :  Yes
+   Presence of non-printable characters         :  Not Present
+   -n Flag specified                            :  Yes
+   Presence of a number in the input file       :  Present
+   Number has a minus sign                      :  Yes
+   Number has a decimal digits                  :  No
+   Number has thousands-seperator characters    :  Yes
+   -r Flag specified                            :  Yes
+   -u Flag specified                            :  Yes
+
+
+Test Case 63 		(Key = 2.2.1.1.1.2.1.2.1.1.1.2.1.2.2.1.1.)
+   Presence of a file corresponding to the name :  Present
+   Size                                         :  Not Empty
+   File format                                  :  ASCII
+   Valid flags specified                        :  Yes
+   -b Flag specified                            :  Yes
+   Presence of leading space and/or tab         :  Present
+   -f Flag specified                            :  Yes
+   Presence of alphabetic characters            :  Present
+   -i Flag specified                            :  Yes
+   Presence of non-printable characters         :  Not Present
+   -n Flag specified                            :  Yes
+   Presence of a number in the input file       :  Present
+   Number has a minus sign                      :  Yes
+   Number has a decimal digits                  :  No
+   Number has thousands-seperator characters    :  No
+   -r Flag specified                            :  Yes
+   -u Flag specified                            :  Yes
+
+
+Test Case 64 		(Key = 2.2.1.1.1.2.1.2.1.1.1.2.2.1.1.1.1.)
+   Presence of a file corresponding to the name :  Present
+   Size                                         :  Not Empty
+   File format                                  :  ASCII
+   Valid flags specified                        :  Yes
+   -b Flag specified                            :  Yes
+   Presence of leading space and/or tab         :  Present
+   -f Flag specified                            :  Yes
+   Presence of alphabetic characters            :  Present
+   -i Flag specified                            :  Yes
+   Presence of non-printable characters         :  Not Present
+   -n Flag specified                            :  Yes
+   Presence of a number in the input file       :  Present
+   Number has a minus sign                      :  No
+   Number has a decimal digits                  :  Yes
+   Number has thousands-seperator characters    :  Yes
+   -r Flag specified                            :  Yes
+   -u Flag specified                            :  Yes
+
+
+Test Case 65 		(Key = 2.2.1.1.1.2.1.2.1.1.1.2.2.1.2.1.1.)
+   Presence of a file corresponding to the name :  Present
+   Size                                         :  Not Empty
+   File format                                  :  ASCII
+   Valid flags specified                        :  Yes
+   -b Flag specified                            :  Yes
+   Presence of leading space and/or tab         :  Present
+   -f Flag specified                            :  Yes
+   Presence of alphabetic characters            :  Present
+   -i Flag specified                            :  Yes
+   Presence of non-printable characters         :  Not Present
+   -n Flag specified                            :  Yes
+   Presence of a number in the input file       :  Present
+   Number has a minus sign                      :  No
+   Number has a decimal digits                  :  Yes
+   Number has thousands-seperator characters    :  No
+   -r Flag specified                            :  Yes
+   -u Flag specified                            :  Yes
+
+
+Test Case 66 		(Key = 2.2.1.1.1.2.1.2.1.1.1.2.2.2.1.1.1.)
+   Presence of a file corresponding to the name :  Present
+   Size                                         :  Not Empty
+   File format                                  :  ASCII
+   Valid flags specified                        :  Yes
+   -b Flag specified                            :  Yes
+   Presence of leading space and/or tab         :  Present
+   -f Flag specified                            :  Yes
+   Presence of alphabetic characters            :  Present
+   -i Flag specified                            :  Yes
+   Presence of non-printable characters         :  Not Present
+   -n Flag specified                            :  Yes
+   Presence of a number in the input file       :  Present
+   Number has a minus sign                      :  No
+   Number has a decimal digits                  :  No
+   Number has thousands-seperator characters    :  Yes
+   -r Flag specified                            :  Yes
+   -u Flag specified                            :  Yes
+
+
+Test Case 67 		(Key = 2.2.1.1.1.2.1.2.1.1.1.2.2.2.2.1.1.)
+   Presence of a file corresponding to the name :  Present
+   Size                                         :  Not Empty
+   File format                                  :  ASCII
+   Valid flags specified                        :  Yes
+   -b Flag specified                            :  Yes
+   Presence of leading space and/or tab         :  Present
+   -f Flag specified                            :  Yes
+   Presence of alphabetic characters            :  Present
+   -i Flag specified                            :  Yes
+   Presence of non-printable characters         :  Not Present
+   -n Flag specified                            :  Yes
+   Presence of a number in the input file       :  Present
+   Number has a minus sign                      :  No
+   Number has a decimal digits                  :  No
+   Number has thousands-seperator characters    :  No
+   -r Flag specified                            :  Yes
+   -u Flag specified                            :  Yes
+
+
+Test Case 68 		(Key = 2.2.1.1.1.2.1.2.1.2.1.2.1.1.1.1.1.)
+   Presence of a file corresponding to the name :  Present
+   Size                                         :  Not Empty
+   File format                                  :  ASCII
+   Valid flags specified                        :  Yes
+   -b Flag specified                            :  Yes
+   Presence of leading space and/or tab         :  Present
+   -f Flag specified                            :  Yes
+   Presence of alphabetic characters            :  Present
+   -i Flag specified                            :  Yes
+   Presence of non-printable characters         :  Present
+   -n Flag specified                            :  Yes
+   Presence of a number in the input file       :  Present
+   Number has a minus sign                      :  Yes
+   Number has a decimal digits                  :  Yes
+   Number has thousands-seperator characters    :  Yes
+   -r Flag specified                            :  Yes
+   -u Flag specified                            :  Yes
+
+
+Test Case 69 		(Key = 2.2.1.1.1.2.1.2.1.2.1.2.1.1.2.1.1.)
+   Presence of a file corresponding to the name :  Present
+   Size                                         :  Not Empty
+   File format                                  :  ASCII
+   Valid flags specified                        :  Yes
+   -b Flag specified                            :  Yes
+   Presence of leading space and/or tab         :  Present
+   -f Flag specified                            :  Yes
+   Presence of alphabetic characters            :  Present
+   -i Flag specified                            :  Yes
+   Presence of non-printable characters         :  Present
+   -n Flag specified                            :  Yes
+   Presence of a number in the input file       :  Present
+   Number has a minus sign                      :  Yes
+   Number has a decimal digits                  :  Yes
+   Number has thousands-seperator characters    :  No
+   -r Flag specified                            :  Yes
+   -u Flag specified                            :  Yes
+
+
+Test Case 70 		(Key = 2.2.1.1.1.2.1.2.1.2.1.2.1.2.1.1.1.)
+   Presence of a file corresponding to the name :  Present
+   Size                                         :  Not Empty
+   File format                                  :  ASCII
+   Valid flags specified                        :  Yes
+   -b Flag specified                            :  Yes
+   Presence of leading space and/or tab         :  Present
+   -f Flag specified                            :  Yes
+   Presence of alphabetic characters            :  Present
+   -i Flag specified                            :  Yes
+   Presence of non-printable characters         :  Present
+   -n Flag specified                            :  Yes
+   Presence of a number in the input file       :  Present
+   Number has a minus sign                      :  Yes
+   Number has a decimal digits                  :  No
+   Number has thousands-seperator characters    :  Yes
+   -r Flag specified                            :  Yes
+   -u Flag specified                            :  Yes
+
+
+Test Case 71 		(Key = 2.2.1.1.1.2.1.2.1.2.1.2.1.2.2.1.1.)
+   Presence of a file corresponding to the name :  Present
+   Size                                         :  Not Empty
+   File format                                  :  ASCII
+   Valid flags specified                        :  Yes
+   -b Flag specified                            :  Yes
+   Presence of leading space and/or tab         :  Present
+   -f Flag specified                            :  Yes
+   Presence of alphabetic characters            :  Present
+   -i Flag specified                            :  Yes
+   Presence of non-printable characters         :  Present
+   -n Flag specified                            :  Yes
+   Presence of a number in the input file       :  Present
+   Number has a minus sign                      :  Yes
+   Number has a decimal digits                  :  No
+   Number has thousands-seperator characters    :  No
+   -r Flag specified                            :  Yes
+   -u Flag specified                            :  Yes
+
+
+Test Case 72 		(Key = 2.2.1.1.1.2.1.2.1.2.1.2.2.1.1.1.1.)
+   Presence of a file corresponding to the name :  Present
+   Size                                         :  Not Empty
+   File format                                  :  ASCII
+   Valid flags specified                        :  Yes
+   -b Flag specified                            :  Yes
+   Presence of leading space and/or tab         :  Present
+   -f Flag specified                            :  Yes
+   Presence of alphabetic characters            :  Present
+   -i Flag specified                            :  Yes
+   Presence of non-printable characters         :  Present
+   -n Flag specified                            :  Yes
+   Presence of a number in the input file       :  Present
+   Number has a minus sign                      :  No
+   Number has a decimal digits                  :  Yes
+   Number has thousands-seperator characters    :  Yes
+   -r Flag specified                            :  Yes
+   -u Flag specified                            :  Yes
+
+
+Test Case 73 		(Key = 2.2.1.1.1.2.1.2.1.2.1.2.2.1.2.1.1.)
+   Presence of a file corresponding to the name :  Present
+   Size                                         :  Not Empty
+   File format                                  :  ASCII
+   Valid flags specified                        :  Yes
+   -b Flag specified                            :  Yes
+   Presence of leading space and/or tab         :  Present
+   -f Flag specified                            :  Yes
+   Presence of alphabetic characters            :  Present
+   -i Flag specified                            :  Yes
+   Presence of non-printable characters         :  Present
+   -n Flag specified                            :  Yes
+   Presence of a number in the input file       :  Present
+   Number has a minus sign                      :  No
+   Number has a decimal digits                  :  Yes
+   Number has thousands-seperator characters    :  No
+   -r Flag specified                            :  Yes
+   -u Flag specified                            :  Yes
+
+
+Test Case 74 		(Key = 2.2.1.1.1.2.1.2.1.2.1.2.2.2.1.1.1.)
+   Presence of a file corresponding to the name :  Present
+   Size                                         :  Not Empty
+   File format                                  :  ASCII
+   Valid flags specified                        :  Yes
+   -b Flag specified                            :  Yes
+   Presence of leading space and/or tab         :  Present
+   -f Flag specified                            :  Yes
+   Presence of alphabetic characters            :  Present
+   -i Flag specified                            :  Yes
+   Presence of non-printable characters         :  Present
+   -n Flag specified                            :  Yes
+   Presence of a number in the input file       :  Present
+   Number has a minus sign                      :  No
+   Number has a decimal digits                  :  No
+   Number has thousands-seperator characters    :  Yes
+   -r Flag specified                            :  Yes
+   -u Flag specified                            :  Yes
+
+
+Test Case 75 		(Key = 2.2.1.1.1.2.1.2.1.2.1.2.2.2.2.1.1.)
+   Presence of a file corresponding to the name :  Present
+   Size                                         :  Not Empty
+   File format                                  :  ASCII
+   Valid flags specified                        :  Yes
+   -b Flag specified                            :  Yes
+   Presence of leading space and/or tab         :  Present
+   -f Flag specified                            :  Yes
+   Presence of alphabetic characters            :  Present
+   -i Flag specified                            :  Yes
+   Presence of non-printable characters         :  Present
+   -n Flag specified                            :  Yes
+   Presence of a number in the input file       :  Present
+   Number has a minus sign                      :  No
+   Number has a decimal digits                  :  No
+   Number has thousands-seperator characters    :  No
+   -r Flag specified                            :  Yes
+   -u Flag specified                            :  Yes
+

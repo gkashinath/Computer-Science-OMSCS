@@ -1,0 +1,1343 @@
+=== Run information ===
+
+Scheme:weka.classifiers.meta.AdaBoostM1 -P 100 -S 1 -I 10 -W weka.classifiers.trees.J48 -- -C 0.25 -M 2
+Relation:     preprocess_car_data
+Instances:    1728
+Attributes:   7
+              buying
+              maint
+              doors
+              persons
+              lug_boot
+              safety
+              class
+Test mode:10-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+AdaBoostM1: Base classifiers and their weights: 
+
+J48 pruned tree
+------------------
+
+persons <= 2: unacc (576.0)
+persons > 2
+|   safety <= 1: unacc (384.0)
+|   safety > 1
+|   |   buying <= 2
+|   |   |   maint <= 2
+|   |   |   |   safety <= 2
+|   |   |   |   |   lug_boot <= 1
+|   |   |   |   |   |   doors <= 2
+|   |   |   |   |   |   |   persons <= 4: acc (4.0)
+|   |   |   |   |   |   |   persons > 4: unacc (4.0)
+|   |   |   |   |   |   doors > 2: acc (24.0)
+|   |   |   |   |   lug_boot > 1
+|   |   |   |   |   |   buying <= 1
+|   |   |   |   |   |   |   lug_boot <= 2
+|   |   |   |   |   |   |   |   doors <= 3
+|   |   |   |   |   |   |   |   |   doors <= 2: acc (4.0)
+|   |   |   |   |   |   |   |   |   doors > 2
+|   |   |   |   |   |   |   |   |   |   persons <= 4: acc (2.0)
+|   |   |   |   |   |   |   |   |   |   persons > 4: good (2.0)
+|   |   |   |   |   |   |   |   doors > 3: good (8.0)
+|   |   |   |   |   |   |   lug_boot > 2: good (16.0)
+|   |   |   |   |   |   buying > 1
+|   |   |   |   |   |   |   maint <= 1
+|   |   |   |   |   |   |   |   lug_boot <= 2
+|   |   |   |   |   |   |   |   |   doors <= 3: acc (4.0/1.0)
+|   |   |   |   |   |   |   |   |   doors > 3: good (4.0)
+|   |   |   |   |   |   |   |   lug_boot > 2: good (8.0)
+|   |   |   |   |   |   |   maint > 1: acc (16.0)
+|   |   |   |   safety > 2
+|   |   |   |   |   lug_boot <= 1
+|   |   |   |   |   |   doors <= 2
+|   |   |   |   |   |   |   persons <= 4: good (4.0/1.0)
+|   |   |   |   |   |   |   persons > 4: unacc (4.0)
+|   |   |   |   |   |   doors > 2
+|   |   |   |   |   |   |   buying <= 1: good (12.0)
+|   |   |   |   |   |   |   buying > 1
+|   |   |   |   |   |   |   |   maint <= 1: good (6.0)
+|   |   |   |   |   |   |   |   maint > 1: acc (6.0)
+|   |   |   |   |   lug_boot > 1
+|   |   |   |   |   |   lug_boot <= 2
+|   |   |   |   |   |   |   doors <= 3
+|   |   |   |   |   |   |   |   doors <= 2
+|   |   |   |   |   |   |   |   |   buying <= 1: good (4.0)
+|   |   |   |   |   |   |   |   |   buying > 1
+|   |   |   |   |   |   |   |   |   |   maint <= 1: good (2.0)
+|   |   |   |   |   |   |   |   |   |   maint > 1: acc (2.0)
+|   |   |   |   |   |   |   |   doors > 2
+|   |   |   |   |   |   |   |   |   persons <= 4: good (4.0/1.0)
+|   |   |   |   |   |   |   |   |   persons > 4: vgood (4.0)
+|   |   |   |   |   |   |   doors > 3: vgood (16.0)
+|   |   |   |   |   |   lug_boot > 2: vgood (32.0)
+|   |   |   maint > 2
+|   |   |   |   lug_boot <= 1
+|   |   |   |   |   safety <= 2
+|   |   |   |   |   |   buying <= 1
+|   |   |   |   |   |   |   maint <= 3: acc (8.0/1.0)
+|   |   |   |   |   |   |   maint > 3: unacc (8.0)
+|   |   |   |   |   |   buying > 1: unacc (16.0)
+|   |   |   |   |   safety > 2
+|   |   |   |   |   |   doors <= 2
+|   |   |   |   |   |   |   persons <= 4: acc (4.0)
+|   |   |   |   |   |   |   persons > 4: unacc (4.0)
+|   |   |   |   |   |   doors > 2: acc (24.0)
+|   |   |   |   lug_boot > 1
+|   |   |   |   |   safety <= 2
+|   |   |   |   |   |   lug_boot <= 2
+|   |   |   |   |   |   |   doors <= 3
+|   |   |   |   |   |   |   |   buying <= 1
+|   |   |   |   |   |   |   |   |   maint <= 3: acc (4.0)
+|   |   |   |   |   |   |   |   |   maint > 3: unacc (4.0/1.0)
+|   |   |   |   |   |   |   |   buying > 1
+|   |   |   |   |   |   |   |   |   doors <= 2: unacc (4.0)
+|   |   |   |   |   |   |   |   |   doors > 2
+|   |   |   |   |   |   |   |   |   |   persons <= 4: unacc (2.0)
+|   |   |   |   |   |   |   |   |   |   persons > 4: acc (2.0)
+|   |   |   |   |   |   |   doors > 3: acc (16.0)
+|   |   |   |   |   |   lug_boot > 2: acc (32.0)
+|   |   |   |   |   safety > 2
+|   |   |   |   |   |   buying <= 1
+|   |   |   |   |   |   |   maint <= 3
+|   |   |   |   |   |   |   |   lug_boot <= 2
+|   |   |   |   |   |   |   |   |   doors <= 3: acc (4.0/1.0)
+|   |   |   |   |   |   |   |   |   doors > 3: vgood (4.0)
+|   |   |   |   |   |   |   |   lug_boot > 2: vgood (8.0)
+|   |   |   |   |   |   |   maint > 3: acc (16.0)
+|   |   |   |   |   |   buying > 1: acc (32.0)
+|   |   buying > 2
+|   |   |   maint <= 3
+|   |   |   |   lug_boot <= 1
+|   |   |   |   |   safety <= 2: unacc (48.0)
+|   |   |   |   |   safety > 2
+|   |   |   |   |   |   maint <= 2
+|   |   |   |   |   |   |   doors <= 2
+|   |   |   |   |   |   |   |   persons <= 4: acc (4.0)
+|   |   |   |   |   |   |   |   persons > 4: unacc (4.0)
+|   |   |   |   |   |   |   doors > 2: acc (24.0)
+|   |   |   |   |   |   maint > 2
+|   |   |   |   |   |   |   buying <= 3: acc (8.0/1.0)
+|   |   |   |   |   |   |   buying > 3: unacc (8.0)
+|   |   |   |   lug_boot > 1
+|   |   |   |   |   maint <= 2
+|   |   |   |   |   |   lug_boot <= 2
+|   |   |   |   |   |   |   safety <= 2
+|   |   |   |   |   |   |   |   doors <= 3
+|   |   |   |   |   |   |   |   |   doors <= 2: unacc (8.0)
+|   |   |   |   |   |   |   |   |   doors > 2
+|   |   |   |   |   |   |   |   |   |   persons <= 4: unacc (4.0)
+|   |   |   |   |   |   |   |   |   |   persons > 4: acc (4.0)
+|   |   |   |   |   |   |   |   doors > 3: acc (16.0)
+|   |   |   |   |   |   |   safety > 2: acc (32.0)
+|   |   |   |   |   |   lug_boot > 2: acc (64.0)
+|   |   |   |   |   maint > 2
+|   |   |   |   |   |   buying <= 3: acc (32.0/3.0)
+|   |   |   |   |   |   buying > 3: unacc (32.0)
+|   |   |   maint > 3: unacc (96.0)
+
+Number of Leaves  : 	59
+
+Size of the tree : 	117
+
+
+Weight: 5.15
+
+J48 pruned tree
+------------------
+
+buying <= 2
+|   persons <= 2: unacc (144.84)
+|   persons > 2
+|   |   maint <= 1
+|   |   |   safety <= 1: unacc (24.14)
+|   |   |   safety > 1
+|   |   |   |   safety <= 2
+|   |   |   |   |   lug_boot <= 1: acc (8.05/1.01)
+|   |   |   |   |   lug_boot > 1
+|   |   |   |   |   |   doors <= 2
+|   |   |   |   |   |   |   lug_boot <= 2: acc (2.01)
+|   |   |   |   |   |   |   lug_boot > 2: good (2.01)
+|   |   |   |   |   |   doors > 2: good (97.97/1.01)
+|   |   |   |   safety > 2
+|   |   |   |   |   lug_boot <= 1: good (8.05/1.01)
+|   |   |   |   |   lug_boot > 1
+|   |   |   |   |   |   lug_boot <= 2
+|   |   |   |   |   |   |   doors <= 3: good (4.02/1.01)
+|   |   |   |   |   |   |   doors > 3: vgood (4.02)
+|   |   |   |   |   |   lug_boot > 2: vgood (8.05)
+|   |   maint > 1
+|   |   |   safety <= 2
+|   |   |   |   lug_boot <= 1
+|   |   |   |   |   maint <= 2
+|   |   |   |   |   |   safety <= 1: unacc (8.05)
+|   |   |   |   |   |   safety > 1: acc (8.05/1.01)
+|   |   |   |   |   maint > 2: unacc (118.08/3.52)
+|   |   |   |   lug_boot > 1
+|   |   |   |   |   safety <= 1: unacc (48.28)
+|   |   |   |   |   safety > 1
+|   |   |   |   |   |   maint <= 2
+|   |   |   |   |   |   |   buying <= 1: good (8.05/1.51)
+|   |   |   |   |   |   |   buying > 1: acc (8.05)
+|   |   |   |   |   |   maint > 2
+|   |   |   |   |   |   |   doors <= 2
+|   |   |   |   |   |   |   |   lug_boot <= 2: unacc (4.02/1.01)
+|   |   |   |   |   |   |   |   lug_boot > 2: acc (4.02)
+|   |   |   |   |   |   |   doors > 2: acc (110.04/1.51)
+|   |   |   safety > 2
+|   |   |   |   buying <= 1
+|   |   |   |   |   maint <= 3
+|   |   |   |   |   |   lug_boot <= 1
+|   |   |   |   |   |   |   maint <= 2: good (4.02/0.5)
+|   |   |   |   |   |   |   maint > 2: acc (4.02/0.5)
+|   |   |   |   |   |   lug_boot > 1: vgood (101.99/3.02)
+|   |   |   |   |   maint > 3: acc (12.07/0.5)
+|   |   |   |   buying > 1
+|   |   |   |   |   lug_boot <= 2: acc (195.93/4.02)
+|   |   |   |   |   lug_boot > 2
+|   |   |   |   |   |   maint <= 2: vgood (4.02)
+|   |   |   |   |   |   maint > 2: acc (8.05)
+buying > 2
+|   maint <= 2
+|   |   persons <= 2: unacc (72.42)
+|   |   persons > 2
+|   |   |   safety <= 1: unacc (48.28)
+|   |   |   safety > 1
+|   |   |   |   safety <= 2
+|   |   |   |   |   lug_boot <= 1: unacc (16.09)
+|   |   |   |   |   lug_boot > 1
+|   |   |   |   |   |   lug_boot <= 2
+|   |   |   |   |   |   |   doors <= 3
+|   |   |   |   |   |   |   |   doors <= 2: unacc (4.02)
+|   |   |   |   |   |   |   |   doors > 2
+|   |   |   |   |   |   |   |   |   persons <= 4: unacc (2.01)
+|   |   |   |   |   |   |   |   |   persons > 4: acc (2.01)
+|   |   |   |   |   |   |   doors > 3: acc (8.05)
+|   |   |   |   |   |   lug_boot > 2: acc (16.09)
+|   |   |   |   safety > 2: acc (48.28/2.01)
+|   maint > 2
+|   |   lug_boot <= 2: unacc (488.43/10.06)
+|   |   lug_boot > 2
+|   |   |   buying <= 3
+|   |   |   |   maint <= 3
+|   |   |   |   |   persons <= 2: unacc (6.03)
+|   |   |   |   |   persons > 2
+|   |   |   |   |   |   safety <= 1: unacc (4.02)
+|   |   |   |   |   |   safety > 1: acc (8.05)
+|   |   |   |   maint > 3: unacc (18.1)
+|   |   |   buying > 3: unacc (36.21)
+
+Number of Leaves  : 	41
+
+Size of the tree : 	81
+
+
+Weight: 3.93
+
+J48 pruned tree
+------------------
+
+doors <= 2
+|   persons <= 4
+|   |   persons <= 2: unacc (36.92)
+|   |   persons > 2
+|   |   |   safety <= 2
+|   |   |   |   buying <= 1
+|   |   |   |   |   safety <= 1: unacc (3.08)
+|   |   |   |   |   safety > 1: acc (41.58/1.03)
+|   |   |   |   buying > 1: unacc (62.25/3.33)
+|   |   |   safety > 2
+|   |   |   |   buying <= 1
+|   |   |   |   |   maint <= 2: good (14.37/0.51)
+|   |   |   |   |   maint > 2: acc (14.37/0.26)
+|   |   |   |   buying > 1
+|   |   |   |   |   maint <= 3: acc (76.38/1.79)
+|   |   |   |   |   maint > 3: unacc (2.31/0.77)
+|   persons > 4
+|   |   lug_boot <= 1: unacc (305.24)
+|   |   lug_boot > 1
+|   |   |   buying <= 1
+|   |   |   |   maint <= 2
+|   |   |   |   |   safety <= 2: acc (14.89/1.54)
+|   |   |   |   |   safety > 2: good (13.86/0.51)
+|   |   |   |   maint > 2: acc (28.75/1.54)
+|   |   |   buying > 1
+|   |   |   |   safety <= 2: unacc (56.1/2.82)
+|   |   |   |   safety > 2: acc (18.99/2.31)
+doors > 2
+|   persons <= 2: unacc (110.76)
+|   persons > 2
+|   |   safety <= 2
+|   |   |   safety <= 1: unacc (73.84)
+|   |   |   safety > 1
+|   |   |   |   maint <= 1
+|   |   |   |   |   persons <= 4: acc (34.9/4.61)
+|   |   |   |   |   persons > 4
+|   |   |   |   |   |   buying <= 2: good (48.4/1.54)
+|   |   |   |   |   |   buying > 2: acc (4.61/1.54)
+|   |   |   |   maint > 1
+|   |   |   |   |   persons <= 4
+|   |   |   |   |   |   doors <= 3
+|   |   |   |   |   |   |   buying <= 1
+|   |   |   |   |   |   |   |   maint <= 3: acc (27.21/0.26)
+|   |   |   |   |   |   |   |   maint > 3: unacc (13.6/0.26)
+|   |   |   |   |   |   |   buying > 1
+|   |   |   |   |   |   |   |   lug_boot <= 2: unacc (74.07/0.51)
+|   |   |   |   |   |   |   |   lug_boot > 2: acc (2.31/0.77)
+|   |   |   |   |   |   doors > 3
+|   |   |   |   |   |   |   buying <= 3: acc (65.18/5.13)
+|   |   |   |   |   |   |   buying > 3: unacc (4.61/1.03)
+|   |   |   |   |   persons > 4
+|   |   |   |   |   |   buying <= 3
+|   |   |   |   |   |   |   buying <= 1: acc (89.22/2.31)
+|   |   |   |   |   |   |   buying > 1
+|   |   |   |   |   |   |   |   lug_boot <= 1: unacc (4.61/0.77)
+|   |   |   |   |   |   |   |   lug_boot > 1: acc (47.73/1.54)
+|   |   |   |   |   |   buying > 3: unacc (6.92/1.54)
+|   |   safety > 2
+|   |   |   buying <= 2
+|   |   |   |   persons <= 4
+|   |   |   |   |   doors <= 3
+|   |   |   |   |   |   buying <= 1
+|   |   |   |   |   |   |   maint <= 2: good (14.37/0.51)
+|   |   |   |   |   |   |   maint > 2: acc (14.37/0.26)
+|   |   |   |   |   |   buying > 1: acc (46.87/1.03)
+|   |   |   |   |   doors > 3
+|   |   |   |   |   |   lug_boot <= 1
+|   |   |   |   |   |   |   maint <= 2: good (2.05/0.51)
+|   |   |   |   |   |   |   maint > 2: acc (2.05)
+|   |   |   |   |   |   lug_boot > 1
+|   |   |   |   |   |   |   maint <= 2: vgood (29.77)
+|   |   |   |   |   |   |   maint > 2: acc (4.1/1.03)
+|   |   |   |   persons > 4
+|   |   |   |   |   lug_boot <= 1
+|   |   |   |   |   |   maint <= 2: good (3.08/0.77)
+|   |   |   |   |   |   maint > 2: acc (3.08)
+|   |   |   |   |   lug_boot > 1
+|   |   |   |   |   |   maint <= 3: vgood (117.19/1.54)
+|   |   |   |   |   |   maint > 3: acc (3.08)
+|   |   |   buying > 2
+|   |   |   |   maint <= 3
+|   |   |   |   |   buying <= 3: acc (167.86)
+|   |   |   |   |   buying > 3
+|   |   |   |   |   |   maint <= 2: acc (9.23)
+|   |   |   |   |   |   maint > 2: unacc (4.61)
+|   |   |   |   maint > 3: unacc (9.23)
+
+Number of Leaves  : 	44
+
+Size of the tree : 	87
+
+
+Weight: 3.65
+
+J48 pruned tree
+------------------
+
+buying <= 2
+|   safety <= 2
+|   |   safety <= 1: unacc (77.25)
+|   |   safety > 1
+|   |   |   maint <= 2
+|   |   |   |   lug_boot <= 1
+|   |   |   |   |   doors <= 2
+|   |   |   |   |   |   persons <= 4: acc (10.89/0.53)
+|   |   |   |   |   |   persons > 4: unacc (26.86)
+|   |   |   |   |   doors > 2: acc (53.95/1.58)
+|   |   |   |   lug_boot > 1
+|   |   |   |   |   doors <= 3
+|   |   |   |   |   |   lug_boot <= 2
+|   |   |   |   |   |   |   persons <= 4: acc (43.21/1.05)
+|   |   |   |   |   |   |   persons > 4
+|   |   |   |   |   |   |   |   doors <= 2: acc (16.95)
+|   |   |   |   |   |   |   |   doors > 2: good (27.91/0.13)
+|   |   |   |   |   |   lug_boot > 2
+|   |   |   |   |   |   |   buying <= 1: good (36.03/0.53)
+|   |   |   |   |   |   |   buying > 1
+|   |   |   |   |   |   |   |   maint <= 1: good (15.55/0.26)
+|   |   |   |   |   |   |   |   maint > 1: acc (10.63/0.26)
+|   |   |   |   |   doors > 3: good (85.05/3.16)
+|   |   |   maint > 2
+|   |   |   |   lug_boot <= 2
+|   |   |   |   |   buying <= 1
+|   |   |   |   |   |   maint <= 3
+|   |   |   |   |   |   |   doors <= 2
+|   |   |   |   |   |   |   |   lug_boot <= 1: unacc (29.44/6.72)
+|   |   |   |   |   |   |   |   lug_boot > 1: acc (13.56/0.13)
+|   |   |   |   |   |   |   doors > 2: acc (41.87/0.79)
+|   |   |   |   |   |   maint > 3
+|   |   |   |   |   |   |   lug_boot <= 1: unacc (31.1)
+|   |   |   |   |   |   |   lug_boot > 1
+|   |   |   |   |   |   |   |   persons <= 4: unacc (12.56/0.26)
+|   |   |   |   |   |   |   |   persons > 4
+|   |   |   |   |   |   |   |   |   doors <= 2: unacc (5.05)
+|   |   |   |   |   |   |   |   |   doors > 2: acc (22.86)
+|   |   |   |   |   buying > 1: unacc (39.17/1.32)
+|   |   |   |   lug_boot > 2
+|   |   |   |   |   persons <= 2: unacc (2.1)
+|   |   |   |   |   persons > 2: acc (28.81)
+|   safety > 2
+|   |   lug_boot <= 1
+|   |   |   maint <= 1
+|   |   |   |   persons <= 4: good (11.95/1.05)
+|   |   |   |   persons > 4: unacc (14.22/0.79)
+|   |   |   maint > 1
+|   |   |   |   persons <= 4
+|   |   |   |   |   persons <= 2: unacc (3.16)
+|   |   |   |   |   persons > 2: acc (40.38/0.53)
+|   |   |   |   persons > 4
+|   |   |   |   |   doors <= 2: unacc (40.3)
+|   |   |   |   |   doors > 2: acc (17.13/0.39)
+|   |   lug_boot > 1
+|   |   |   persons <= 2: unacc (8.42)
+|   |   |   persons > 2
+|   |   |   |   maint <= 2
+|   |   |   |   |   lug_boot <= 2
+|   |   |   |   |   |   doors <= 2: good (24.06/0.26)
+|   |   |   |   |   |   doors > 2
+|   |   |   |   |   |   |   persons <= 4
+|   |   |   |   |   |   |   |   doors <= 3
+|   |   |   |   |   |   |   |   |   buying <= 1: good (6.85)
+|   |   |   |   |   |   |   |   |   buying > 1: acc (27.65/5.05)
+|   |   |   |   |   |   |   |   doors > 3: vgood (14.22)
+|   |   |   |   |   |   |   persons > 4: vgood (34.5)
+|   |   |   |   |   lug_boot > 2: vgood (63.26)
+|   |   |   |   maint > 2
+|   |   |   |   |   buying <= 1
+|   |   |   |   |   |   lug_boot <= 2
+|   |   |   |   |   |   |   doors <= 2: acc (13.69)
+|   |   |   |   |   |   |   doors > 2
+|   |   |   |   |   |   |   |   persons <= 4
+|   |   |   |   |   |   |   |   |   doors <= 3: acc (6.85)
+|   |   |   |   |   |   |   |   |   doors > 3: vgood (10.37/0.26)
+|   |   |   |   |   |   |   |   persons > 4: vgood (23.25/0.39)
+|   |   |   |   |   |   lug_boot > 2: vgood (26.71/1.05)
+|   |   |   |   |   buying > 1: acc (43.58)
+buying > 2
+|   maint <= 3
+|   |   persons <= 2: unacc (28.41)
+|   |   persons > 2
+|   |   |   lug_boot <= 1
+|   |   |   |   safety <= 2: unacc (91.36)
+|   |   |   |   safety > 2
+|   |   |   |   |   doors <= 2
+|   |   |   |   |   |   persons <= 4
+|   |   |   |   |   |   |   buying <= 3: acc (6.98)
+|   |   |   |   |   |   |   buying > 3: unacc (5.32/0.26)
+|   |   |   |   |   |   persons > 4: unacc (49.59)
+|   |   |   |   |   doors > 2: acc (44.24/0.79)
+|   |   |   lug_boot > 1
+|   |   |   |   doors <= 3
+|   |   |   |   |   maint <= 2
+|   |   |   |   |   |   lug_boot <= 2
+|   |   |   |   |   |   |   persons <= 4: unacc (13.0/1.05)
+|   |   |   |   |   |   |   persons > 4: acc (8.08/1.58)
+|   |   |   |   |   |   lug_boot > 2
+|   |   |   |   |   |   |   safety <= 1: unacc (2.1)
+|   |   |   |   |   |   |   safety > 1: acc (48.5)
+|   |   |   |   |   maint > 2
+|   |   |   |   |   |   buying <= 3
+|   |   |   |   |   |   |   safety <= 2
+|   |   |   |   |   |   |   |   lug_boot <= 2
+|   |   |   |   |   |   |   |   |   doors <= 2: unacc (45.46)
+|   |   |   |   |   |   |   |   |   doors > 2
+|   |   |   |   |   |   |   |   |   |   persons <= 4: unacc (22.73)
+|   |   |   |   |   |   |   |   |   |   persons > 4: acc (6.85/0.13)
+|   |   |   |   |   |   |   |   lug_boot > 2: acc (10.89/0.53)
+|   |   |   |   |   |   |   safety > 2: acc (27.39)
+|   |   |   |   |   |   buying > 3: unacc (27.76)
+|   |   |   |   doors > 3
+|   |   |   |   |   safety <= 1: unacc (6.31)
+|   |   |   |   |   safety > 1
+|   |   |   |   |   |   buying <= 3: acc (58.99)
+|   |   |   |   |   |   buying > 3
+|   |   |   |   |   |   |   maint <= 2: acc (43.58)
+|   |   |   |   |   |   |   maint > 2: unacc (2.1)
+|   maint > 3: unacc (116.99)
+
+Number of Leaves  : 	61
+
+Size of the tree : 	121
+
+
+Weight: 4.01
+
+J48 pruned tree
+------------------
+
+persons <= 2: unacc (266.49)
+persons > 2
+|   buying <= 2
+|   |   maint <= 2
+|   |   |   safety <= 2
+|   |   |   |   safety <= 1: unacc (16.45)
+|   |   |   |   safety > 1
+|   |   |   |   |   lug_boot <= 1
+|   |   |   |   |   |   doors <= 2
+|   |   |   |   |   |   |   persons <= 4: acc (5.28)
+|   |   |   |   |   |   |   persons > 4: unacc (13.68)
+|   |   |   |   |   |   doors > 2: acc (26.66)
+|   |   |   |   |   lug_boot > 1
+|   |   |   |   |   |   buying <= 1
+|   |   |   |   |   |   |   lug_boot <= 2
+|   |   |   |   |   |   |   |   doors <= 3
+|   |   |   |   |   |   |   |   |   persons <= 4: acc (10.32)
+|   |   |   |   |   |   |   |   |   persons > 4
+|   |   |   |   |   |   |   |   |   |   doors <= 2: acc (3.49)
+|   |   |   |   |   |   |   |   |   |   doors > 2: good (2.64)
+|   |   |   |   |   |   |   |   doors > 3: good (15.57)
+|   |   |   |   |   |   |   lug_boot > 2: good (33.64)
+|   |   |   |   |   |   buying > 1
+|   |   |   |   |   |   |   maint <= 1
+|   |   |   |   |   |   |   |   lug_boot <= 2
+|   |   |   |   |   |   |   |   |   doors <= 2: acc (5.14)
+|   |   |   |   |   |   |   |   |   doors > 2: good (20.2/3.42)
+|   |   |   |   |   |   |   |   lug_boot > 2: good (13.06)
+|   |   |   |   |   |   |   maint > 1: acc (46.16)
+|   |   |   safety > 2
+|   |   |   |   lug_boot <= 2
+|   |   |   |   |   maint <= 1
+|   |   |   |   |   |   doors <= 2
+|   |   |   |   |   |   |   persons <= 4: good (5.28)
+|   |   |   |   |   |   |   persons > 4
+|   |   |   |   |   |   |   |   lug_boot <= 1: unacc (6.84)
+|   |   |   |   |   |   |   |   lug_boot > 1: good (2.64)
+|   |   |   |   |   |   doors > 2
+|   |   |   |   |   |   |   persons <= 4: good (144.79/0.27)
+|   |   |   |   |   |   |   persons > 4
+|   |   |   |   |   |   |   |   lug_boot <= 1: good (22.11)
+|   |   |   |   |   |   |   |   lug_boot > 1: vgood (7.11)
+|   |   |   |   |   maint > 1
+|   |   |   |   |   |   buying <= 1: good (39.8/3.75)
+|   |   |   |   |   |   buying > 1
+|   |   |   |   |   |   |   lug_boot <= 1
+|   |   |   |   |   |   |   |   persons <= 4: acc (16.71)
+|   |   |   |   |   |   |   |   persons > 4
+|   |   |   |   |   |   |   |   |   doors <= 2: unacc (3.42)
+|   |   |   |   |   |   |   |   |   doors > 2: acc (7.72)
+|   |   |   |   |   |   |   lug_boot > 1
+|   |   |   |   |   |   |   |   doors <= 3: acc (22.29/3.42)
+|   |   |   |   |   |   |   |   doors > 3: vgood (13.68)
+|   |   |   |   lug_boot > 2: vgood (32.21)
+|   |   maint > 2
+|   |   |   safety <= 2
+|   |   |   |   safety <= 1: unacc (16.45)
+|   |   |   |   safety > 1
+|   |   |   |   |   maint <= 3
+|   |   |   |   |   |   persons <= 4
+|   |   |   |   |   |   |   buying <= 1: acc (202.29)
+|   |   |   |   |   |   |   buying > 1
+|   |   |   |   |   |   |   |   lug_boot <= 1: unacc (5.28)
+|   |   |   |   |   |   |   |   lug_boot > 1
+|   |   |   |   |   |   |   |   |   doors <= 3
+|   |   |   |   |   |   |   |   |   |   lug_boot <= 2: unacc (3.49)
+|   |   |   |   |   |   |   |   |   |   lug_boot > 2: acc (2.64)
+|   |   |   |   |   |   |   |   |   doors > 3: acc (7.5)
+|   |   |   |   |   |   persons > 4
+|   |   |   |   |   |   |   doors <= 2
+|   |   |   |   |   |   |   |   lug_boot <= 1: unacc (11.57)
+|   |   |   |   |   |   |   |   lug_boot > 1: acc (6.13/0.07)
+|   |   |   |   |   |   |   doors > 2: acc (22.11/0.2)
+|   |   |   |   |   maint > 3
+|   |   |   |   |   |   lug_boot <= 1: unacc (21.11)
+|   |   |   |   |   |   lug_boot > 1
+|   |   |   |   |   |   |   doors <= 3
+|   |   |   |   |   |   |   |   persons <= 4
+|   |   |   |   |   |   |   |   |   lug_boot <= 2: unacc (9.48)
+|   |   |   |   |   |   |   |   |   lug_boot > 2: acc (5.28)
+|   |   |   |   |   |   |   |   persons > 4
+|   |   |   |   |   |   |   |   |   doors <= 2
+|   |   |   |   |   |   |   |   |   |   lug_boot <= 2: unacc (2.64)
+|   |   |   |   |   |   |   |   |   |   lug_boot > 2: acc (2.64)
+|   |   |   |   |   |   |   |   |   doors > 2: acc (15.32)
+|   |   |   |   |   |   |   doors > 3: acc (22.78)
+|   |   |   safety > 2
+|   |   |   |   lug_boot <= 1
+|   |   |   |   |   persons <= 4: acc (3.58)
+|   |   |   |   |   persons > 4: unacc (14.48/0.8)
+|   |   |   |   lug_boot > 1
+|   |   |   |   |   maint <= 3
+|   |   |   |   |   |   buying <= 1
+|   |   |   |   |   |   |   lug_boot <= 2
+|   |   |   |   |   |   |   |   doors <= 2: acc (6.84)
+|   |   |   |   |   |   |   |   doors > 2: vgood (20.2/3.42)
+|   |   |   |   |   |   |   lug_boot > 2: vgood (13.06)
+|   |   |   |   |   |   buying > 1: acc (16.1)
+|   |   |   |   |   maint > 3: acc (54.19)
+|   buying > 2
+|   |   safety <= 1: unacc (59.89)
+|   |   safety > 1
+|   |   |   maint <= 3
+|   |   |   |   lug_boot <= 1
+|   |   |   |   |   safety <= 2: unacc (43.3)
+|   |   |   |   |   safety > 2
+|   |   |   |   |   |   persons <= 4
+|   |   |   |   |   |   |   buying <= 3: acc (14.21)
+|   |   |   |   |   |   |   buying > 3
+|   |   |   |   |   |   |   |   maint <= 2: acc (7.77)
+|   |   |   |   |   |   |   |   maint > 2: unacc (13.63)
+|   |   |   |   |   |   persons > 4
+|   |   |   |   |   |   |   doors <= 2: unacc (25.25)
+|   |   |   |   |   |   |   doors > 2
+|   |   |   |   |   |   |   |   buying <= 3: acc (10.66)
+|   |   |   |   |   |   |   |   buying > 3: unacc (11.46/0.4)
+|   |   |   |   lug_boot > 1
+|   |   |   |   |   doors <= 3
+|   |   |   |   |   |   safety <= 2
+|   |   |   |   |   |   |   lug_boot <= 2
+|   |   |   |   |   |   |   |   doors <= 2: unacc (38.15)
+|   |   |   |   |   |   |   |   doors > 2
+|   |   |   |   |   |   |   |   |   persons <= 4: unacc (16.85)
+|   |   |   |   |   |   |   |   |   persons > 4: acc (6.26/0.07)
+|   |   |   |   |   |   |   lug_boot > 2
+|   |   |   |   |   |   |   |   doors <= 2: acc (25.86/0.13)
+|   |   |   |   |   |   |   |   doors > 2
+|   |   |   |   |   |   |   |   |   maint <= 2: acc (3.04)
+|   |   |   |   |   |   |   |   |   maint > 2: unacc (2.77/0.13)
+|   |   |   |   |   |   safety > 2
+|   |   |   |   |   |   |   buying <= 3: acc (29.49)
+|   |   |   |   |   |   |   buying > 3
+|   |   |   |   |   |   |   |   maint <= 2: acc (15.54)
+|   |   |   |   |   |   |   |   maint > 2: unacc (10.56)
+|   |   |   |   |   doors > 3: acc (53.29/1.07)
+|   |   |   maint > 3: unacc (51.52)
+
+Number of Leaves  : 	69
+
+Size of the tree : 	137
+
+
+Weight: 4.6
+
+J48 pruned tree
+------------------
+
+maint <= 2
+|   lug_boot <= 1
+|   |   buying <= 1
+|   |   |   doors <= 2: unacc (185.13/1.96)
+|   |   |   doors > 2
+|   |   |   |   persons <= 2: unacc (17.05)
+|   |   |   |   persons > 2
+|   |   |   |   |   safety <= 2: acc (4.61/0.41)
+|   |   |   |   |   safety > 2: good (16.85)
+|   |   buying > 1
+|   |   |   persons <= 2: unacc (24.36)
+|   |   |   persons > 2
+|   |   |   |   safety <= 2
+|   |   |   |   |   buying <= 2
+|   |   |   |   |   |   doors <= 2
+|   |   |   |   |   |   |   persons <= 4: acc (2.67/0.07)
+|   |   |   |   |   |   |   persons > 4: unacc (3.52)
+|   |   |   |   |   |   doors > 2: acc (9.67/0.41)
+|   |   |   |   |   buying > 2: unacc (19.88)
+|   |   |   |   safety > 2
+|   |   |   |   |   doors <= 2
+|   |   |   |   |   |   persons <= 4: acc (10.9/1.3)
+|   |   |   |   |   |   persons > 4: unacc (10.36)
+|   |   |   |   |   doors > 2
+|   |   |   |   |   |   buying <= 2
+|   |   |   |   |   |   |   maint <= 1: good (6.95)
+|   |   |   |   |   |   |   maint > 1: acc (6.53)
+|   |   |   |   |   |   buying > 2: acc (20.84)
+|   lug_boot > 1
+|   |   safety <= 2
+|   |   |   persons <= 2: unacc (62.79)
+|   |   |   persons > 2
+|   |   |   |   safety <= 1: unacc (24.01)
+|   |   |   |   safety > 1
+|   |   |   |   |   buying <= 1
+|   |   |   |   |   |   lug_boot <= 2
+|   |   |   |   |   |   |   doors <= 3: acc (8.31/1.33)
+|   |   |   |   |   |   |   doors > 3: good (7.86)
+|   |   |   |   |   |   lug_boot > 2: good (16.99)
+|   |   |   |   |   buying > 1
+|   |   |   |   |   |   buying <= 2
+|   |   |   |   |   |   |   lug_boot <= 2
+|   |   |   |   |   |   |   |   persons <= 4: acc (182.38/2.6)
+|   |   |   |   |   |   |   |   persons > 4
+|   |   |   |   |   |   |   |   |   maint <= 1: good (7.18/1.3)
+|   |   |   |   |   |   |   |   |   maint > 1: acc (6.88)
+|   |   |   |   |   |   |   lug_boot > 2
+|   |   |   |   |   |   |   |   maint <= 1: good (6.6)
+|   |   |   |   |   |   |   |   maint > 1: acc (10.11)
+|   |   |   |   |   |   buying > 2
+|   |   |   |   |   |   |   lug_boot <= 2
+|   |   |   |   |   |   |   |   doors <= 3: unacc (11.64/1.4)
+|   |   |   |   |   |   |   |   doors > 3: acc (5.6)
+|   |   |   |   |   |   |   lug_boot > 2: acc (17.53)
+|   |   safety > 2
+|   |   |   persons <= 4
+|   |   |   |   buying <= 2
+|   |   |   |   |   doors <= 3
+|   |   |   |   |   |   lug_boot <= 2
+|   |   |   |   |   |   |   maint <= 1: good (72.99/0.14)
+|   |   |   |   |   |   |   maint > 1
+|   |   |   |   |   |   |   |   buying <= 1: good (3.52/0.07)
+|   |   |   |   |   |   |   |   buying > 1: acc (7.74/0.07)
+|   |   |   |   |   |   lug_boot > 2: vgood (10.66/0.27)
+|   |   |   |   |   doors > 3: vgood (24.5/0.54)
+|   |   |   |   buying > 2: acc (16.78/1.08)
+|   |   |   persons > 4
+|   |   |   |   doors <= 2
+|   |   |   |   |   lug_boot <= 2: good (5.06/2.0)
+|   |   |   |   |   lug_boot > 2: vgood (5.33/0.14)
+|   |   |   |   doors > 2: vgood (190.54/0.81)
+maint > 2
+|   buying <= 2
+|   |   persons <= 2: unacc (17.66)
+|   |   persons > 2
+|   |   |   safety <= 2
+|   |   |   |   safety <= 1: unacc (8.31)
+|   |   |   |   safety > 1
+|   |   |   |   |   persons <= 4
+|   |   |   |   |   |   maint <= 3
+|   |   |   |   |   |   |   buying <= 1: acc (102.16)
+|   |   |   |   |   |   |   buying > 1
+|   |   |   |   |   |   |   |   lug_boot <= 1: unacc (2.67)
+|   |   |   |   |   |   |   |   lug_boot > 1: acc (6.88/1.76)
+|   |   |   |   |   |   maint > 3
+|   |   |   |   |   |   |   lug_boot <= 1: unacc (6.6)
+|   |   |   |   |   |   |   lug_boot > 1
+|   |   |   |   |   |   |   |   doors <= 3
+|   |   |   |   |   |   |   |   |   lug_boot <= 2: unacc (4.79)
+|   |   |   |   |   |   |   |   |   lug_boot > 2: acc (2.67)
+|   |   |   |   |   |   |   |   doors > 3: acc (7.58)
+|   |   |   |   |   persons > 4
+|   |   |   |   |   |   lug_boot <= 1
+|   |   |   |   |   |   |   buying <= 1
+|   |   |   |   |   |   |   |   doors <= 2: unacc (5.84)
+|   |   |   |   |   |   |   |   doors > 2
+|   |   |   |   |   |   |   |   |   maint <= 3: acc (5.18)
+|   |   |   |   |   |   |   |   |   maint > 3: unacc (3.9)
+|   |   |   |   |   |   |   buying > 1: unacc (10.28)
+|   |   |   |   |   |   lug_boot > 1
+|   |   |   |   |   |   |   doors <= 2
+|   |   |   |   |   |   |   |   lug_boot <= 2: unacc (6.43/1.73)
+|   |   |   |   |   |   |   |   lug_boot > 2: acc (2.67)
+|   |   |   |   |   |   |   doors > 2: acc (17.55)
+|   |   |   safety > 2
+|   |   |   |   doors <= 2
+|   |   |   |   |   lug_boot <= 1: unacc (8.31/1.4)
+|   |   |   |   |   lug_boot > 1
+|   |   |   |   |   |   maint <= 3
+|   |   |   |   |   |   |   lug_boot <= 2: acc (3.52)
+|   |   |   |   |   |   |   lug_boot > 2: vgood (2.67/0.07)
+|   |   |   |   |   |   maint > 3: acc (6.46)
+|   |   |   |   doors > 2
+|   |   |   |   |   persons <= 4
+|   |   |   |   |   |   doors <= 3: acc (175.63/1.3)
+|   |   |   |   |   |   doors > 3
+|   |   |   |   |   |   |   maint <= 3: vgood (5.47/0.27)
+|   |   |   |   |   |   |   maint > 3: acc (7.71)
+|   |   |   |   |   persons > 4
+|   |   |   |   |   |   lug_boot <= 1: acc (40.46)
+|   |   |   |   |   |   lug_boot > 1
+|   |   |   |   |   |   |   maint <= 3
+|   |   |   |   |   |   |   |   buying <= 1: vgood (5.98)
+|   |   |   |   |   |   |   |   buying > 1: acc (7.79)
+|   |   |   |   |   |   |   maint > 3: acc (11.37)
+|   buying > 2
+|   |   buying <= 3
+|   |   |   maint <= 3
+|   |   |   |   safety <= 1: unacc (10.35)
+|   |   |   |   safety > 1
+|   |   |   |   |   doors <= 2
+|   |   |   |   |   |   lug_boot <= 2
+|   |   |   |   |   |   |   safety <= 2: unacc (11.75)
+|   |   |   |   |   |   |   safety > 2
+|   |   |   |   |   |   |   |   lug_boot <= 1: unacc (7.57/1.73)
+|   |   |   |   |   |   |   |   lug_boot > 1: acc (3.49/0.03)
+|   |   |   |   |   |   lug_boot > 2: acc (2.73/0.07)
+|   |   |   |   |   doors > 2
+|   |   |   |   |   |   persons <= 4
+|   |   |   |   |   |   |   safety <= 2
+|   |   |   |   |   |   |   |   lug_boot <= 2
+|   |   |   |   |   |   |   |   |   doors <= 3: unacc (5.91)
+|   |   |   |   |   |   |   |   |   doors > 3
+|   |   |   |   |   |   |   |   |   |   lug_boot <= 1: unacc (2.67)
+|   |   |   |   |   |   |   |   |   |   lug_boot > 1: acc (3.52/0.07)
+|   |   |   |   |   |   |   |   lug_boot > 2: acc (3.54/0.1)
+|   |   |   |   |   |   |   safety > 2: acc (10.77/0.3)
+|   |   |   |   |   |   persons > 4: acc (19.18/0.1)
+|   |   |   maint > 3: unacc (22.63)
+|   |   buying > 3: unacc (93.08)
+
+Number of Leaves  : 	76
+
+Size of the tree : 	151
+
+
+Weight: 4.23
+
+J48 pruned tree
+------------------
+
+persons <= 2: unacc (162.28)
+persons > 2
+|   maint <= 2
+|   |   lug_boot <= 1
+|   |   |   persons <= 4
+|   |   |   |   safety <= 2
+|   |   |   |   |   safety <= 1: unacc (16.8)
+|   |   |   |   |   safety > 1
+|   |   |   |   |   |   buying <= 2: acc (4.52)
+|   |   |   |   |   |   buying > 2: unacc (5.41)
+|   |   |   |   safety > 2
+|   |   |   |   |   buying <= 1: good (68.88)
+|   |   |   |   |   buying > 1
+|   |   |   |   |   |   maint <= 1: good (47.0/1.06)
+|   |   |   |   |   |   maint > 1: acc (5.35)
+|   |   |   persons > 4
+|   |   |   |   doors <= 2: unacc (97.18)
+|   |   |   |   doors > 2
+|   |   |   |   |   safety <= 2
+|   |   |   |   |   |   safety <= 1: unacc (14.34)
+|   |   |   |   |   |   safety > 1
+|   |   |   |   |   |   |   buying <= 2: acc (5.98)
+|   |   |   |   |   |   |   buying > 2: unacc (4.06)
+|   |   |   |   |   safety > 2
+|   |   |   |   |   |   buying <= 2: good (10.47/1.98)
+|   |   |   |   |   |   buying > 2: acc (10.37)
+|   |   lug_boot > 1
+|   |   |   buying <= 2
+|   |   |   |   safety <= 2
+|   |   |   |   |   doors <= 3
+|   |   |   |   |   |   buying <= 1
+|   |   |   |   |   |   |   safety <= 1: unacc (2.84)
+|   |   |   |   |   |   |   safety > 1
+|   |   |   |   |   |   |   |   persons <= 4
+|   |   |   |   |   |   |   |   |   lug_boot <= 2: acc (2.64)
+|   |   |   |   |   |   |   |   |   lug_boot > 2: good (2.64)
+|   |   |   |   |   |   |   |   persons > 4: good (49.31/0.89)
+|   |   |   |   |   |   buying > 1: acc (142.73/5.22)
+|   |   |   |   |   doors > 3
+|   |   |   |   |   |   maint <= 1: good (94.86/0.27)
+|   |   |   |   |   |   maint > 1
+|   |   |   |   |   |   |   buying <= 1: good (5.41/0.14)
+|   |   |   |   |   |   |   buying > 1: acc (7.69/0.14)
+|   |   |   |   safety > 2
+|   |   |   |   |   doors <= 2
+|   |   |   |   |   |   lug_boot <= 2: acc (68.86/3.1)
+|   |   |   |   |   |   lug_boot > 2: vgood (5.27)
+|   |   |   |   |   doors > 2
+|   |   |   |   |   |   maint <= 1
+|   |   |   |   |   |   |   doors <= 3: good (39.38/3.1)
+|   |   |   |   |   |   |   doors > 3: vgood (7.05)
+|   |   |   |   |   |   maint > 1: vgood (104.71/3.82)
+|   |   |   buying > 2
+|   |   |   |   safety <= 1: unacc (8.51)
+|   |   |   |   safety > 1
+|   |   |   |   |   doors <= 2
+|   |   |   |   |   |   safety <= 2
+|   |   |   |   |   |   |   lug_boot <= 2: unacc (3.84)
+|   |   |   |   |   |   |   lug_boot > 2: acc (5.27)
+|   |   |   |   |   |   safety > 2: acc (13.27)
+|   |   |   |   |   doors > 2: acc (88.98/1.35)
+|   maint > 2
+|   |   lug_boot <= 2
+|   |   |   buying <= 1
+|   |   |   |   maint <= 3
+|   |   |   |   |   persons <= 4: acc (144.97/1.46)
+|   |   |   |   |   persons > 4
+|   |   |   |   |   |   lug_boot <= 1
+|   |   |   |   |   |   |   doors <= 2: unacc (3.84)
+|   |   |   |   |   |   |   doors > 2: acc (7.81/0.05)
+|   |   |   |   |   |   lug_boot > 1: acc (64.76/3.69)
+|   |   |   |   maint > 3
+|   |   |   |   |   safety <= 2
+|   |   |   |   |   |   lug_boot <= 1: unacc (4.13)
+|   |   |   |   |   |   lug_boot > 1: acc (7.84/2.97)
+|   |   |   |   |   safety > 2: acc (12.01/0.88)
+|   |   |   buying > 1
+|   |   |   |   safety <= 2
+|   |   |   |   |   doors <= 3: unacc (83.1/2.76)
+|   |   |   |   |   doors > 3
+|   |   |   |   |   |   lug_boot <= 1: unacc (11.67)
+|   |   |   |   |   |   lug_boot > 1
+|   |   |   |   |   |   |   buying <= 3
+|   |   |   |   |   |   |   |   buying <= 2: acc (7.69/0.14)
+|   |   |   |   |   |   |   |   buying > 2
+|   |   |   |   |   |   |   |   |   maint <= 3: acc (3.57/0.07)
+|   |   |   |   |   |   |   |   |   maint > 3: unacc (2.7)
+|   |   |   |   |   |   |   buying > 3: unacc (7.05)
+|   |   |   |   safety > 2
+|   |   |   |   |   buying <= 3
+|   |   |   |   |   |   persons <= 4: acc (118.36/0.14)
+|   |   |   |   |   |   persons > 4
+|   |   |   |   |   |   |   doors <= 2: unacc (6.29/0.91)
+|   |   |   |   |   |   |   doors > 2: acc (17.65/0.1)
+|   |   |   |   |   buying > 3: unacc (15.45)
+|   |   lug_boot > 2
+|   |   |   buying <= 1
+|   |   |   |   maint <= 3: vgood (48.85/0.92)
+|   |   |   |   maint > 3: acc (9.11/0.78)
+|   |   |   buying > 1
+|   |   |   |   buying <= 2: acc (10.6/0.27)
+|   |   |   |   buying > 2
+|   |   |   |   |   buying <= 3
+|   |   |   |   |   |   maint <= 3
+|   |   |   |   |   |   |   safety <= 1: unacc (3.84)
+|   |   |   |   |   |   |   safety > 1: acc (4.94)
+|   |   |   |   |   |   maint > 3: unacc (4.9)
+|   |   |   |   |   buying > 3: unacc (20.97)
+
+Number of Leaves  : 	55
+
+Size of the tree : 	109
+
+
+Weight: 3.84
+
+J48 pruned tree
+------------------
+
+maint <= 2
+|   persons <= 2: unacc (66.97)
+|   persons > 2
+|   |   buying <= 2
+|   |   |   safety <= 1: unacc (36.79)
+|   |   |   safety > 1
+|   |   |   |   lug_boot <= 1
+|   |   |   |   |   persons <= 4
+|   |   |   |   |   |   safety <= 2: acc (2.31)
+|   |   |   |   |   |   safety > 2
+|   |   |   |   |   |   |   buying <= 1: good (35.18)
+|   |   |   |   |   |   |   buying > 1
+|   |   |   |   |   |   |   |   maint <= 1: good (23.46)
+|   |   |   |   |   |   |   |   maint > 1: acc (2.19)
+|   |   |   |   |   persons > 4
+|   |   |   |   |   |   doors <= 2: unacc (47.73)
+|   |   |   |   |   |   doors > 2
+|   |   |   |   |   |   |   buying <= 1: good (3.93/1.04)
+|   |   |   |   |   |   |   buying > 1: acc (50.62/1.45)
+|   |   |   |   lug_boot > 1
+|   |   |   |   |   safety <= 2
+|   |   |   |   |   |   lug_boot <= 2
+|   |   |   |   |   |   |   doors <= 2: acc (45.88)
+|   |   |   |   |   |   |   doors > 2
+|   |   |   |   |   |   |   |   persons <= 4
+|   |   |   |   |   |   |   |   |   doors <= 3: acc (45.83)
+|   |   |   |   |   |   |   |   |   doors > 3: good (48.52/0.96)
+|   |   |   |   |   |   |   |   persons > 4: good (96.16/1.45)
+|   |   |   |   |   |   lug_boot > 2
+|   |   |   |   |   |   |   maint <= 1: good (49.97)
+|   |   |   |   |   |   |   maint > 1
+|   |   |   |   |   |   |   |   buying <= 1: good (2.69)
+|   |   |   |   |   |   |   |   buying > 1: acc (2.62)
+|   |   |   |   |   safety > 2
+|   |   |   |   |   |   doors <= 2
+|   |   |   |   |   |   |   buying <= 1: good (43.95/1.35)
+|   |   |   |   |   |   |   buying > 1
+|   |   |   |   |   |   |   |   maint <= 1: good (32.11/0.67)
+|   |   |   |   |   |   |   |   maint > 1: acc (34.26/0.67)
+|   |   |   |   |   |   doors > 2
+|   |   |   |   |   |   |   persons <= 4
+|   |   |   |   |   |   |   |   lug_boot <= 2
+|   |   |   |   |   |   |   |   |   buying <= 1
+|   |   |   |   |   |   |   |   |   |   doors <= 3: good (20.9)
+|   |   |   |   |   |   |   |   |   |   doors > 3: vgood (3.49)
+|   |   |   |   |   |   |   |   |   buying > 1
+|   |   |   |   |   |   |   |   |   |   maint <= 1: good (20.27/1.75)
+|   |   |   |   |   |   |   |   |   |   maint > 1: acc (71.2/0.89)
+|   |   |   |   |   |   |   |   lug_boot > 2: vgood (32.18)
+|   |   |   |   |   |   |   persons > 4: vgood (90.85)
+|   |   buying > 2
+|   |   |   safety <= 2
+|   |   |   |   maint <= 1: unacc (41.53/2.72)
+|   |   |   |   maint > 1
+|   |   |   |   |   safety <= 1: unacc (2.31)
+|   |   |   |   |   safety > 1: acc (30.78/2.6)
+|   |   |   safety > 2: acc (56.33/1.79)
+maint > 2
+|   safety <= 2
+|   |   safety <= 1: unacc (92.96)
+|   |   safety > 1
+|   |   |   persons <= 4
+|   |   |   |   lug_boot <= 1
+|   |   |   |   |   doors <= 2: acc (25.08/0.46)
+|   |   |   |   |   doors > 2: unacc (6.43/1.34)
+|   |   |   |   lug_boot > 1
+|   |   |   |   |   lug_boot <= 2
+|   |   |   |   |   |   doors <= 3: unacc (72.99/0.46)
+|   |   |   |   |   |   doors > 3
+|   |   |   |   |   |   |   persons <= 2: unacc (2.27)
+|   |   |   |   |   |   |   persons > 2
+|   |   |   |   |   |   |   |   buying <= 2: acc (2.91)
+|   |   |   |   |   |   |   |   buying > 2: unacc (3.33/0.89)
+|   |   |   |   |   lug_boot > 2
+|   |   |   |   |   |   buying <= 2: acc (2.87/0.14)
+|   |   |   |   |   |   buying > 2: unacc (8.08/1.23)
+|   |   |   persons > 4
+|   |   |   |   buying <= 3
+|   |   |   |   |   lug_boot <= 1: unacc (8.38/1.34)
+|   |   |   |   |   lug_boot > 1
+|   |   |   |   |   |   maint <= 3: acc (81.62/2.38)
+|   |   |   |   |   |   maint > 3
+|   |   |   |   |   |   |   doors <= 2: unacc (16.09/0.35)
+|   |   |   |   |   |   |   doors > 2
+|   |   |   |   |   |   |   |   buying <= 2: acc (25.06)
+|   |   |   |   |   |   |   |   buying > 2: unacc (2.02)
+|   |   |   |   buying > 3: unacc (5.4)
+|   safety > 2
+|   |   buying <= 1
+|   |   |   doors <= 2
+|   |   |   |   lug_boot <= 1: unacc (22.56/1.2)
+|   |   |   |   lug_boot > 1: acc (2.58/0.71)
+|   |   |   doors > 2
+|   |   |   |   maint <= 3
+|   |   |   |   |   persons <= 4
+|   |   |   |   |   |   doors <= 3
+|   |   |   |   |   |   |   lug_boot <= 2: acc (44.63/0.02)
+|   |   |   |   |   |   |   lug_boot > 2: vgood (23.12/0.01)
+|   |   |   |   |   |   doors > 3: vgood (33.37/1.26)
+|   |   |   |   |   persons > 4
+|   |   |   |   |   |   lug_boot <= 1: acc (2.62)
+|   |   |   |   |   |   lug_boot > 1: vgood (71.15)
+|   |   |   |   maint > 3: acc (8.04/0.08)
+|   |   buying > 1
+|   |   |   buying <= 3
+|   |   |   |   persons <= 2: unacc (6.94)
+|   |   |   |   persons > 2
+|   |   |   |   |   maint <= 3: acc (69.94/1.95)
+|   |   |   |   |   maint > 3
+|   |   |   |   |   |   buying <= 2: acc (27.4/0.45)
+|   |   |   |   |   |   buying > 2: unacc (6.47)
+|   |   |   buying > 3: unacc (12.68)
+
+Number of Leaves  : 	57
+
+Size of the tree : 	113
+
+
+Weight: 3.98
+
+J48 pruned tree
+------------------
+
+buying <= 2
+|   safety <= 2
+|   |   safety <= 1: unacc (63.63)
+|   |   safety > 1
+|   |   |   maint <= 2
+|   |   |   |   persons <= 2: unacc (11.79)
+|   |   |   |   persons > 2
+|   |   |   |   |   lug_boot <= 2
+|   |   |   |   |   |   lug_boot <= 1: acc (31.44/0.91)
+|   |   |   |   |   |   lug_boot > 1
+|   |   |   |   |   |   |   maint <= 1
+|   |   |   |   |   |   |   |   doors <= 2: acc (12.15)
+|   |   |   |   |   |   |   |   doors > 2
+|   |   |   |   |   |   |   |   |   persons <= 4
+|   |   |   |   |   |   |   |   |   |   doors <= 3: acc (22.94)
+|   |   |   |   |   |   |   |   |   |   doors > 3: good (23.88)
+|   |   |   |   |   |   |   |   |   persons > 4: good (36.13)
+|   |   |   |   |   |   |   maint > 1
+|   |   |   |   |   |   |   |   buying <= 1
+|   |   |   |   |   |   |   |   |   doors <= 2: acc (10.87)
+|   |   |   |   |   |   |   |   |   doors > 2: good (12.68/0.23)
+|   |   |   |   |   |   |   |   buying > 1: acc (66.44)
+|   |   |   |   |   lug_boot > 2: good (28.15/1.33)
+|   |   |   maint > 2
+|   |   |   |   lug_boot <= 1
+|   |   |   |   |   maint <= 3: acc (89.86/3.92)
+|   |   |   |   |   maint > 3: unacc (11.18)
+|   |   |   |   lug_boot > 1
+|   |   |   |   |   persons <= 4
+|   |   |   |   |   |   doors <= 2
+|   |   |   |   |   |   |   maint <= 3: acc (13.65/1.04)
+|   |   |   |   |   |   |   maint > 3: unacc (8.67/0.18)
+|   |   |   |   |   |   doors > 2: unacc (32.72/2.55)
+|   |   |   |   |   persons > 4
+|   |   |   |   |   |   doors <= 2
+|   |   |   |   |   |   |   lug_boot <= 2
+|   |   |   |   |   |   |   |   buying <= 1: acc (23.65/8.01)
+|   |   |   |   |   |   |   |   buying > 1: unacc (23.89)
+|   |   |   |   |   |   |   lug_boot > 2: acc (9.82)
+|   |   |   |   |   |   doors > 2: acc (25.37)
+|   safety > 2
+|   |   lug_boot <= 1
+|   |   |   maint <= 1: good (54.98/2.42)
+|   |   |   maint > 1
+|   |   |   |   persons <= 4
+|   |   |   |   |   maint <= 2: good (18.75/1.15)
+|   |   |   |   |   maint > 2: acc (80.01/1.48)
+|   |   |   |   persons > 4
+|   |   |   |   |   doors <= 2: unacc (58.28)
+|   |   |   |   |   doors > 2: acc (30.09/0.74)
+|   |   lug_boot > 1
+|   |   |   persons <= 2: unacc (13.71)
+|   |   |   persons > 2
+|   |   |   |   lug_boot <= 2
+|   |   |   |   |   doors <= 2
+|   |   |   |   |   |   buying <= 1: good (22.16/0.46)
+|   |   |   |   |   |   buying > 1
+|   |   |   |   |   |   |   maint <= 1: good (16.01)
+|   |   |   |   |   |   |   maint > 1: acc (17.7)
+|   |   |   |   |   doors > 2
+|   |   |   |   |   |   doors <= 3
+|   |   |   |   |   |   |   persons <= 4
+|   |   |   |   |   |   |   |   maint <= 1: good (9.44)
+|   |   |   |   |   |   |   |   maint > 1: acc (69.18/10.64)
+|   |   |   |   |   |   |   persons > 4: vgood (80.67/0.42)
+|   |   |   |   |   |   doors > 3: vgood (93.77/1.96)
+|   |   |   |   lug_boot > 2
+|   |   |   |   |   maint <= 2: vgood (90.48)
+|   |   |   |   |   maint > 2
+|   |   |   |   |   |   maint <= 3: vgood (32.28/1.74)
+|   |   |   |   |   |   maint > 3: acc (2.17)
+buying > 2
+|   lug_boot <= 2
+|   |   doors <= 2
+|   |   |   persons <= 4
+|   |   |   |   safety <= 2: unacc (3.87)
+|   |   |   |   safety > 2: acc (31.13/2.35)
+|   |   |   persons > 4
+|   |   |   |   lug_boot <= 1: unacc (90.65)
+|   |   |   |   lug_boot > 1
+|   |   |   |   |   safety <= 2: unacc (69.03)
+|   |   |   |   |   safety > 2: acc (12.38/0.51)
+|   |   doors > 2
+|   |   |   persons <= 4
+|   |   |   |   maint <= 2
+|   |   |   |   |   safety <= 2: unacc (60.42/1.31)
+|   |   |   |   |   safety > 2
+|   |   |   |   |   |   persons <= 2: unacc (3.73)
+|   |   |   |   |   |   persons > 2: acc (2.3)
+|   |   |   |   maint > 2
+|   |   |   |   |   buying <= 3
+|   |   |   |   |   |   persons <= 2: unacc (2.58)
+|   |   |   |   |   |   persons > 2: acc (29.35/3.52)
+|   |   |   |   |   buying > 3: unacc (2.81)
+|   |   |   persons > 4
+|   |   |   |   lug_boot <= 1
+|   |   |   |   |   safety <= 2: unacc (3.53)
+|   |   |   |   |   safety > 2: acc (4.75/1.38)
+|   |   |   |   lug_boot > 1
+|   |   |   |   |   doors <= 3: acc (59.15/2.08)
+|   |   |   |   |   doors > 3
+|   |   |   |   |   |   maint <= 2: acc (3.8/0.04)
+|   |   |   |   |   |   maint > 2: unacc (3.91/0.91)
+|   lug_boot > 2
+|   |   persons <= 2: unacc (7.67)
+|   |   persons > 2
+|   |   |   doors <= 3: acc (78.29/3.43)
+|   |   |   doors > 3
+|   |   |   |   maint <= 2: acc (5.18/0.07)
+|   |   |   |   maint > 2: unacc (4.88/0.51)
+
+Number of Leaves  : 	56
+
+Size of the tree : 	111
+
+
+Weight: 3.41
+
+J48 pruned tree
+------------------
+
+maint <= 2
+|   persons <= 2: unacc (66.63)
+|   persons > 2
+|   |   buying <= 2
+|   |   |   safety <= 2
+|   |   |   |   safety <= 1: unacc (9.68)
+|   |   |   |   safety > 1
+|   |   |   |   |   lug_boot <= 1
+|   |   |   |   |   |   doors <= 2: unacc (14.74/0.49)
+|   |   |   |   |   |   doors > 2: acc (15.28)
+|   |   |   |   |   lug_boot > 1
+|   |   |   |   |   |   maint <= 1
+|   |   |   |   |   |   |   lug_boot <= 2
+|   |   |   |   |   |   |   |   doors <= 2: acc (6.28)
+|   |   |   |   |   |   |   |   doors > 2
+|   |   |   |   |   |   |   |   |   persons <= 4
+|   |   |   |   |   |   |   |   |   |   doors <= 3: acc (11.85)
+|   |   |   |   |   |   |   |   |   |   doors > 3: good (12.33)
+|   |   |   |   |   |   |   |   |   persons > 4: good (18.66)
+|   |   |   |   |   |   |   lug_boot > 2: good (13.15)
+|   |   |   |   |   |   maint > 1
+|   |   |   |   |   |   |   buying <= 1
+|   |   |   |   |   |   |   |   doors <= 2: acc (5.79/0.18)
+|   |   |   |   |   |   |   |   doors > 2
+|   |   |   |   |   |   |   |   |   persons <= 4: acc (4.0/0.44)
+|   |   |   |   |   |   |   |   |   persons > 4: good (6.52)
+|   |   |   |   |   |   |   buying > 1: acc (55.16)
+|   |   |   safety > 2
+|   |   |   |   lug_boot <= 2
+|   |   |   |   |   buying <= 1
+|   |   |   |   |   |   persons <= 4: good (182.09/0.92)
+|   |   |   |   |   |   persons > 4
+|   |   |   |   |   |   |   doors <= 2
+|   |   |   |   |   |   |   |   lug_boot <= 1: unacc (15.29)
+|   |   |   |   |   |   |   |   lug_boot > 1: good (5.6)
+|   |   |   |   |   |   |   doors > 2
+|   |   |   |   |   |   |   |   lug_boot <= 1: good (11.89)
+|   |   |   |   |   |   |   |   lug_boot > 1: vgood (6.19)
+|   |   |   |   |   buying > 1
+|   |   |   |   |   |   maint <= 1
+|   |   |   |   |   |   |   lug_boot <= 1: good (30.16/3.56)
+|   |   |   |   |   |   |   lug_boot > 1
+|   |   |   |   |   |   |   |   doors <= 3
+|   |   |   |   |   |   |   |   |   persons <= 4: good (9.01)
+|   |   |   |   |   |   |   |   |   persons > 4: vgood (9.63/4.14)
+|   |   |   |   |   |   |   |   doors > 3: vgood (24.68)
+|   |   |   |   |   |   maint > 1
+|   |   |   |   |   |   |   lug_boot <= 1: acc (29.93/0.12)
+|   |   |   |   |   |   |   lug_boot > 1
+|   |   |   |   |   |   |   |   doors <= 3
+|   |   |   |   |   |   |   |   |   persons <= 4: acc (18.62)
+|   |   |   |   |   |   |   |   |   persons > 4: vgood (20.44/8.71)
+|   |   |   |   |   |   |   |   doors > 3: vgood (12.87)
+|   |   |   |   lug_boot > 2: vgood (46.74)
+|   |   buying > 2
+|   |   |   safety <= 1: unacc (18.76)
+|   |   |   safety > 1
+|   |   |   |   lug_boot <= 2
+|   |   |   |   |   doors <= 2
+|   |   |   |   |   |   persons <= 4: acc (7.17/0.5)
+|   |   |   |   |   |   persons > 4: unacc (40.03/0.63)
+|   |   |   |   |   doors > 2
+|   |   |   |   |   |   persons <= 4
+|   |   |   |   |   |   |   doors <= 3: unacc (20.98/0.73)
+|   |   |   |   |   |   |   doors > 3
+|   |   |   |   |   |   |   |   lug_boot <= 1: unacc (10.55/0.44)
+|   |   |   |   |   |   |   |   lug_boot > 1: acc (20.49)
+|   |   |   |   |   |   persons > 4: acc (28.47/1.27)
+|   |   |   |   lug_boot > 2: acc (23.88)
+maint > 2
+|   safety <= 2
+|   |   doors <= 2
+|   |   |   persons <= 4
+|   |   |   |   persons <= 2: unacc (20.11)
+|   |   |   |   persons > 2
+|   |   |   |   |   safety <= 1: unacc (4.83)
+|   |   |   |   |   safety > 1
+|   |   |   |   |   |   buying <= 3
+|   |   |   |   |   |   |   lug_boot <= 2
+|   |   |   |   |   |   |   |   buying <= 1
+|   |   |   |   |   |   |   |   |   maint <= 3: acc (12.79)
+|   |   |   |   |   |   |   |   |   maint > 3: unacc (8.89)
+|   |   |   |   |   |   |   |   buying > 1: unacc (9.3)
+|   |   |   |   |   |   |   lug_boot > 2: acc (7.77/0.07)
+|   |   |   |   |   |   buying > 3: unacc (7.27)
+|   |   |   persons > 4
+|   |   |   |   lug_boot <= 2
+|   |   |   |   |   maint <= 3
+|   |   |   |   |   |   buying <= 1
+|   |   |   |   |   |   |   lug_boot <= 1: unacc (11.98)
+|   |   |   |   |   |   |   lug_boot > 1: acc (12.22/4.14)
+|   |   |   |   |   |   buying > 1: unacc (33.69)
+|   |   |   |   |   maint > 3: unacc (129.29)
+|   |   |   |   lug_boot > 2
+|   |   |   |   |   maint <= 3: unacc (15.39/0.28)
+|   |   |   |   |   maint > 3
+|   |   |   |   |   |   safety <= 1: unacc (4.38)
+|   |   |   |   |   |   safety > 1: acc (5.02/0.14)
+|   |   doors > 2
+|   |   |   safety <= 1: unacc (25.27)
+|   |   |   safety > 1
+|   |   |   |   persons <= 2: unacc (14.48)
+|   |   |   |   persons > 2
+|   |   |   |   |   buying <= 1
+|   |   |   |   |   |   maint <= 3: acc (51.9)
+|   |   |   |   |   |   maint > 3
+|   |   |   |   |   |   |   doors <= 3
+|   |   |   |   |   |   |   |   lug_boot <= 2: unacc (5.98/0.4)
+|   |   |   |   |   |   |   |   lug_boot > 2: acc (2.68)
+|   |   |   |   |   |   |   doors > 3: acc (8.18/0.35)
+|   |   |   |   |   buying > 1
+|   |   |   |   |   |   lug_boot <= 1: unacc (37.84)
+|   |   |   |   |   |   lug_boot > 1
+|   |   |   |   |   |   |   buying <= 3
+|   |   |   |   |   |   |   |   doors <= 3
+|   |   |   |   |   |   |   |   |   persons <= 4
+|   |   |   |   |   |   |   |   |   |   lug_boot <= 2: unacc (20.25)
+|   |   |   |   |   |   |   |   |   |   lug_boot > 2
+|   |   |   |   |   |   |   |   |   |   |   maint <= 3: acc (12.41)
+|   |   |   |   |   |   |   |   |   |   |   maint > 3: unacc (2.75/0.07)
+|   |   |   |   |   |   |   |   |   persons > 4
+|   |   |   |   |   |   |   |   |   |   buying <= 2: acc (11.85)
+|   |   |   |   |   |   |   |   |   |   buying > 2
+|   |   |   |   |   |   |   |   |   |   |   maint <= 3: acc (5.73)
+|   |   |   |   |   |   |   |   |   |   |   maint > 3: unacc (5.36)
+|   |   |   |   |   |   |   |   doors > 3
+|   |   |   |   |   |   |   |   |   maint <= 3: acc (35.46)
+|   |   |   |   |   |   |   |   |   maint > 3
+|   |   |   |   |   |   |   |   |   |   buying <= 2: acc (8.07)
+|   |   |   |   |   |   |   |   |   |   buying > 2: unacc (5.89)
+|   |   |   |   |   |   |   buying > 3: unacc (14.38)
+|   safety > 2
+|   |   buying <= 2
+|   |   |   persons <= 2: unacc (25.18)
+|   |   |   persons > 2
+|   |   |   |   lug_boot <= 1
+|   |   |   |   |   persons <= 4: acc (40.56)
+|   |   |   |   |   persons > 4
+|   |   |   |   |   |   doors <= 2: unacc (18.25)
+|   |   |   |   |   |   doors > 2: acc (2.76)
+|   |   |   |   lug_boot > 1
+|   |   |   |   |   buying <= 1
+|   |   |   |   |   |   maint <= 3
+|   |   |   |   |   |   |   lug_boot <= 2
+|   |   |   |   |   |   |   |   doors <= 2: acc (7.12)
+|   |   |   |   |   |   |   |   doors > 2
+|   |   |   |   |   |   |   |   |   persons <= 4: acc (20.0/8.27)
+|   |   |   |   |   |   |   |   |   persons > 4: vgood (18.71)
+|   |   |   |   |   |   |   lug_boot > 2: vgood (15.77)
+|   |   |   |   |   |   maint > 3: acc (20.34)
+|   |   |   |   |   buying > 1: acc (45.63)
+|   |   buying > 2
+|   |   |   maint <= 3
+|   |   |   |   buying <= 3
+|   |   |   |   |   persons <= 4
+|   |   |   |   |   |   persons <= 2: unacc (6.44)
+|   |   |   |   |   |   persons > 2: acc (9.05)
+|   |   |   |   |   persons > 4
+|   |   |   |   |   |   lug_boot <= 1: unacc (21.61/0.35)
+|   |   |   |   |   |   lug_boot > 1: acc (12.88)
+|   |   |   |   buying > 3: unacc (27.5)
+|   |   |   maint > 3: unacc (51.22)
+
+Number of Leaves  : 	82
+
+Size of the tree : 	163
+
+
+Weight: 3.84
+
+Number of performed Iterations: 10
+
+
+Time taken to build model: 0.09 seconds
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances        1713               99.1319 %
+Incorrectly Classified Instances        15                0.8681 %
+Kappa statistic                          0.9811
+Mean absolute error                      0.0045
+Root mean squared error                  0.0638
+Relative absolute error                  1.9698 %
+Root relative squared error             18.8683 %
+Total Number of Instances             1728     
+
+=== Detailed Accuracy By Class ===
+
+               TP Rate   FP Rate   Precision   Recall  F-Measure   ROC Area  Class
+                 0.998     0.002      0.999     0.998     0.998      1        unacc
+                 0.977     0.004      0.987     0.977     0.982      1        acc
+                 0.985     0.001      0.97      0.985     0.977      1        vgood
+                 0.971     0.004      0.905     0.971     0.937      0.999    good
+Weighted Avg.    0.991     0.002      0.992     0.991     0.991      1    
+
+=== Confusion Matrix ===
+
+    a    b    c    d   <-- classified as
+ 1207    3    0    0 |    a = unacc
+    1  375    2    6 |    b = acc
+    0    0   64    1 |    c = vgood
+    0    2    0   67 |    d = good
+

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="edu.gatech.unitconverter"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="21" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="edu.gatech.seclass.converter.MainActivity"
+            android:label="@string/title_activity_main" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="edu.gatech.seclass.converter.DistanceActivity"
+            android:label="@string/title_activity_distance" >
+        </activity>
+        <activity android:name="edu.gatech.seclass.converter.AreaActivity" android:label="@string/title_activity_area"></activity>
+        <activity android:name="edu.gatech.seclass.converter.CurrencyActivity" android:label="@string/title_activity_currency"></activity>
+        <activity android:name="edu.gatech.seclass.converter.FluidActivity" android:label="@string/title_activity_fluid"></activity>
+        <activity android:name="edu.gatech.seclass.converter.WeightActivity" android:label="@string/title_activity_weight"></activity>
+    </application>
+
+</manifest>

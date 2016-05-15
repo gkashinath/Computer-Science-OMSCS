@@ -1,0 +1,52 @@
+=== Run information ===
+
+Scheme:weka.classifiers.lazy.IBk -K 9 -W 0 -A "weka.core.neighboursearch.LinearNNSearch -A \"weka.core.ManhattanDistance -R first-last\""
+Relation:     preprocess_car_data
+Instances:    1728
+Attributes:   7
+              buying
+              maint
+              doors
+              persons
+              lug_boot
+              safety
+              class
+Test mode:10-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+IB1 instance-based classifier
+using 9 nearest neighbour(s) for classification
+
+
+Time taken to build model: 0 seconds
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances        1670               96.6435 %
+Incorrectly Classified Instances        58                3.3565 %
+Kappa statistic                          0.926 
+Mean absolute error                      0.0818
+Root mean squared error                  0.1609
+Relative absolute error                 35.6999 %
+Root relative squared error             47.5838 %
+Total Number of Instances             1728     
+
+=== Detailed Accuracy By Class ===
+
+               TP Rate   FP Rate   Precision   Recall  F-Measure   ROC Area  Class
+                 0.993     0.014      0.994     0.993     0.994      1        unacc
+                 0.977     0.034      0.891     0.977     0.932      0.997    acc
+                 0.908     0.002      0.952     0.908     0.929      1        vgood
+                 0.493     0.001      0.944     0.493     0.648      0.995    good
+Weighted Avg.    0.966     0.017      0.968     0.966     0.964      0.999
+
+=== Confusion Matrix ===
+
+    a    b    c    d   <-- classified as
+ 1202    8    0    0 |    a = unacc
+    7  375    0    2 |    b = acc
+    0    6   59    0 |    c = vgood
+    0   32    3   34 |    d = good
+

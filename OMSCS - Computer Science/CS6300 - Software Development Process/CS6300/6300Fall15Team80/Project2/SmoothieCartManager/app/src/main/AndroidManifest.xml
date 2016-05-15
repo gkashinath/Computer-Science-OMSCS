@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="edu.gatech.seclass.scm" >
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar" >
+        </activity>
+        <activity
+            android:name=".mainPage"
+            android:label="@string/title_activity_main_page"
+            android:parentActivityName=".frontPage" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="edu.gatech.seclass.scm.frontPage" />
+        </activity>
+        <activity
+            android:name=".customerAddEdit"
+            android:label="@string/title_activity_customer_add_edit"
+            android:parentActivityName=".customerMain" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="edu.gatech.seclass.scm.customerMain" />
+        </activity>
+        <activity
+            android:name=".customerPrintTrans"
+            android:label="@string/title_activity_customer_print_trans"
+            android:parentActivityName=".customerMain" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="edu.gatech.seclass.scm.customerMain" />
+        </activity>
+        <activity
+            android:name=".transactionMain"
+            android:label="@string/title_activity_transaction_main"
+            android:parentActivityName=".mainPage" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="edu.gatech.seclass.scm.mainPage" />
+        </activity>
+        <activity
+            android:name=".transactionCC"
+            android:label="@string/title_activity_transaction_cc"
+            android:parentActivityName=".transactionMain" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="edu.gatech.seclass.scm.transactionMain" />
+        </activity>
+        <activity
+            android:name=".rewardsGetSet"
+            android:label="@string/title_activity_rewards_get_set"
+            android:parentActivityName=".mainPage" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="edu.gatech.seclass.scm.mainPage" />
+        </activity>
+        <activity
+            android:name=".rewardsGet"
+            android:label="@string/title_activity_rewards_get"
+            android:parentActivityName=".rewardsGetSet" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="edu.gatech.seclass.scm.rewardsGetSet" />
+        </activity>
+        <activity
+            android:name=".rewardsSet"
+            android:label="@string/title_activity_rewards_set"
+            android:parentActivityName=".rewardsGetSet" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="edu.gatech.seclass.scm.rewardsGetSet" />
+        </activity>
+        <activity
+            android:name=".frontPage"
+            android:label="@string/title_activity_front_page" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".customerMain"
+            android:label="@string/title_activity_customer_main"
+            android:parentActivityName=".mainPage" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="edu.gatech.seclass.scm.mainPage" />
+        </activity>
+        <activity
+            android:name=".customerEdit"
+            android:label="@string/title_activity_customer_edit"
+            android:parentActivityName=".customerMain" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="edu.gatech.seclass.scm.customerMain" />
+        </activity>
+    </application>
+
+</manifest>

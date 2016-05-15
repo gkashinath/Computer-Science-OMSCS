@@ -1,0 +1,129 @@
+=== Run information ===
+
+Scheme:weka.classifiers.trees.J48 -C 0.45 -M 5
+Relation:     preprocess_car_data
+Instances:    1728
+Attributes:   7
+              buying
+              maint
+              doors
+              persons
+              lug_boot
+              safety
+              class
+Test mode:10-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+J48 pruned tree
+------------------
+
+persons <= 2: unacc (576.0)
+persons > 2
+|   safety <= 1: unacc (384.0)
+|   safety > 1
+|   |   buying <= 2
+|   |   |   maint <= 2
+|   |   |   |   safety <= 2
+|   |   |   |   |   lug_boot <= 1: acc (32.0/4.0)
+|   |   |   |   |   lug_boot > 1
+|   |   |   |   |   |   buying <= 1
+|   |   |   |   |   |   |   lug_boot <= 2
+|   |   |   |   |   |   |   |   doors <= 3: acc (8.0/2.0)
+|   |   |   |   |   |   |   |   doors > 3: good (8.0)
+|   |   |   |   |   |   |   lug_boot > 2: good (16.0)
+|   |   |   |   |   |   buying > 1
+|   |   |   |   |   |   |   maint <= 1: good (16.0/3.0)
+|   |   |   |   |   |   |   maint > 1: acc (16.0)
+|   |   |   |   safety > 2
+|   |   |   |   |   lug_boot <= 1
+|   |   |   |   |   |   buying <= 1: good (16.0/2.0)
+|   |   |   |   |   |   buying > 1
+|   |   |   |   |   |   |   maint <= 1: good (8.0/1.0)
+|   |   |   |   |   |   |   maint > 1: acc (8.0/1.0)
+|   |   |   |   |   lug_boot > 1
+|   |   |   |   |   |   lug_boot <= 2
+|   |   |   |   |   |   |   doors <= 3
+|   |   |   |   |   |   |   |   doors <= 2: good (8.0/2.0)
+|   |   |   |   |   |   |   |   doors > 2: vgood (8.0/4.0)
+|   |   |   |   |   |   |   doors > 3: vgood (16.0)
+|   |   |   |   |   |   lug_boot > 2: vgood (32.0)
+|   |   |   maint > 2
+|   |   |   |   lug_boot <= 1
+|   |   |   |   |   safety <= 2
+|   |   |   |   |   |   buying <= 1
+|   |   |   |   |   |   |   maint <= 3: acc (8.0/1.0)
+|   |   |   |   |   |   |   maint > 3: unacc (8.0)
+|   |   |   |   |   |   buying > 1: unacc (16.0)
+|   |   |   |   |   safety > 2: acc (32.0/4.0)
+|   |   |   |   lug_boot > 1
+|   |   |   |   |   safety <= 2
+|   |   |   |   |   |   lug_boot <= 2
+|   |   |   |   |   |   |   doors <= 3
+|   |   |   |   |   |   |   |   buying <= 1: acc (8.0/3.0)
+|   |   |   |   |   |   |   |   buying > 1: unacc (8.0/2.0)
+|   |   |   |   |   |   |   doors > 3: acc (16.0)
+|   |   |   |   |   |   lug_boot > 2: acc (32.0)
+|   |   |   |   |   safety > 2
+|   |   |   |   |   |   buying <= 1
+|   |   |   |   |   |   |   maint <= 3: vgood (16.0/3.0)
+|   |   |   |   |   |   |   maint > 3: acc (16.0)
+|   |   |   |   |   |   buying > 1: acc (32.0)
+|   |   buying > 2
+|   |   |   maint <= 3
+|   |   |   |   lug_boot <= 1
+|   |   |   |   |   safety <= 2: unacc (48.0)
+|   |   |   |   |   safety > 2
+|   |   |   |   |   |   maint <= 2: acc (32.0/4.0)
+|   |   |   |   |   |   maint > 2
+|   |   |   |   |   |   |   buying <= 3: acc (8.0/1.0)
+|   |   |   |   |   |   |   buying > 3: unacc (8.0)
+|   |   |   |   lug_boot > 1
+|   |   |   |   |   maint <= 2
+|   |   |   |   |   |   lug_boot <= 2
+|   |   |   |   |   |   |   safety <= 2
+|   |   |   |   |   |   |   |   doors <= 3: unacc (16.0/4.0)
+|   |   |   |   |   |   |   |   doors > 3: acc (16.0)
+|   |   |   |   |   |   |   safety > 2: acc (32.0)
+|   |   |   |   |   |   lug_boot > 2: acc (64.0)
+|   |   |   |   |   maint > 2
+|   |   |   |   |   |   buying <= 3: acc (32.0/3.0)
+|   |   |   |   |   |   buying > 3: unacc (32.0)
+|   |   |   maint > 3: unacc (96.0)
+
+Number of Leaves  : 	37
+
+Size of the tree : 	73
+
+
+Time taken to build model: 0.01 seconds
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances        1650               95.4861 %
+Incorrectly Classified Instances        78                4.5139 %
+Kappa statistic                          0.9026
+Mean absolute error                      0.0271
+Root mean squared error                  0.1289
+Relative absolute error                 11.8113 %
+Root relative squared error             38.1291 %
+Total Number of Instances             1728     
+
+=== Detailed Accuracy By Class ===
+
+               TP Rate   FP Rate   Precision   Recall  F-Measure   ROC Area  Class
+                 0.971     0.033      0.986     0.971     0.978      0.993    unacc
+                 0.924     0.028      0.906     0.924     0.915      0.989    acc
+                 0.969     0.005      0.875     0.969     0.92       0.999    vgood
+                 0.826     0.009      0.792     0.826     0.809      0.995    good
+Weighted Avg.    0.955     0.03       0.956     0.955     0.955      0.993
+
+=== Confusion Matrix ===
+
+    a    b    c    d   <-- classified as
+ 1175   32    0    3 |    a = unacc
+   15  355    4   10 |    b = acc
+    0    0   63    2 |    c = vgood
+    2    5    5   57 |    d = good
+

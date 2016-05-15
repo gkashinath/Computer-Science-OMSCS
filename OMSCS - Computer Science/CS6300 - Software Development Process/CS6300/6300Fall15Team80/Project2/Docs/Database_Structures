@@ -1,0 +1,29 @@
+Database Structures:
+
+Customer_Information:
+ID
+Name
+Billing_Address
+Email_Address
+Unique_ID
+Transaction_List (list of Transaction IDs)
+goldStatus
+creditValue
+creditExpiryDate
+LastPurchaseDate
+TotalPurchaseSinceJan
+
+Transaction:
+ID
+date
+rawPurchasePrice
+rewardsApplied
+rewardValueApplied
+actualPurchasePrice
+
+Policy:
+ID
+CreditThreshold
+GoldStatusThreshold
+CreditAmount
+GoldPercentage

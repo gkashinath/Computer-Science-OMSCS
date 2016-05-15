@@ -1,0 +1,65 @@
+=== Run information ===
+
+Scheme:       weka.clusterers.SimpleKMeans -init 0 -max-candidates 100 -periodic-pruning 10000 -min-density 2.0 -t1 -1.25 -t2 -1.0 -N 3 -A "weka.core.EuclideanDistance -R first-last" -I 500 -num-slots 1 -S 10
+Relation:     glass_ICA-weka.filters.unsupervised.attribute.IndependentComponents-W-A10-N200-T1.0E-4
+Instances:    214
+Attributes:   10
+              Source_0
+              Source_1
+              Source_2
+              Source_3
+              Source_4
+              Source_5
+              Source_6
+              Source_7
+              Source_8
+              Class
+Test mode:    evaluate on training data
+
+
+=== Clustering model (full training set) ===
+
+
+kMeans
+======
+
+Number of iterations: 6
+Within cluster sum of squared errors: 66.42400304887745
+
+Initial starting points (random):
+
+Cluster 0: 0.03915,0.026527,0.060757,0.052571,-0.047773,0.003847,0.104546,-0.049868,0.040965,1
+Cluster 1: 0.144222,0.445572,0.075894,-0.164528,0.192368,-0.237948,0.095772,0.15059,-0.174961,7
+Cluster 2: -0.074632,0.113098,0.103303,0.112475,0.033458,0.053818,-0.149445,-0.070889,-0.178133,2
+
+Missing values globally replaced with mean/mode
+
+Final cluster centroids:
+                         Cluster#
+Attribute    Full Data          0          1          2
+               (214.0)     (79.0)     (41.0)     (94.0)
+=======================================================
+Source_0        0.0294     0.0187     0.1074     0.0045
+Source_1        0.1018     0.0375     0.3041     0.0677
+Source_2       -0.0143     -0.022     0.0027    -0.0154
+Source_3        0.0086     0.0248    -0.0504     0.0208
+Source_4        0.0036    -0.0197     0.0871    -0.0131
+Source_5        0.0203    -0.0031      0.063     0.0214
+Source_6       -0.0047     0.0345    -0.0473     -0.019
+Source_7        0.0098     0.0024     0.0301     0.0071
+Source_8       -0.0178     0.0067    -0.0274    -0.0342
+Class                2          1          7          2
+
+
+
+
+Time taken to build model (full training data) : 0 seconds
+
+=== Model and evaluation on training set ===
+
+Clustered Instances
+
+0       79 ( 37%)
+1       41 ( 19%)
+2       94 ( 44%)
+

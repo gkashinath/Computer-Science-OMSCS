@@ -1,0 +1,59 @@
+=== Run information ===
+
+Scheme:weka.classifiers.functions.LibSVM -S 0 -K 0 -D 3 -G 0.0 -R 0.0 -N 0.5 -M 40.0 -C 1.0 -E 0.001 -P 0.1 -seed 1
+Relation:     glass-weka.filters.unsupervised.attribute.Normalize-S1.0-T0.0
+Instances:    214
+Attributes:   10
+              RI
+              Na
+              Mg
+              Al
+              Si
+              K
+              Ca
+              Ba
+              Fe
+              Class
+Test mode:10-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+LibSVM wrapper, original code by Yasser EL-Manzalawy (= WLSVM)
+
+Time taken to build model: 0.06 seconds
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances         122               57.0093 %
+Incorrectly Classified Instances        92               42.9907 %
+Kappa statistic                          0.3719
+Mean absolute error                      0.1228
+Root mean squared error                  0.3505
+Relative absolute error                 58.0054 %
+Root relative squared error            107.9911 %
+Total Number of Instances              214     
+
+=== Detailed Accuracy By Class ===
+
+               TP Rate   FP Rate   Precision   Recall  F-Measure   ROC Area  Class
+                 0.443     0.125      0.633     0.443     0.521      0.659    1
+                 0.855     0.5        0.485     0.855     0.619      0.678    2
+                 0         0          0         0         0          0.5      3
+                 0         0          0         0         0          ?        4
+                 0.154     0.01       0.5       0.154     0.235      0.572    5
+                 0         0          0         0         0          0.5      6
+                 0.828     0.016      0.889     0.828     0.857      0.906    7
+Weighted Avg.    0.57      0.221      0.53      0.57      0.521      0.674
+
+=== Confusion Matrix ===
+
+  a  b  c  d  e  f  g   <-- classified as
+ 31 39  0  0  0  0  0 |  a = 1
+ 10 65  0  0  1  0  0 |  b = 2
+  6 11  0  0  0  0  0 |  c = 3
+  0  0  0  0  0  0  0 |  d = 4
+  0 10  0  0  2  0  1 |  e = 5
+  0  7  0  0  0  0  2 |  f = 6
+  2  2  0  0  1  0 24 |  g = 7
+

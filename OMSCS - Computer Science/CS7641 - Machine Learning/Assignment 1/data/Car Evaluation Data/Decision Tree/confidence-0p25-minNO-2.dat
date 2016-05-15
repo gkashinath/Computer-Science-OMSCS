@@ -1,0 +1,173 @@
+=== Run information ===
+
+Scheme:weka.classifiers.trees.J48 -C 0.25 -M 2
+Relation:     preprocess_car_data
+Instances:    1728
+Attributes:   7
+              buying
+              maint
+              doors
+              persons
+              lug_boot
+              safety
+              class
+Test mode:10-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+J48 pruned tree
+------------------
+
+persons <= 2: unacc (576.0)
+persons > 2
+|   safety <= 1: unacc (384.0)
+|   safety > 1
+|   |   buying <= 2
+|   |   |   maint <= 2
+|   |   |   |   safety <= 2
+|   |   |   |   |   lug_boot <= 1
+|   |   |   |   |   |   doors <= 2
+|   |   |   |   |   |   |   persons <= 4: acc (4.0)
+|   |   |   |   |   |   |   persons > 4: unacc (4.0)
+|   |   |   |   |   |   doors > 2: acc (24.0)
+|   |   |   |   |   lug_boot > 1
+|   |   |   |   |   |   buying <= 1
+|   |   |   |   |   |   |   lug_boot <= 2
+|   |   |   |   |   |   |   |   doors <= 3
+|   |   |   |   |   |   |   |   |   doors <= 2: acc (4.0)
+|   |   |   |   |   |   |   |   |   doors > 2
+|   |   |   |   |   |   |   |   |   |   persons <= 4: acc (2.0)
+|   |   |   |   |   |   |   |   |   |   persons > 4: good (2.0)
+|   |   |   |   |   |   |   |   doors > 3: good (8.0)
+|   |   |   |   |   |   |   lug_boot > 2: good (16.0)
+|   |   |   |   |   |   buying > 1
+|   |   |   |   |   |   |   maint <= 1
+|   |   |   |   |   |   |   |   lug_boot <= 2
+|   |   |   |   |   |   |   |   |   doors <= 3: acc (4.0/1.0)
+|   |   |   |   |   |   |   |   |   doors > 3: good (4.0)
+|   |   |   |   |   |   |   |   lug_boot > 2: good (8.0)
+|   |   |   |   |   |   |   maint > 1: acc (16.0)
+|   |   |   |   safety > 2
+|   |   |   |   |   lug_boot <= 1
+|   |   |   |   |   |   doors <= 2
+|   |   |   |   |   |   |   persons <= 4: good (4.0/1.0)
+|   |   |   |   |   |   |   persons > 4: unacc (4.0)
+|   |   |   |   |   |   doors > 2
+|   |   |   |   |   |   |   buying <= 1: good (12.0)
+|   |   |   |   |   |   |   buying > 1
+|   |   |   |   |   |   |   |   maint <= 1: good (6.0)
+|   |   |   |   |   |   |   |   maint > 1: acc (6.0)
+|   |   |   |   |   lug_boot > 1
+|   |   |   |   |   |   lug_boot <= 2
+|   |   |   |   |   |   |   doors <= 3
+|   |   |   |   |   |   |   |   doors <= 2
+|   |   |   |   |   |   |   |   |   buying <= 1: good (4.0)
+|   |   |   |   |   |   |   |   |   buying > 1
+|   |   |   |   |   |   |   |   |   |   maint <= 1: good (2.0)
+|   |   |   |   |   |   |   |   |   |   maint > 1: acc (2.0)
+|   |   |   |   |   |   |   |   doors > 2
+|   |   |   |   |   |   |   |   |   persons <= 4: good (4.0/1.0)
+|   |   |   |   |   |   |   |   |   persons > 4: vgood (4.0)
+|   |   |   |   |   |   |   doors > 3: vgood (16.0)
+|   |   |   |   |   |   lug_boot > 2: vgood (32.0)
+|   |   |   maint > 2
+|   |   |   |   lug_boot <= 1
+|   |   |   |   |   safety <= 2
+|   |   |   |   |   |   buying <= 1
+|   |   |   |   |   |   |   maint <= 3: acc (8.0/1.0)
+|   |   |   |   |   |   |   maint > 3: unacc (8.0)
+|   |   |   |   |   |   buying > 1: unacc (16.0)
+|   |   |   |   |   safety > 2
+|   |   |   |   |   |   doors <= 2
+|   |   |   |   |   |   |   persons <= 4: acc (4.0)
+|   |   |   |   |   |   |   persons > 4: unacc (4.0)
+|   |   |   |   |   |   doors > 2: acc (24.0)
+|   |   |   |   lug_boot > 1
+|   |   |   |   |   safety <= 2
+|   |   |   |   |   |   lug_boot <= 2
+|   |   |   |   |   |   |   doors <= 3
+|   |   |   |   |   |   |   |   buying <= 1
+|   |   |   |   |   |   |   |   |   maint <= 3: acc (4.0)
+|   |   |   |   |   |   |   |   |   maint > 3: unacc (4.0/1.0)
+|   |   |   |   |   |   |   |   buying > 1
+|   |   |   |   |   |   |   |   |   doors <= 2: unacc (4.0)
+|   |   |   |   |   |   |   |   |   doors > 2
+|   |   |   |   |   |   |   |   |   |   persons <= 4: unacc (2.0)
+|   |   |   |   |   |   |   |   |   |   persons > 4: acc (2.0)
+|   |   |   |   |   |   |   doors > 3: acc (16.0)
+|   |   |   |   |   |   lug_boot > 2: acc (32.0)
+|   |   |   |   |   safety > 2
+|   |   |   |   |   |   buying <= 1
+|   |   |   |   |   |   |   maint <= 3
+|   |   |   |   |   |   |   |   lug_boot <= 2
+|   |   |   |   |   |   |   |   |   doors <= 3: acc (4.0/1.0)
+|   |   |   |   |   |   |   |   |   doors > 3: vgood (4.0)
+|   |   |   |   |   |   |   |   lug_boot > 2: vgood (8.0)
+|   |   |   |   |   |   |   maint > 3: acc (16.0)
+|   |   |   |   |   |   buying > 1: acc (32.0)
+|   |   buying > 2
+|   |   |   maint <= 3
+|   |   |   |   lug_boot <= 1
+|   |   |   |   |   safety <= 2: unacc (48.0)
+|   |   |   |   |   safety > 2
+|   |   |   |   |   |   maint <= 2
+|   |   |   |   |   |   |   doors <= 2
+|   |   |   |   |   |   |   |   persons <= 4: acc (4.0)
+|   |   |   |   |   |   |   |   persons > 4: unacc (4.0)
+|   |   |   |   |   |   |   doors > 2: acc (24.0)
+|   |   |   |   |   |   maint > 2
+|   |   |   |   |   |   |   buying <= 3: acc (8.0/1.0)
+|   |   |   |   |   |   |   buying > 3: unacc (8.0)
+|   |   |   |   lug_boot > 1
+|   |   |   |   |   maint <= 2
+|   |   |   |   |   |   lug_boot <= 2
+|   |   |   |   |   |   |   safety <= 2
+|   |   |   |   |   |   |   |   doors <= 3
+|   |   |   |   |   |   |   |   |   doors <= 2: unacc (8.0)
+|   |   |   |   |   |   |   |   |   doors > 2
+|   |   |   |   |   |   |   |   |   |   persons <= 4: unacc (4.0)
+|   |   |   |   |   |   |   |   |   |   persons > 4: acc (4.0)
+|   |   |   |   |   |   |   |   doors > 3: acc (16.0)
+|   |   |   |   |   |   |   safety > 2: acc (32.0)
+|   |   |   |   |   |   lug_boot > 2: acc (64.0)
+|   |   |   |   |   maint > 2
+|   |   |   |   |   |   buying <= 3: acc (32.0/3.0)
+|   |   |   |   |   |   buying > 3: unacc (32.0)
+|   |   |   maint > 3: unacc (96.0)
+
+Number of Leaves  : 	59
+
+Size of the tree : 	117
+
+
+Time taken to build model: 0.01 seconds
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances        1686               97.5694 %
+Incorrectly Classified Instances        42                2.4306 %
+Kappa statistic                          0.9471
+Mean absolute error                      0.0145
+Root mean squared error                  0.1019
+Relative absolute error                  6.3191 %
+Root relative squared error             30.1508 %
+Total Number of Instances             1728     
+
+=== Detailed Accuracy By Class ===
+
+               TP Rate   FP Rate   Precision   Recall  F-Measure   ROC Area  Class
+                 0.989     0.015      0.993     0.989     0.991      0.994    unacc
+                 0.945     0.013      0.953     0.945     0.949      0.986    acc
+                 0.969     0.002      0.955     0.969     0.962      0.992    vgood
+                 0.913     0.008      0.829     0.913     0.869      0.99     good
+Weighted Avg.    0.976     0.014      0.976     0.976     0.976      0.992
+
+=== Confusion Matrix ===
+
+    a    b    c    d   <-- classified as
+ 1197   11    0    2 |    a = unacc
+    8  363    3   10 |    b = acc
+    0    1   63    1 |    c = vgood
+    0    6    0   63 |    d = good
+

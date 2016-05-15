@@ -1,0 +1,76 @@
+=== Run information ===
+
+Scheme:       weka.clusterers.EM -I 100 -N -1 -X 10 -max -1 -ll-cv 1.0E-6 -ll-iter 1.0E-6 -M 1.0E-6 -K 10 -num-slots 1 -S 100
+Relation:     preprocess_car_data_principal components-weka.filters.unsupervised.attribute.PrincipalComponents-R0.95-A5-M-1
+Instances:    1728
+Attributes:   7
+              1    safety+0    persons+0    doors+0    maint+0    lug_boot...
+              1    lug_boot+0    persons+0    buying+0    doors+0    maint...
+              1    maint+0    buying+0    persons+0    doors+0    lug_boot...
+              1    doors+0    persons+0    buying+0    maint+0    lug_boot...
+              -1persons+0    buying+0    doors+0    maint+0    lug_boot...
+              1    buying+0    persons+0    doors+0    maint+0    lug_boot...
+              class
+Test mode:    evaluate on training data
+
+
+=== Clustering model (full training set) ===
+
+
+EM
+==
+
+Number of clusters selected by cross validation: 4
+Number of iterations performed: 0
+
+
+                                                                  Cluster
+Attribute                                                               0       1       2       3
+                                                                   (0.21)  (0.33)   (0.3)  (0.16)
+==================================================================================================
+1    safety+0    persons+0    doors+0    maint+0    lug_boot...
+  mean                                                             -1.2039       0  0.7067  0.2351
+  std. dev.                                                         0.1574  1.0006  0.6054  0.7631
+
+1    lug_boot+0    persons+0    buying+0    doors+0    maint...
+  mean                                                              0.0718       0  0.1938 -0.4569
+  std. dev.                                                         0.9908  1.0006  0.9648  0.9356
+
+1    maint+0    buying+0    persons+0    doors+0    lug_boot...
+  mean                                                             -0.1199       0 -0.2779  0.6771
+  std. dev.                                                         0.9803  1.0006  0.9235  0.8435
+
+1    doors+0    persons+0    buying+0    maint+0    lug_boot...
+  mean                                                               -0.02       0  0.0949 -0.1523
+  std. dev.                                                         1.0054  1.0006  0.9758  1.0216
+
+-1persons+0    buying+0    doors+0    maint+0    lug_boot...
+  mean                                                             -0.6702  1.3359 -0.6602 -0.6796
+  std. dev.                                                         0.4013       1  0.4011  0.4013
+
+1    buying+0    persons+0    doors+0    maint+0    lug_boot...
+  mean                                                             -0.1049       0 -0.3124  0.7225
+  std. dev.                                                         0.9751  1.0006  0.9292  0.7792
+
+class
+  unacc                                                                359     577       1     277
+  acc                                                                    1       1     385       1
+  vgood                                                                  1       1      66       1
+  good                                                                   1       1      70       1
+  [total]                                                              362     580     522     280
+
+
+Time taken to build model (full training data) : 3.82 seconds
+
+=== Model and evaluation on training set ===
+
+Clustered Instances
+
+0       384 ( 22%)
+1       585 ( 34%)
+2       518 ( 30%)
+3       241 ( 14%)
+
+
+Log likelihood: -8.43427
+

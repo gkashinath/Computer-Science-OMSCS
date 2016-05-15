@@ -1,0 +1,94 @@
+=== Run information ===
+
+Scheme:weka.classifiers.trees.J48 -C 0.05 -M 4
+Relation:     glass-weka.filters.unsupervised.attribute.Normalize-S1.0-T0.0
+Instances:    214
+Attributes:   10
+              RI
+              Na
+              Mg
+              Al
+              Si
+              K
+              Ca
+              Ba
+              Fe
+              Class
+Test mode:10-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+J48 pruned tree
+------------------
+
+Ba <= 0.085714
+|   Mg <= 0.536748
+|   |   K <= 0.004831
+|   |   |   Na <= 0.475188: 2 (4.0/1.0)
+|   |   |   Na > 0.475188: 6 (8.0)
+|   |   K > 0.004831
+|   |   |   Na <= 0.415038
+|   |   |   |   RI <= 0.496927: 5 (12.0/1.0)
+|   |   |   |   RI > 0.496927: 2 (4.0/1.0)
+|   |   |   Na > 0.415038: 2 (7.0/1.0)
+|   Mg > 0.536748
+|   |   Al <= 0.34891
+|   |   |   RI <= 0.259877
+|   |   |   |   RI <= 0.217296: 1 (5.0/2.0)
+|   |   |   |   RI > 0.217296
+|   |   |   |   |   Al <= 0.305296: 2 (5.0/1.0)
+|   |   |   |   |   Al > 0.305296: 3 (4.0)
+|   |   |   RI > 0.259877
+|   |   |   |   K <= 0.037037: 1 (27.0/8.0)
+|   |   |   |   K > 0.037037
+|   |   |   |   |   Mg <= 0.835189
+|   |   |   |   |   |   Fe <= 0.27451: 1 (38.0/2.0)
+|   |   |   |   |   |   Fe > 0.27451
+|   |   |   |   |   |   |   Al <= 0.274143: 2 (5.0)
+|   |   |   |   |   |   |   Al > 0.274143: 1 (6.0/1.0)
+|   |   |   |   |   Mg > 0.835189: 2 (10.0)
+|   |   Al > 0.34891: 2 (50.0/10.0)
+Ba > 0.085714: 7 (29.0/3.0)
+
+Number of Leaves  : 	15
+
+Size of the tree : 	29
+
+
+Time taken to build model: 0.01 seconds
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances         145               67.757  %
+Incorrectly Classified Instances        69               32.243  %
+Kappa statistic                          0.5639
+Mean absolute error                      0.1156
+Root mean squared error                  0.2744
+Relative absolute error                 54.5937 %
+Root relative squared error             84.551  %
+Total Number of Instances              214     
+
+=== Detailed Accuracy By Class ===
+
+               TP Rate   FP Rate   Precision   Recall  F-Measure   ROC Area  Class
+                 0.7       0.167      0.671     0.7       0.685      0.784    1
+                 0.632     0.174      0.667     0.632     0.649      0.761    2
+                 0.176     0.03       0.333     0.176     0.231      0.624    3
+                 0         0          0         0         0          ?        4
+                 0.846     0.025      0.688     0.846     0.759      0.945    5
+                 0.889     0.029      0.571     0.889     0.696      0.936    6
+                 0.897     0.022      0.867     0.897     0.881      0.912    7
+Weighted Avg.    0.678     0.124      0.666     0.678     0.668      0.797
+
+=== Confusion Matrix ===
+
+  a  b  c  d  e  f  g   <-- classified as
+ 49 16  3  0  0  1  1 |  a = 1
+ 14 48  3  0  5  4  2 |  b = 2
+  8  6  3  0  0  0  0 |  c = 3
+  0  0  0  0  0  0  0 |  d = 4
+  0  1  0  0 11  0  1 |  e = 5
+  1  0  0  0  0  8  0 |  f = 6
+  1  1  0  0  0  1 26 |  g = 7
+

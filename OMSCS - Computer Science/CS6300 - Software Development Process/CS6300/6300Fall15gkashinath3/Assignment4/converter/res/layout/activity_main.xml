@@ -1,0 +1,52 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/UnitConverter"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="${packageName}.${activityClass}" >
+
+    <LinearLayout
+        android:id="@+id/fromLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:orientation="vertical" >
+
+        <Button
+            android:id="@+id/buttonDistance"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:onClick="distance"
+            android:text="@string/distance" />
+
+        <Button
+            android:id="@+id/buttonAreae"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:onClick="area"
+            android:text="@string/area" />
+
+        <Button
+            android:id="@+id/buttonCurrency"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:onClick="currency"
+            android:text="@string/currency" />
+
+        <Button
+            android:id="@+id/buttonFluid"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:onClick="fluid"
+            android:text="@string/fluid" />
+
+        <Button
+            android:id="@+id/buttonWeight"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:onClick="weight"
+            android:text="@string/weight" />
+    </LinearLayout>
+        
+</RelativeLayout>

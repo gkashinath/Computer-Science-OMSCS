@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Converter</string>
+    <string name="title_activity_main">Unit Converter</string>
+    <string name="title_activity_distance">Distance Converter</string>
+    <string name="distance">Distance</string>
+    <string name="area">Area</string>
+    <string name="title_activity_area">Area Converter</string>
+    <string name="title_activity_currency">Currency Converter</string>
+    <string name="title_activity_weight">Weight Converter</string>
+    <string name="title_activity_fluid">Fluid Converter</string>
+    <string name="currency">Currency</string>
+    <string name="fluid">Fluid</string>
+    <string name="weight">Weight</string>
+    <string name="initial_zero">0.00</string>
+    <string name="back">Back</string>
+
+</resources>

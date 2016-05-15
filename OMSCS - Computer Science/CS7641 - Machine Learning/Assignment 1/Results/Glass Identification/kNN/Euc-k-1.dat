@@ -1,0 +1,61 @@
+=== Run information ===
+
+Scheme:weka.classifiers.lazy.IBk -K 1 -W 0 -A "weka.core.neighboursearch.LinearNNSearch -A \"weka.core.EuclideanDistance -R first-last\""
+Relation:     glass-weka.filters.unsupervised.attribute.Normalize-S1.0-T0.0
+Instances:    214
+Attributes:   10
+              RI
+              Na
+              Mg
+              Al
+              Si
+              K
+              Ca
+              Ba
+              Fe
+              Class
+Test mode:10-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+IB1 instance-based classifier
+using 1 nearest neighbour(s) for classification
+
+
+Time taken to build model: 0 seconds
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances         151               70.5607 %
+Incorrectly Classified Instances        63               29.4393 %
+Kappa statistic                          0.6017
+Mean absolute error                      0.0897
+Root mean squared error                  0.2852
+Relative absolute error                 42.3765 %
+Root relative squared error             87.8768 %
+Total Number of Instances              214     
+
+=== Detailed Accuracy By Class ===
+
+               TP Rate   FP Rate   Precision   Recall  F-Measure   ROC Area  Class
+                 0.771     0.139      0.73      0.771     0.75       0.823    1
+                 0.671     0.145      0.718     0.671     0.694      0.749    2
+                 0.353     0.061      0.333     0.353     0.343      0.67     3
+                 0         0          0         0         0          ?        4
+                 0.769     0.03       0.625     0.769     0.69       0.824    5
+                 0.667     0.01       0.75      0.667     0.706      0.819    6
+                 0.828     0.016      0.889     0.828     0.857      0.903    7
+Weighted Avg.    0.706     0.106      0.71      0.706     0.707      0.795
+
+=== Confusion Matrix ===
+
+  a  b  c  d  e  f  g   <-- classified as
+ 54  9  7  0  0  0  0 |  a = 1
+ 14 51  5  0  4  1  1 |  b = 2
+  6  5  6  0  0  0  0 |  c = 3
+  0  0  0  0  0  0  0 |  d = 4
+  0  2  0  0 10  0  1 |  e = 5
+  0  1  0  0  1  6  1 |  f = 6
+  0  3  0  0  1  1 24 |  g = 7
+

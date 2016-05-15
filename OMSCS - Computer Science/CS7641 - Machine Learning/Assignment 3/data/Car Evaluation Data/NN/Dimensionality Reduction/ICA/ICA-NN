@@ -1,0 +1,141 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.functions.MultilayerPerceptron -L 0.3 -M 0.2 -N 500 -V 0 -S 0 -E 20 -H a
+Relation:     preprocess_car_data_ICA-weka.filters.unsupervised.attribute.IndependentComponents-W-A7-N200-T1.0E-4
+Instances:    1728
+Attributes:   7
+              Source_0
+              Source_1
+              Source_2
+              Source_3
+              Source_4
+              Source_5
+              class
+Test mode:    10-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+Sigmoid Node 0
+    Inputs    Weights
+    Threshold    -4.048245047366622
+    Node 4    -2.188339150917757
+    Node 5    12.313846336740534
+    Node 6    15.58588334143982
+    Node 7    10.6453114283172
+    Node 8    13.969687596956167
+Sigmoid Node 1
+    Inputs    Weights
+    Threshold    -2.7280141310625536
+    Node 4    8.439350298647001
+    Node 5    -11.883010816101082
+    Node 6    -14.165578482954949
+    Node 7    -9.804673671967539
+    Node 8    -12.117129018879053
+Sigmoid Node 2
+    Inputs    Weights
+    Threshold    0.13119647249294564
+    Node 4    -3.7797340957959316
+    Node 5    -2.529006216349696
+    Node 6    -7.782248928674464
+    Node 7    -17.81999411704176
+    Node 8    -11.166186592277683
+Sigmoid Node 3
+    Inputs    Weights
+    Threshold    -0.012223755469065444
+    Node 4    -3.835273905372814
+    Node 5    -2.8478255140226127
+    Node 6    -6.600131482701533
+    Node 7    -3.3355786176988067
+    Node 8    -3.981767427332266
+Sigmoid Node 4
+    Inputs    Weights
+    Threshold    12.799949973673083
+    Attrib Source_0    7.242054692759198
+    Attrib Source_1    15.411850153053592
+    Attrib Source_2    -12.620899859613953
+    Attrib Source_3    -3.5429886286059658
+    Attrib Source_4    -24.311838170670743
+    Attrib Source_5    -8.910928688108225
+Sigmoid Node 5
+    Inputs    Weights
+    Threshold    -11.259821979013635
+    Attrib Source_0    7.428876894485296
+    Attrib Source_1    -0.09738439871026307
+    Attrib Source_2    -2.238483122328229
+    Attrib Source_3    -1.573241633017296
+    Attrib Source_4    -19.799185306141347
+    Attrib Source_5    -0.6262133460386281
+Sigmoid Node 6
+    Inputs    Weights
+    Threshold    -5.768199086657437
+    Attrib Source_0    3.559244294127305
+    Attrib Source_1    27.51033923880384
+    Attrib Source_2    -9.771823673375854
+    Attrib Source_3    1.5782814938459901
+    Attrib Source_4    -11.270784983123313
+    Attrib Source_5    -18.93730456276117
+Sigmoid Node 7
+    Inputs    Weights
+    Threshold    1.9129194232640632
+    Attrib Source_0    9.309357170856071
+    Attrib Source_1    6.393537725961577
+    Attrib Source_2    -13.12423803852059
+    Attrib Source_3    -2.7877651058548167
+    Attrib Source_4    1.8201565100586543
+    Attrib Source_5    -7.44604293839207
+Sigmoid Node 8
+    Inputs    Weights
+    Threshold    -15.809106767482557
+    Attrib Source_0    -22.6555027728304
+    Attrib Source_1    3.729953771974765
+    Attrib Source_2    -0.7498130585998727
+    Attrib Source_3    5.269669663524602
+    Attrib Source_4    -11.456553205292266
+    Attrib Source_5    3.8708290966881154
+Class unacc
+    Input
+    Node 0
+Class acc
+    Input
+    Node 1
+Class vgood
+    Input
+    Node 2
+Class good
+    Input
+    Node 3
+
+
+Time taken to build model: 1.13 seconds
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances        1625               94.0394 %
+Incorrectly Classified Instances       103                5.9606 %
+Kappa statistic                          0.8708
+Mean absolute error                      0.0393
+Root mean squared error                  0.145 
+Relative absolute error                 17.1433 %
+Root relative squared error             42.8891 %
+Coverage of cases (0.95 level)          98.4954 %
+Mean rel. region size (0.95 level)      31.1777 %
+Total Number of Instances             1728     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.978    0.031    0.987      0.978    0.982      0.941    0.992     0.997     unacc
+                 0.911    0.028    0.904      0.911    0.908      0.881    0.981     0.942     acc
+                 0.708    0.016    0.639      0.708    0.672      0.659    0.990     0.763     vgood
+                 0.667    0.014    0.657      0.667    0.662      0.648    0.987     0.685     good
+Weighted Avg.    0.940    0.029    0.942      0.940    0.941      0.906    0.990     0.964     
+
+=== Confusion Matrix ===
+
+    a    b    c    d   <-- classified as
+ 1183   24    2    1 |    a = unacc
+   16  350    7   11 |    b = acc
+    0    7   46   12 |    c = vgood
+    0    6   17   46 |    d = good
+

@@ -1,0 +1,44 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:background="@drawable/bg2"
+    tools:context="edu.gatech.seclass.scm.mainPage">
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Customer"
+        android:id="@+id/bCustomerMain"
+        android:clickable="true"
+        android:enabled="true"
+        android:onClick="@string/title_activity_customer_main"
+        android:layout_marginTop="146dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Rewards"
+        android:id="@+id/bRewardsMain"
+        android:enabled="true"
+        android:clickable="true"
+        android:onClick="@string/title_activity_rewards_get_set"
+        android:layout_below="@+id/bCustomerMain"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Transaction"
+        android:id="@+id/bTransactionMain"
+        android:enabled="true"
+        android:clickable="true"
+        android:onClick="@string/title_activity_transaction_main"
+        android:layout_below="@+id/bRewardsMain"
+        android:layout_centerHorizontal="true" />
+
+</RelativeLayout>

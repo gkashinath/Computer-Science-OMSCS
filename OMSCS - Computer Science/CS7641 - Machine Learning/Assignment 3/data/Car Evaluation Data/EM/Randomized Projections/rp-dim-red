@@ -1,0 +1,67 @@
+=== Run information ===
+
+Scheme:       weka.clusterers.SimpleKMeans -init 0 -max-candidates 100 -periodic-pruning 10000 -min-density 2.0 -t1 -1.25 -t2 -1.0 -N 3 -A "weka.core.EuclideanDistance -R first-last" -I 500 -num-slots 1 -S 10
+Relation:     preprocess_car_data-weka.filters.unsupervised.attribute.RandomProjection-N10-R42-DSparse1
+Instances:    1728
+Attributes:   11
+              K1
+              K2
+              K3
+              K4
+              K5
+              K6
+              K7
+              K8
+              K9
+              K10
+              class
+Test mode:    evaluate on training data
+
+
+=== Clustering model (full training set) ===
+
+
+kMeans
+======
+
+Number of iterations: 4
+Within cluster sum of squared errors: 928.623578312995
+
+Initial starting points (random):
+
+Cluster 0: 12.124356,6.928203,17.320508,-3.464102,3.464102,0,0,1.732051,0,3.464102,unacc
+Cluster 1: 13.856406,3.464102,10.392305,-8.660254,8.660254,0,12.124356,1.732051,0,8.660254,good
+Cluster 2: 13.856406,5.196152,13.856406,-6.928203,6.928203,0,5.196152,1.732051,0,6.928203,unacc
+
+Missing values globally replaced with mean/mode
+
+Final cluster centroids:
+                         Cluster#
+Attribute    Full Data          0          1          2
+              (1728.0)    (576.0)    (511.0)    (641.0)
+=======================================================
+K1              12.413     9.5263    14.0225     13.724
+K2              4.3301     4.3301     3.7285     4.8098
+K3             13.8564    13.8564    13.7378     13.951
+K4             -6.3509    -3.4641     -7.779    -7.8064
+K5              6.3509     3.4641      7.779     7.8064
+K6                   0          0          0          0
+K7              8.9489     6.0622    12.2701     8.8953
+K8              3.4641     3.4641     3.7658     3.2236
+K9                   0          0          0          0
+K10             6.3509     3.4641      7.779     7.8064
+class            unacc      unacc        acc      unacc
+
+
+
+
+Time taken to build model (full training data) : 0.01 seconds
+
+=== Model and evaluation on training set ===
+
+Clustered Instances
+
+0       576 ( 33%)
+1       511 ( 30%)
+2       641 ( 37%)
+

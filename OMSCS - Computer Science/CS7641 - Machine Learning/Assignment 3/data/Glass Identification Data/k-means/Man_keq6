@@ -1,0 +1,71 @@
+=== Run information ===
+
+Scheme:       weka.clusterers.SimpleKMeans -init 0 -max-candidates 100 -periodic-pruning 10000 -min-density 2.0 -t1 -1.25 -t2 -1.0 -N 6 -A "weka.core.ManhattanDistance -R first-last" -I 500 -num-slots 1 -S 10
+Relation:     glass
+Instances:    214
+Attributes:   10
+              RI
+              Na
+              Mg
+              Al
+              Si
+              K
+              Ca
+              Ba
+              Fe
+              Class
+Test mode:    evaluate on training data
+
+
+=== Clustering model (full training set) ===
+
+
+kMeans
+======
+
+Number of iterations: 8
+Sum of within cluster distances: 155.1560147187222
+
+Initial starting points (random):
+
+Cluster 0: 1.523,13.31,3.58,0.82,71.99,0.12,10.17,0,0.03,1
+Cluster 1: 1.51831,14.39,0,1.82,72.86,1.41,6.47,2.88,0,7
+Cluster 2: 1.52475,11.45,0,1.88,72.19,0.81,13.24,0,0.34,2
+Cluster 3: 1.51571,12.72,3.46,1.56,73.2,0.67,8.09,0,0.24,1
+Cluster 4: 1.51556,13.87,0,2.54,73.23,0.14,9.41,0.81,0.01,7
+Cluster 5: 1.52172,13.51,3.86,0.88,71.79,0.23,9.54,0,0.11,1
+
+Missing values globally replaced with mean/mode
+
+Final cluster centroids:
+                         Cluster#
+Attribute    Full Data          0          1          2          3          4          5
+               (214.0)     (58.0)      (6.0)     (24.0)     (77.0)     (26.0)     (23.0)
+========================================================================================
+RI              1.5177     1.5176     1.5183     1.5214     1.5169     1.5162     1.5217
+Na                13.3      13.01     14.355     12.915      13.24      14.47      13.73
+Mg                3.48       3.52       2.44          0       3.52          0       3.75
+Al                1.36       1.28       1.94       1.56       1.48       2.26       0.83
+Si               72.79     72.965      70.84      72.68       72.7     73.255      71.79
+K                0.555       0.57      1.435      0.325       0.58          0       0.12
+Ca                 8.6      8.555       6.17     11.465       8.27      8.645       9.57
+Ba                   0          0      1.655          0          0      0.665          0
+Fe                   0          0          0          0          0          0          0
+Class                2          1          7          2          2          7          1
+
+
+
+
+Time taken to build model (full training data) : 0.01 seconds
+
+=== Model and evaluation on training set ===
+
+Clustered Instances
+
+0       58 ( 27%)
+1        6 (  3%)
+2       24 ( 11%)
+3       77 ( 36%)
+4       26 ( 12%)
+5       23 ( 11%)
+

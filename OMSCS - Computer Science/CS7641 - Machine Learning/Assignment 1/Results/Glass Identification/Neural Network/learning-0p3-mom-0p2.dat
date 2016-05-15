@@ -1,0 +1,253 @@
+=== Run information ===
+
+Scheme:weka.classifiers.functions.MultilayerPerceptron -L 0.3 -M 0.2 -N 500 -V 0 -S 0 -E 20 -H a
+Relation:     glass-weka.filters.unsupervised.attribute.Normalize-S1.0-T0.0
+Instances:    214
+Attributes:   10
+              RI
+              Na
+              Mg
+              Al
+              Si
+              K
+              Ca
+              Ba
+              Fe
+              Class
+Test mode:10-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+Sigmoid Node 0
+    Inputs    Weights
+    Threshold    -7.526546920265681
+    Node 7    -2.6117837674819646
+    Node 8    1.1204327525840194
+    Node 9    5.972934574598446
+    Node 10    1.9964336150760156
+    Node 11    6.142103014884206
+    Node 12    -3.628043217912459
+    Node 13    0.8425259068883681
+    Node 14    -7.829527515865534
+Sigmoid Node 1
+    Inputs    Weights
+    Threshold    -0.1901796640648042
+    Node 7    5.264568955600425
+    Node 8    2.520838109733058
+    Node 9    -6.566685829106103
+    Node 10    -7.073636150774162
+    Node 11    -2.867038198579287
+    Node 12    -9.453380846455357
+    Node 13    -0.08465736448183345
+    Node 14    11.725337811789823
+Sigmoid Node 2
+    Inputs    Weights
+    Threshold    1.7220102576167122
+    Node 7    -3.502221560784669
+    Node 8    -4.331505847232545
+    Node 9    -1.7928436855204977
+    Node 10    -4.354245671359058
+    Node 11    2.111316184173288
+    Node 12    -2.2612967552068217
+    Node 13    -2.085626680310409
+    Node 14    -4.7960183141310955
+Sigmoid Node 3
+    Inputs    Weights
+    Threshold    -2.9755710865780425
+    Node 7    -1.090802807546554
+    Node 8    -1.3942962264827101
+    Node 9    -1.1024761147318278
+    Node 10    -1.071873994043819
+    Node 11    -1.3309139039687712
+    Node 12    -1.1331012117910753
+    Node 13    -1.1580497446662465
+    Node 14    -0.9314625280537316
+Sigmoid Node 4
+    Inputs    Weights
+    Threshold    -4.959789766909828
+    Node 7    -1.220560543560627
+    Node 8    4.107003802964762
+    Node 9    -0.09792599796274949
+    Node 10    -3.745350055076343
+    Node 11    -6.0989163241226505
+    Node 12    6.705225947870653
+    Node 13    -8.477759339998688
+    Node 14    0.4684432912616753
+Sigmoid Node 5
+    Inputs    Weights
+    Threshold    2.5262298273818806
+    Node 7    -9.48275590461904
+    Node 8    -6.2865522643061995
+    Node 9    2.183473540497434
+    Node 10    4.359946805300227
+    Node 11    -2.4867718863627646
+    Node 12    -0.6706310728196246
+    Node 13    -4.582367729779142
+    Node 14    -6.811803284066886
+Sigmoid Node 6
+    Inputs    Weights
+    Threshold    -8.112072496057426
+    Node 7    6.220037538577626
+    Node 8    -7.460946873854665
+    Node 9    0.06746222411201047
+    Node 10    6.313127344389781
+    Node 11    -3.114178684151551
+    Node 12    1.11796535704931
+    Node 13    -2.203845928647119
+    Node 14    -1.0103282527786086
+Sigmoid Node 7
+    Inputs    Weights
+    Threshold    2.055978560285707
+    Attrib RI    1.6715780252282508
+    Attrib Na    5.778501444256557
+    Attrib Mg    4.618987980890803
+    Attrib Al    6.130090813472892
+    Attrib Si    -2.7515952794091776
+    Attrib K    -6.009353178189704
+    Attrib Ca    -11.989989125912452
+    Attrib Ba    12.29533865628364
+    Attrib Fe    -1.444343422159532
+Sigmoid Node 8
+    Inputs    Weights
+    Threshold    2.1735378532737757
+    Attrib RI    5.215156366456684
+    Attrib Na    -11.219011936336548
+    Attrib Mg    2.6032599424674796
+    Attrib Al    5.549813006285436
+    Attrib Si    2.5811479398300716
+    Attrib K    1.9462174057301267
+    Attrib Ca    -1.9368326465465076
+    Attrib Ba    -0.7764971948817184
+    Attrib Fe    1.204570760536682
+Sigmoid Node 9
+    Inputs    Weights
+    Threshold    -3.0927780868848176
+    Attrib RI    10.902476244989783
+    Attrib Na    7.504990482924966
+    Attrib Mg    -2.2812353049983973
+    Attrib Al    -7.348705393223251
+    Attrib Si    4.442204494542888
+    Attrib K    -1.101192616096838
+    Attrib Ca    7.998569100039116
+    Attrib Ba    -1.3579901030719779
+    Attrib Fe    -7.52105218548281
+Sigmoid Node 10
+    Inputs    Weights
+    Threshold    -1.560633632286786
+    Attrib RI    -0.305599533326938
+    Attrib Na    8.841183562432137
+    Attrib Mg    -2.502454585196833
+    Attrib Al    0.9261617554252531
+    Attrib Si    -0.2430750715268398
+    Attrib K    -2.645869734113793
+    Attrib Ca    -2.5007492034025023
+    Attrib Ba    7.648690789988447
+    Attrib Fe    -4.9330578907646325
+Sigmoid Node 11
+    Inputs    Weights
+    Threshold    3.914263611318464
+    Attrib RI    7.004049587875937
+    Attrib Na    -2.732450510579829
+    Attrib Mg    8.745466189986624
+    Attrib Al    -8.954112760345188
+    Attrib Si    -2.3626047202657894
+    Attrib K    1.554094828758948
+    Attrib Ca    0.20460957882782538
+    Attrib Ba    -1.9578532798975545
+    Attrib Fe    8.246042499660907
+Sigmoid Node 12
+    Inputs    Weights
+    Threshold    1.4975205075260236
+    Attrib RI    -3.397719838364088
+    Attrib Na    -8.002712652127563
+    Attrib Mg    -7.9067927903605835
+    Attrib Al    15.019737900130044
+    Attrib Si    0.3708712973180905
+    Attrib K    1.352589804935181
+    Attrib Ca    0.251249544996707
+    Attrib Ba    3.3428406804670083
+    Attrib Fe    0.39874330389323265
+Sigmoid Node 13
+    Inputs    Weights
+    Threshold    -1.4624248308878343
+    Attrib RI    0.7777209787698789
+    Attrib Na    -2.869171175102189
+    Attrib Mg    3.6315662330526295
+    Attrib Al    -7.529694755345049
+    Attrib Si    6.791955213122341
+    Attrib K    5.023118571496033
+    Attrib Ca    0.41211640988646564
+    Attrib Ba    -1.2439298722580725
+    Attrib Fe    1.6000654651176507
+Sigmoid Node 14
+    Inputs    Weights
+    Threshold    -1.1258440087791801
+    Attrib RI    -0.4489327252252135
+    Attrib Na    -2.5742029318689443
+    Attrib Mg    -5.992737929855762
+    Attrib Al    -5.80843227834906
+    Attrib Si    -3.7231697023095407
+    Attrib K    0.16007218056020134
+    Attrib Ca    6.888871131536764
+    Attrib Ba    -0.0329780315228645
+    Attrib Fe    0.4258588876446296
+Class 1
+    Input
+    Node 0
+Class 2
+    Input
+    Node 1
+Class 3
+    Input
+    Node 2
+Class 4
+    Input
+    Node 3
+Class 5
+    Input
+    Node 4
+Class 6
+    Input
+    Node 5
+Class 7
+    Input
+    Node 6
+
+
+Time taken to build model: 0.38 seconds
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances         148               69.1589 %
+Incorrectly Classified Instances        66               30.8411 %
+Kappa statistic                          0.5677
+Mean absolute error                      0.1067
+Root mean squared error                  0.2471
+Relative absolute error                 50.3806 %
+Root relative squared error             76.124  %
+Total Number of Instances              214     
+
+=== Detailed Accuracy By Class ===
+
+               TP Rate   FP Rate   Precision   Recall  F-Measure   ROC Area  Class
+                 0.814     0.229      0.633     0.814     0.713      0.881    1
+                 0.697     0.174      0.688     0.697     0.693      0.856    2
+                 0.059     0.005      0.5       0.059     0.105      0.732    3
+                 0         0          0         0         0          ?        4
+                 0.692     0.02       0.692     0.692     0.692      0.981    5
+                 0.556     0.015      0.625     0.556     0.588      0.933    6
+                 0.793     0.005      0.958     0.793     0.868      0.908    7
+Weighted Avg.    0.692     0.14       0.69      0.692     0.672      0.872
+
+=== Confusion Matrix ===
+
+  a  b  c  d  e  f  g   <-- classified as
+ 57 12  1  0  0  0  0 |  a = 1
+ 20 53  0  0  1  2  0 |  b = 2
+ 10  6  1  0  0  0  0 |  c = 3
+  0  0  0  0  0  0  0 |  d = 4
+  0  3  0  0  9  0  1 |  e = 5
+  2  1  0  0  1  5  0 |  f = 6
+  1  2  0  0  2  1 23 |  g = 7
+

@@ -1,0 +1,86 @@
+=== Run information ===
+
+Scheme:weka.classifiers.trees.J48 -C 0.05 -M 5
+Relation:     glass-weka.filters.unsupervised.attribute.Normalize-S1.0-T0.0
+Instances:    214
+Attributes:   10
+              RI
+              Na
+              Mg
+              Al
+              Si
+              K
+              Ca
+              Ba
+              Fe
+              Class
+Test mode:10-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+J48 pruned tree
+------------------
+
+Ba <= 0.085714
+|   Mg <= 0.536748
+|   |   K <= 0.004831: 6 (12.0/3.0)
+|   |   K > 0.004831
+|   |   |   Na <= 0.415038: 5 (16.0/4.0)
+|   |   |   Na > 0.415038: 2 (7.0/1.0)
+|   Mg > 0.536748
+|   |   Al <= 0.34891
+|   |   |   RI <= 0.259877: 3 (14.0/7.0)
+|   |   |   RI > 0.259877
+|   |   |   |   K <= 0.037037: 1 (27.0/8.0)
+|   |   |   |   K > 0.037037
+|   |   |   |   |   Mg <= 0.835189
+|   |   |   |   |   |   Fe <= 0.27451: 1 (38.0/2.0)
+|   |   |   |   |   |   Fe > 0.27451
+|   |   |   |   |   |   |   Al <= 0.274143: 2 (5.0)
+|   |   |   |   |   |   |   Al > 0.274143: 1 (6.0/1.0)
+|   |   |   |   |   Mg > 0.835189: 2 (10.0)
+|   |   Al > 0.34891: 2 (50.0/10.0)
+Ba > 0.085714: 7 (29.0/3.0)
+
+Number of Leaves  : 	11
+
+Size of the tree : 	21
+
+
+Time taken to build model: 0.01 seconds
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances         141               65.8879 %
+Incorrectly Classified Instances        73               34.1121 %
+Kappa statistic                          0.5379
+Mean absolute error                      0.1197
+Root mean squared error                  0.2767
+Relative absolute error                 56.5449 %
+Root relative squared error             85.2672 %
+Total Number of Instances              214     
+
+=== Detailed Accuracy By Class ===
+
+               TP Rate   FP Rate   Precision   Recall  F-Measure   ROC Area  Class
+                 0.7       0.181      0.653     0.7       0.676      0.796    1
+                 0.592     0.188      0.634     0.592     0.612      0.748    2
+                 0.176     0.025      0.375     0.176     0.24       0.63     3
+                 0         0          0         0         0          ?        4
+                 0.769     0.03       0.625     0.769     0.69       0.935    5
+                 0.889     0.029      0.571     0.889     0.696      0.933    6
+                 0.897     0.022      0.867     0.897     0.881      0.912    7
+Weighted Avg.    0.659     0.134      0.648     0.659     0.648      0.796
+
+=== Confusion Matrix ===
+
+  a  b  c  d  e  f  g   <-- classified as
+ 49 17  2  0  0  1  1 |  a = 1
+ 16 45  3  0  6  4  2 |  b = 2
+  8  6  3  0  0  0  0 |  c = 3
+  0  0  0  0  0  0  0 |  d = 4
+  0  2  0  0 10  0  1 |  e = 5
+  1  0  0  0  0  8  0 |  f = 6
+  1  1  0  0  0  1 26 |  g = 7
+

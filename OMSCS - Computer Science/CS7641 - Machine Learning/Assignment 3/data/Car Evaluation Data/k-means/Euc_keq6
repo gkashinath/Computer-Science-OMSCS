@@ -1,0 +1,65 @@
+=== Run information ===
+
+Scheme:       weka.clusterers.SimpleKMeans -init 0 -max-candidates 100 -periodic-pruning 10000 -min-density 2.0 -t1 -1.25 -t2 -1.0 -N 6 -A "weka.core.EuclideanDistance -R first-last" -I 500 -num-slots 1 -S 10
+Relation:     preprocess_car_data
+Instances:    1728
+Attributes:   7
+              buying
+              maint
+              doors
+              persons
+              lug_boot
+              safety
+              class
+Test mode:    evaluate on training data
+
+
+=== Clustering model (full training set) ===
+
+
+kMeans
+======
+
+Number of iterations: 23
+Within cluster sum of squared errors: 1100.5990006310435
+
+Initial starting points (random):
+
+Cluster 0: 4,2,5,2,1,1,unacc
+Cluster 1: 2,1,3,5,1,3,good
+Cluster 2: 3,2,4,4,1,1,unacc
+Cluster 3: 3,1,5,2,2,1,unacc
+Cluster 4: 3,3,3,5,2,3,acc
+Cluster 5: 1,4,2,5,1,1,unacc
+
+Missing values globally replaced with mean/mode
+
+Final cluster centroids:
+                         Cluster#
+Attribute    Full Data          0          1          2          3          4          5
+              (1728.0)    (289.0)    (129.0)    (286.0)    (288.0)    (389.0)    (347.0)
+========================================================================================
+buying             2.5     2.5986     1.3411     3.3112     2.4028      2.419     2.3516
+maint              2.5     2.5363     1.5426     3.2762     2.4583     2.4036     2.3285
+doors              3.5     3.5052     3.6434     3.2622        3.5     3.5938     3.5331
+persons         3.6667     2.0069     4.5039      4.514          2     4.4859     4.5043
+lug_boot             2     1.3322     2.3333     1.6329     2.6667     2.1003     2.0692
+safety               2     2.2215     2.6977     2.1434     1.7778     2.5373     1.0202
+class            unacc      unacc       good      unacc      unacc        acc      unacc
+
+
+
+
+Time taken to build model (full training data) : 0.03 seconds
+
+=== Model and evaluation on training set ===
+
+Clustered Instances
+
+0       289 ( 17%)
+1       129 (  7%)
+2       286 ( 17%)
+3       288 ( 17%)
+4       389 ( 23%)
+5       347 ( 20%)
+

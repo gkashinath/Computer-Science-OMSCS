@@ -1,0 +1,57 @@
+=== Run information ===
+
+Scheme:       weka.clusterers.SimpleKMeans -init 0 -max-candidates 100 -periodic-pruning 10000 -min-density 2.0 -t1 -1.25 -t2 -1.0 -N 2 -A "weka.core.EuclideanDistance -R first-last" -I 500 -num-slots 1 -S 10
+Relation:     preprocess_car_data
+Instances:    1728
+Attributes:   7
+              buying
+              maint
+              doors
+              persons
+              lug_boot
+              safety
+              class
+Test mode:    evaluate on training data
+
+
+=== Clustering model (full training set) ===
+
+
+kMeans
+======
+
+Number of iterations: 4
+Within cluster sum of squared errors: 1587.7459650914207
+
+Initial starting points (random):
+
+Cluster 0: 4,2,5,2,1,1,unacc
+Cluster 1: 2,1,3,5,1,3,good
+
+Missing values globally replaced with mean/mode
+
+Final cluster centroids:
+                         Cluster#
+Attribute    Full Data          0          1
+              (1728.0)   (1210.0)    (518.0)
+============================================
+buying             2.5     2.6496     2.1506
+maint              2.5     2.6331     2.1892
+doors              3.5     3.4545     3.6062
+persons         3.6667      3.314     4.4903
+lug_boot             2     1.9322     2.1583
+safety               2     1.7529     2.5772
+class            unacc      unacc        acc
+
+
+
+
+Time taken to build model (full training data) : 0.01 seconds
+
+=== Model and evaluation on training set ===
+
+Clustered Instances
+
+0      1210 ( 70%)
+1       518 ( 30%)
+

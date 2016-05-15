@@ -1,0 +1,65 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="${packageName}.${activityClass}" >
+
+   <RadioGroup
+       android:id="@+id/radioGroup1"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:layout_alignLeft="@+id/text1"
+       android:layout_below="@+id/text1"
+       android:layout_marginTop="22dp" >
+
+       <RadioButton
+           android:id="@+id/radio0"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:checked="true"
+           android:onClick="handleClickArea"
+           android:text="Square foot" />
+
+       <RadioButton
+           android:id="@+id/radio1"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:onClick="handleClickArea"
+           android:text="Square meter" />
+   </RadioGroup>
+
+   <TextView
+       android:id="@+id/textView1"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:layout_alignLeft="@+id/text1"
+       android:layout_alignParentTop="true"
+       android:layout_marginTop="94dp"
+       android:text="@string/area"
+       android:textAppearance="?android:attr/textAppearanceMedium" />
+
+   <EditText
+       android:id="@+id/text1"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:layout_below="@+id/textView1"
+       android:layout_centerHorizontal="true"
+       android:layout_marginTop="23dp"
+       android:ems="10"
+       android:inputType="numberDecimal"
+       android:text="@string/initial_zero" >
+
+       <requestFocus />
+   </EditText>
+
+   <Button
+       android:id="@+id/button1"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:layout_alignParentBottom="true"
+       android:layout_centerHorizontal="true"
+       android:layout_marginBottom="54dp"
+       android:text="@string/back" 
+       android:onClick="goBack" />
+
+</RelativeLayout>

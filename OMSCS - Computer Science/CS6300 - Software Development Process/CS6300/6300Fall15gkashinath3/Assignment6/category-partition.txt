@@ -1,0 +1,67 @@
+# Filename
+  Presence of a file corresponding to the name:
+        Not present. [error]
+        Present.
+# File    
+  Size:
+        Empty.       [error]
+        Not Empty.   
+  File format:
+        ASCII.       
+        Others.      [error]
+
+# Flags
+  Valid flags specified:
+        Yes.         
+        No.          [error]
+
+# -b flag tests
+  -b Flag specified:
+        Yes.         [property minus_b]
+        No.          [single]
+  Presence of leading space and/or tab:
+        Not Present. [if minus_b]
+        Present.     [if minus_b]
+
+# -f flag tests
+  -f Flag specified:
+        Yes.         [property minus_f]
+        No.          [single]
+  Presence of alphabetic characters:
+        Not Present. [if minus_f]
+        Present.     [if minus_f]
+
+# -i flag tests
+  -i Flag specified:
+        Yes.         [property minus_i]
+        No.          [single]
+  Presence of non-printable characters:
+        Not Present. [if minus_i]
+        Present.     [if minus_i]
+
+# -n flag tests
+  -n Flag specified:
+        Yes.         [property minus_n]
+        No.          [single]
+  Presence of a number in the input file:
+        Not Present. [if minus_n] [single] 
+        Present.     [if minus_n] [property number_exists]
+  Number has a minus sign:
+        Yes.         [if minus_n && number_exists]
+        No.          [if minus_n && number_exists]
+  Number has a decimal digits:
+        Yes.         [if minus_n && number_exists]
+        No.          [if minus_n && number_exists]
+  Number has thousands-seperator characters:
+        Yes.         [if minus_n && number_exists]
+        No.          [if minus_n && number_exists]
+
+# -r flag tests
+  -r Flag specified:
+        Yes.
+        No.          [single]
+
+# -u flag tests
+  -u Flag specified:
+        Yes.
+        No.          [single]

@@ -1,0 +1,127 @@
+=== Run information ===
+
+Scheme:weka.classifiers.trees.J48 -C 0.25 -M 5
+Relation:     preprocess_car_data
+Instances:    1728
+Attributes:   7
+              buying
+              maint
+              doors
+              persons
+              lug_boot
+              safety
+              class
+Test mode:10-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+J48 pruned tree
+------------------
+
+persons <= 2: unacc (576.0)
+persons > 2
+|   safety <= 1: unacc (384.0)
+|   safety > 1
+|   |   buying <= 2
+|   |   |   maint <= 2
+|   |   |   |   safety <= 2
+|   |   |   |   |   lug_boot <= 1: acc (32.0/4.0)
+|   |   |   |   |   lug_boot > 1
+|   |   |   |   |   |   buying <= 1
+|   |   |   |   |   |   |   lug_boot <= 2
+|   |   |   |   |   |   |   |   doors <= 3: acc (8.0/2.0)
+|   |   |   |   |   |   |   |   doors > 3: good (8.0)
+|   |   |   |   |   |   |   lug_boot > 2: good (16.0)
+|   |   |   |   |   |   buying > 1
+|   |   |   |   |   |   |   maint <= 1: good (16.0/3.0)
+|   |   |   |   |   |   |   maint > 1: acc (16.0)
+|   |   |   |   safety > 2
+|   |   |   |   |   lug_boot <= 1
+|   |   |   |   |   |   buying <= 1: good (16.0/2.0)
+|   |   |   |   |   |   buying > 1
+|   |   |   |   |   |   |   maint <= 1: good (8.0/1.0)
+|   |   |   |   |   |   |   maint > 1: acc (8.0/1.0)
+|   |   |   |   |   lug_boot > 1
+|   |   |   |   |   |   lug_boot <= 2
+|   |   |   |   |   |   |   doors <= 3: good (16.0/7.0)
+|   |   |   |   |   |   |   doors > 3: vgood (16.0)
+|   |   |   |   |   |   lug_boot > 2: vgood (32.0)
+|   |   |   maint > 2
+|   |   |   |   lug_boot <= 1
+|   |   |   |   |   safety <= 2
+|   |   |   |   |   |   buying <= 1
+|   |   |   |   |   |   |   maint <= 3: acc (8.0/1.0)
+|   |   |   |   |   |   |   maint > 3: unacc (8.0)
+|   |   |   |   |   |   buying > 1: unacc (16.0)
+|   |   |   |   |   safety > 2: acc (32.0/4.0)
+|   |   |   |   lug_boot > 1
+|   |   |   |   |   safety <= 2
+|   |   |   |   |   |   lug_boot <= 2
+|   |   |   |   |   |   |   doors <= 3
+|   |   |   |   |   |   |   |   buying <= 1: acc (8.0/3.0)
+|   |   |   |   |   |   |   |   buying > 1: unacc (8.0/2.0)
+|   |   |   |   |   |   |   doors > 3: acc (16.0)
+|   |   |   |   |   |   lug_boot > 2: acc (32.0)
+|   |   |   |   |   safety > 2
+|   |   |   |   |   |   buying <= 1
+|   |   |   |   |   |   |   maint <= 3: vgood (16.0/3.0)
+|   |   |   |   |   |   |   maint > 3: acc (16.0)
+|   |   |   |   |   |   buying > 1: acc (32.0)
+|   |   buying > 2
+|   |   |   maint <= 3
+|   |   |   |   lug_boot <= 1
+|   |   |   |   |   safety <= 2: unacc (48.0)
+|   |   |   |   |   safety > 2
+|   |   |   |   |   |   maint <= 2: acc (32.0/4.0)
+|   |   |   |   |   |   maint > 2
+|   |   |   |   |   |   |   buying <= 3: acc (8.0/1.0)
+|   |   |   |   |   |   |   buying > 3: unacc (8.0)
+|   |   |   |   lug_boot > 1
+|   |   |   |   |   maint <= 2
+|   |   |   |   |   |   lug_boot <= 2
+|   |   |   |   |   |   |   safety <= 2
+|   |   |   |   |   |   |   |   doors <= 3: unacc (16.0/4.0)
+|   |   |   |   |   |   |   |   doors > 3: acc (16.0)
+|   |   |   |   |   |   |   safety > 2: acc (32.0)
+|   |   |   |   |   |   lug_boot > 2: acc (64.0)
+|   |   |   |   |   maint > 2
+|   |   |   |   |   |   buying <= 3: acc (32.0/3.0)
+|   |   |   |   |   |   buying > 3: unacc (32.0)
+|   |   |   maint > 3: unacc (96.0)
+
+Number of Leaves  : 	36
+
+Size of the tree : 	71
+
+
+Time taken to build model: 0.01 seconds
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances        1645               95.1968 %
+Incorrectly Classified Instances        83                4.8032 %
+Kappa statistic                          0.8963
+Mean absolute error                      0.0279
+Root mean squared error                  0.1317
+Relative absolute error                 12.185  %
+Root relative squared error             38.9384 %
+Total Number of Instances             1728     
+
+=== Detailed Accuracy By Class ===
+
+               TP Rate   FP Rate   Precision   Recall  F-Measure   ROC Area  Class
+                 0.97      0.037      0.984     0.97      0.977      0.993    unacc
+                 0.917     0.029      0.9       0.917     0.908      0.987    acc
+                 0.954     0.005      0.886     0.954     0.919      0.999    vgood
+                 0.826     0.01       0.77      0.826     0.797      0.995    good
+Weighted Avg.    0.952     0.033      0.953     0.952     0.952      0.992
+
+=== Confusion Matrix ===
+
+    a    b    c    d   <-- classified as
+ 1174   34    0    2 |    a = unacc
+   16  352    4   12 |    b = acc
+    0    0   62    3 |    c = vgood
+    3    5    4   57 |    d = good
+

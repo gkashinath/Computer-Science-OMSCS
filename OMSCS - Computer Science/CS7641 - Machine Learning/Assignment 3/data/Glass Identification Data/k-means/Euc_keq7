@@ -1,0 +1,73 @@
+=== Run information ===
+
+Scheme:       weka.clusterers.SimpleKMeans -init 0 -max-candidates 100 -periodic-pruning 10000 -min-density 2.0 -t1 -1.25 -t2 -1.0 -N 7 -A "weka.core.EuclideanDistance -R first-last" -I 500 -num-slots 1 -S 10
+Relation:     glass
+Instances:    214
+Attributes:   10
+              RI
+              Na
+              Mg
+              Al
+              Si
+              K
+              Ca
+              Ba
+              Fe
+              Class
+Test mode:    evaluate on training data
+
+
+=== Clustering model (full training set) ===
+
+
+kMeans
+======
+
+Number of iterations: 9
+Within cluster sum of squared errors: 60.4806852320736
+
+Initial starting points (random):
+
+Cluster 0: 1.523,13.31,3.58,0.82,71.99,0.12,10.17,0,0.03,1
+Cluster 1: 1.51831,14.39,0,1.82,72.86,1.41,6.47,2.88,0,7
+Cluster 2: 1.52475,11.45,0,1.88,72.19,0.81,13.24,0,0.34,2
+Cluster 3: 1.51571,12.72,3.46,1.56,73.2,0.67,8.09,0,0.24,1
+Cluster 4: 1.51556,13.87,0,2.54,73.23,0.14,9.41,0.81,0.01,7
+Cluster 5: 1.52172,13.51,3.86,0.88,71.79,0.23,9.54,0,0.11,1
+Cluster 6: 1.51596,12.79,3.61,1.62,72.97,0.64,8.07,0,0.26,1
+
+Missing values globally replaced with mean/mode
+
+Final cluster centroids:
+                         Cluster#
+Attribute    Full Data          0          1          2          3          4          5          6
+               (214.0)     (57.0)      (6.0)     (19.0)     (60.0)     (31.0)     (19.0)     (22.0)
+===================================================================================================
+RI              1.5184      1.519      1.519     1.5236     1.5173     1.5162     1.5182     1.5181
+Na             13.4079    13.3847    14.3517    12.7263    13.2438    14.4039    13.0053    13.1905
+Mg              2.6845     3.5654     2.7517     0.3305     3.4125     0.1387     3.4926     3.3209
+Al              1.4449     1.1263     2.0217     1.2979     1.4907     2.1461     1.1779     1.3577
+Si             72.6509    72.5389      71.17    72.4842    72.6505    73.1981    72.7942    72.5955
+K               0.4971     0.3946      1.095     0.2768     0.5507     0.5784     0.4879     0.5368
+Ca               8.957     8.8333     7.3817    12.5016     8.4222     8.6116     8.8232     8.7064
+Ba               0.175      0.014     1.1167     0.1658     0.0023     0.8277     0.0126      0.035
+Fe               0.057     0.0093          0     0.0789     0.0155     0.0126     0.1947     0.2341
+Class                2          1          7          2          2          7          1          2
+
+
+
+
+Time taken to build model (full training data) : 0.01 seconds
+
+=== Model and evaluation on training set ===
+
+Clustered Instances
+
+0       57 ( 27%)
+1        6 (  3%)
+2       19 (  9%)
+3       60 ( 28%)
+4       31 ( 14%)
+5       19 (  9%)
+6       22 ( 10%)
+

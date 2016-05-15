@@ -1,0 +1,50 @@
+=== Run information ===
+
+Scheme:weka.classifiers.functions.LibSVM -S 0 -K 1 -D 3 -G 0.0 -R 0.0 -N 0.5 -M 40.0 -C 1.0 -E 0.001 -P 0.1 -seed 1
+Relation:     preprocess_car_data
+Instances:    1728
+Attributes:   7
+              buying
+              maint
+              doors
+              persons
+              lug_boot
+              safety
+              class
+Test mode:10-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+LibSVM wrapper, original code by Yasser EL-Manzalawy (= WLSVM)
+
+Time taken to build model: 0.36 seconds
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances        1642               95.0231 %
+Incorrectly Classified Instances        86                4.9769 %
+Kappa statistic                          0.8905
+Mean absolute error                      0.0249
+Root mean squared error                  0.1577
+Relative absolute error                 10.8656 %
+Root relative squared error             46.6548 %
+Total Number of Instances             1728     
+
+=== Detailed Accuracy By Class ===
+
+               TP Rate   FP Rate   Precision   Recall  F-Measure   ROC Area  Class
+                 0.974     0.075      0.968     0.974     0.971      0.95     unacc
+                 0.885     0.03       0.895     0.885     0.89       0.928    acc
+                 0.985     0.001      0.985     0.985     0.985      0.992    vgood
+                 0.855     0.004      0.908     0.855     0.881      0.926    good
+Weighted Avg.    0.95      0.06       0.95      0.95      0.95       0.945
+
+=== Confusion Matrix ===
+
+    a    b    c    d   <-- classified as
+ 1179   31    0    0 |    a = unacc
+   37  340    1    6 |    b = acc
+    0    1   64    0 |    c = vgood
+    2    8    0   59 |    d = good
+
